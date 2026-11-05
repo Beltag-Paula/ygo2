@@ -1,0 +1,1205 @@
+{
+ "name": "My Resonator",
+ "mainDeck": [
+  {
+   "id": 97268402,
+   "name": "Effect Veiler",
+   "type": "Tuner Monster",
+   "humanReadableCardType": "Effect Tuner Monster",
+   "frameType": "effect",
+   "race": "Spellcaster",
+   "atk": 0,
+   "level": 1,
+   "attribute": "LIGHT",
+   "def": 0,
+   "desc": "During your opponent's Main Phase (Quick Effect): You can send this card from your hand to the GY, then target 1 Effect Monster your opponent controls; negate the effects of that face-up monster your opponent controls, until the end of this turn.",
+   "card_images": [
+    {
+     "id": 97268402,
+     "image_url": "https://images.ygoprodeck.com/images/cards/97268402.jpg",
+     "image_url_small": "https://images.ygoprodeck.com/images/cards_small/97268402.jpg",
+     "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/97268402.jpg"
+    }
+   ]
+  },
+  {
+   "id": 77360173,
+   "name": "Synkron Resonator",
+   "type": "Tuner Monster",
+   "humanReadableCardType": "Effect Tuner Monster",
+   "frameType": "effect",
+   "race": "Fiend",
+   "atk": 100,
+   "level": 1,
+   "attribute": "DARK",
+   "def": 100,
+   "desc": "If a Synchro Monster is on the field, you can Special Summon this card (from your hand). You can only Special Summon \"Synkron Resonator\" once per turn this way. If this card is sent from the field to the GY: You can target 1 \"Resonator\" monster in your GY, except \"Synkron Resonator\"; add it to your hand.",
+   "card_images": [
+    {
+     "id": 77360173,
+     "image_url": "https://images.ygoprodeck.com/images/cards/77360173.jpg",
+     "image_url_small": "https://images.ygoprodeck.com/images/cards_small/77360173.jpg",
+     "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/77360173.jpg"
+    }
+   ]
+  },
+  {
+   "id": 77360173,
+   "name": "Synkron Resonator",
+   "type": "Tuner Monster",
+   "humanReadableCardType": "Effect Tuner Monster",
+   "frameType": "effect",
+   "race": "Fiend",
+   "atk": 100,
+   "level": 1,
+   "attribute": "DARK",
+   "def": 100,
+   "desc": "If a Synchro Monster is on the field, you can Special Summon this card (from your hand). You can only Special Summon \"Synkron Resonator\" once per turn this way. If this card is sent from the field to the GY: You can target 1 \"Resonator\" monster in your GY, except \"Synkron Resonator\"; add it to your hand.",
+   "card_images": [
+    {
+     "id": 77360173,
+     "image_url": "https://images.ygoprodeck.com/images/cards/77360173.jpg",
+     "image_url_small": "https://images.ygoprodeck.com/images/cards_small/77360173.jpg",
+     "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/77360173.jpg"
+    }
+   ]
+  },
+  {
+   "id": 23434538,
+   "name": "Maxx \"C\"",
+   "type": "Effect Monster",
+   "humanReadableCardType": "Effect Monster",
+   "frameType": "effect",
+   "race": "Insect",
+   "atk": 500,
+   "level": 2,
+   "attribute": "EARTH",
+   "def": 200,
+   "desc": "(Quick Effect): You can send this card from your hand to the GY; this turn, each time your opponent Special Summons a monster(s), immediately draw 1 card. You can only use this effect of \"Maxx \"C\"\" once per turn.",
+   "card_images": [
+    {
+     "id": 23434538,
+     "image_url": "https://images.ygoprodeck.com/images/cards/23434538.jpg",
+     "image_url_small": "https://images.ygoprodeck.com/images/cards_small/23434538.jpg",
+     "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/23434538.jpg"
+    }
+   ]
+  },
+  {
+   "id": 34761841,
+   "name": "Crimson Resonator",
+   "type": "Tuner Monster",
+   "humanReadableCardType": "Effect Tuner Monster",
+   "frameType": "effect",
+   "race": "Fiend",
+   "atk": 800,
+   "level": 2,
+   "attribute": "DARK",
+   "def": 300,
+   "desc": "If you control no monsters: You can Special Summon this card from your hand. If the only other monster you control is exactly 1 DARK Dragon Synchro Monster: You can Special Summon up to 2 \"Resonator\" monsters from your hand or Deck, except \"Crimson Resonator\". You can only use each effect of \"Crimson Resonator\" once per turn. You cannot Special Summon monsters from the Extra Deck, except DARK Dragon Synchro Monsters, the turn you activate either of this card's effects.",
+   "card_images": [
+    {
+     "id": 34761841,
+     "image_url": "https://images.ygoprodeck.com/images/cards/34761841.jpg",
+     "image_url_small": "https://images.ygoprodeck.com/images/cards_small/34761841.jpg",
+     "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/34761841.jpg"
+    }
+   ]
+  },
+  {
+   "id": 34761841,
+   "name": "Crimson Resonator",
+   "type": "Tuner Monster",
+   "humanReadableCardType": "Effect Tuner Monster",
+   "frameType": "effect",
+   "race": "Fiend",
+   "atk": 800,
+   "level": 2,
+   "attribute": "DARK",
+   "def": 300,
+   "desc": "If you control no monsters: You can Special Summon this card from your hand. If the only other monster you control is exactly 1 DARK Dragon Synchro Monster: You can Special Summon up to 2 \"Resonator\" monsters from your hand or Deck, except \"Crimson Resonator\". You can only use each effect of \"Crimson Resonator\" once per turn. You cannot Special Summon monsters from the Extra Deck, except DARK Dragon Synchro Monsters, the turn you activate either of this card's effects.",
+   "card_images": [
+    {
+     "id": 34761841,
+     "image_url": "https://images.ygoprodeck.com/images/cards/34761841.jpg",
+     "image_url_small": "https://images.ygoprodeck.com/images/cards_small/34761841.jpg",
+     "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/34761841.jpg"
+    }
+   ]
+  },
+  {
+   "id": 34761841,
+   "name": "Crimson Resonator",
+   "type": "Tuner Monster",
+   "humanReadableCardType": "Effect Tuner Monster",
+   "frameType": "effect",
+   "race": "Fiend",
+   "atk": 800,
+   "level": 2,
+   "attribute": "DARK",
+   "def": 300,
+   "desc": "If you control no monsters: You can Special Summon this card from your hand. If the only other monster you control is exactly 1 DARK Dragon Synchro Monster: You can Special Summon up to 2 \"Resonator\" monsters from your hand or Deck, except \"Crimson Resonator\". You can only use each effect of \"Crimson Resonator\" once per turn. You cannot Special Summon monsters from the Extra Deck, except DARK Dragon Synchro Monsters, the turn you activate either of this card's effects.",
+   "card_images": [
+    {
+     "id": 34761841,
+     "image_url": "https://images.ygoprodeck.com/images/cards/34761841.jpg",
+     "image_url_small": "https://images.ygoprodeck.com/images/cards_small/34761841.jpg",
+     "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/34761841.jpg"
+    }
+   ]
+  },
+  {
+   "id": 98396890,
+   "name": "Vision Resonator",
+   "type": "Tuner Monster",
+   "humanReadableCardType": "Effect Tuner Monster",
+   "frameType": "effect",
+   "race": "Fiend",
+   "atk": 400,
+   "level": 2,
+   "attribute": "DARK",
+   "def": 400,
+   "desc": "If a Level 5 or higher DARK monster is on the field, you can Special Summon this card (from your hand). You can only Special Summon \"Vision Resonator\" once per turn this way. If this card is sent to the GY: You can add 1 Spell/Trap that mentions \"Red Dragon Archfiend\" from your Deck to your hand. You can only use this effect of \"Vision Resonator\" once per turn.",
+   "card_images": [
+    {
+     "id": 98396890,
+     "image_url": "https://images.ygoprodeck.com/images/cards/98396890.jpg",
+     "image_url_small": "https://images.ygoprodeck.com/images/cards_small/98396890.jpg",
+     "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/98396890.jpg"
+    }
+   ]
+  },
+  {
+   "id": 98396890,
+   "name": "Vision Resonator",
+   "type": "Tuner Monster",
+   "humanReadableCardType": "Effect Tuner Monster",
+   "frameType": "effect",
+   "race": "Fiend",
+   "atk": 400,
+   "level": 2,
+   "attribute": "DARK",
+   "def": 400,
+   "desc": "If a Level 5 or higher DARK monster is on the field, you can Special Summon this card (from your hand). You can only Special Summon \"Vision Resonator\" once per turn this way. If this card is sent to the GY: You can add 1 Spell/Trap that mentions \"Red Dragon Archfiend\" from your Deck to your hand. You can only use this effect of \"Vision Resonator\" once per turn.",
+   "card_images": [
+    {
+     "id": 98396890,
+     "image_url": "https://images.ygoprodeck.com/images/cards/98396890.jpg",
+     "image_url_small": "https://images.ygoprodeck.com/images/cards_small/98396890.jpg",
+     "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/98396890.jpg"
+    }
+   ]
+  },
+  {
+   "id": 19299793,
+   "name": "Red Lotus King, Flame Crime",
+   "type": "Effect Monster",
+   "humanReadableCardType": "Effect Monster",
+   "frameType": "effect",
+   "race": "Fiend",
+   "atk": 1700,
+   "level": 3,
+   "attribute": "FIRE",
+   "def": 300,
+   "desc": "During the Main Phase, if you control a Fiend Tuner, or your opponent controls a Special Summoned monster (Quick Effect): You can Special Summon this card from your hand. If this card is Special Summoned: You can inflict 400 damage to your opponent for each FIRE monster you control with different names. If this card is sent to the GY as Synchro Material: You can send 1 Normal Trap from your Deck to the GY. You can only use each effect of \"Red Lotus King, Flame Crime\" once per turn.",
+   "card_images": [
+    {
+     "id": 19299793,
+     "image_url": "https://images.ygoprodeck.com/images/cards/19299793.jpg",
+     "image_url_small": "https://images.ygoprodeck.com/images/cards_small/19299793.jpg",
+     "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/19299793.jpg"
+    }
+   ]
+  },
+  {
+   "id": 19299793,
+   "name": "Red Lotus King, Flame Crime",
+   "type": "Effect Monster",
+   "humanReadableCardType": "Effect Monster",
+   "frameType": "effect",
+   "race": "Fiend",
+   "atk": 1700,
+   "level": 3,
+   "attribute": "FIRE",
+   "def": 300,
+   "desc": "During the Main Phase, if you control a Fiend Tuner, or your opponent controls a Special Summoned monster (Quick Effect): You can Special Summon this card from your hand. If this card is Special Summoned: You can inflict 400 damage to your opponent for each FIRE monster you control with different names. If this card is sent to the GY as Synchro Material: You can send 1 Normal Trap from your Deck to the GY. You can only use each effect of \"Red Lotus King, Flame Crime\" once per turn.",
+   "card_images": [
+    {
+     "id": 19299793,
+     "image_url": "https://images.ygoprodeck.com/images/cards/19299793.jpg",
+     "image_url_small": "https://images.ygoprodeck.com/images/cards_small/19299793.jpg",
+     "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/19299793.jpg"
+    }
+   ]
+  },
+  {
+   "id": 19299793,
+   "name": "Red Lotus King, Flame Crime",
+   "type": "Effect Monster",
+   "humanReadableCardType": "Effect Monster",
+   "frameType": "effect",
+   "race": "Fiend",
+   "atk": 1700,
+   "level": 3,
+   "attribute": "FIRE",
+   "def": 300,
+   "desc": "During the Main Phase, if you control a Fiend Tuner, or your opponent controls a Special Summoned monster (Quick Effect): You can Special Summon this card from your hand. If this card is Special Summoned: You can inflict 400 damage to your opponent for each FIRE monster you control with different names. If this card is sent to the GY as Synchro Material: You can send 1 Normal Trap from your Deck to the GY. You can only use each effect of \"Red Lotus King, Flame Crime\" once per turn.",
+   "card_images": [
+    {
+     "id": 19299793,
+     "image_url": "https://images.ygoprodeck.com/images/cards/19299793.jpg",
+     "image_url_small": "https://images.ygoprodeck.com/images/cards_small/19299793.jpg",
+     "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/19299793.jpg"
+    }
+   ]
+  },
+  {
+   "id": 5780210,
+   "name": "Creation Resonator",
+   "type": "Tuner Monster",
+   "humanReadableCardType": "Effect Tuner Monster",
+   "frameType": "effect",
+   "race": "Fiend",
+   "atk": 800,
+   "level": 3,
+   "attribute": "WIND",
+   "def": 600,
+   "desc": "If you control a Level 8 or higher Synchro Monster, you can Special Summon this card (from your hand).",
+   "card_images": [
+    {
+     "id": 5780210,
+     "image_url": "https://images.ygoprodeck.com/images/cards/5780210.jpg",
+     "image_url_small": "https://images.ygoprodeck.com/images/cards_small/5780210.jpg",
+     "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/5780210.jpg"
+    }
+   ]
+  },
+  {
+   "id": 14558127,
+   "name": "Ash Blossom & Joyous Spring",
+   "type": "Tuner Monster",
+   "humanReadableCardType": "Effect Tuner Monster",
+   "frameType": "effect",
+   "race": "Zombie",
+   "atk": 0,
+   "level": 3,
+   "attribute": "FIRE",
+   "def": 1800,
+   "desc": "When a card or effect is activated that includes any of these effects (Quick Effect): You can discard this card; negate that effect.\r\n● Add a card(s) from the Deck to the hand.\r\n● Special Summon a Monster Card(s) from the Deck.\r\n● Send a card(s) from the Deck to the GY.\r\nYou can only use this effect of \"Ash Blossom & Joyous Spring\" once per turn.\r\n\r\n* The above text is unofficial and describes the card's functionality in the OCG.",
+   "card_images": [
+    {
+     "id": 14558127,
+     "image_url": "https://images.ygoprodeck.com/images/cards/14558127.jpg",
+     "image_url_small": "https://images.ygoprodeck.com/images/cards_small/14558127.jpg",
+     "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/14558127.jpg"
+    }
+   ]
+  },
+  {
+   "id": 14558127,
+   "name": "Ash Blossom & Joyous Spring",
+   "type": "Tuner Monster",
+   "humanReadableCardType": "Effect Tuner Monster",
+   "frameType": "effect",
+   "race": "Zombie",
+   "atk": 0,
+   "level": 3,
+   "attribute": "FIRE",
+   "def": 1800,
+   "desc": "When a card or effect is activated that includes any of these effects (Quick Effect): You can discard this card; negate that effect.\r\n● Add a card(s) from the Deck to the hand.\r\n● Special Summon a Monster Card(s) from the Deck.\r\n● Send a card(s) from the Deck to the GY.\r\nYou can only use this effect of \"Ash Blossom & Joyous Spring\" once per turn.\r\n\r\n* The above text is unofficial and describes the card's functionality in the OCG.",
+   "card_images": [
+    {
+     "id": 14558127,
+     "image_url": "https://images.ygoprodeck.com/images/cards/14558127.jpg",
+     "image_url_small": "https://images.ygoprodeck.com/images/cards_small/14558127.jpg",
+     "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/14558127.jpg"
+    }
+   ]
+  },
+  {
+   "id": 62991792,
+   "name": "Soul Resonator",
+   "type": "Tuner Monster",
+   "humanReadableCardType": "Effect Tuner Monster",
+   "frameType": "effect",
+   "race": "Fiend",
+   "atk": 500,
+   "level": 3,
+   "attribute": "FIRE",
+   "def": 200,
+   "desc": "If this card is Normal or Special Summoned: You can add 1 Level 4 or lower Fiend monster from your Deck to your hand, except \"Soul Resonator\", also you cannot Special Summon monsters from the Extra Deck for the rest of this turn, except DARK Synchro Monsters. If a card(s) you control would be destroyed by card effect, while you control \"Red Dragon Archfiend\" or a Synchro Monster that mentions it, you can banish this card from your GY instead. You can only use each effect of \"Soul Resonator\" once per turn.",
+   "card_images": [
+    {
+     "id": 62991792,
+     "image_url": "https://images.ygoprodeck.com/images/cards/62991792.jpg",
+     "image_url_small": "https://images.ygoprodeck.com/images/cards_small/62991792.jpg",
+     "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/62991792.jpg"
+    }
+   ]
+  },
+  {
+   "id": 62991792,
+   "name": "Soul Resonator",
+   "type": "Tuner Monster",
+   "humanReadableCardType": "Effect Tuner Monster",
+   "frameType": "effect",
+   "race": "Fiend",
+   "atk": 500,
+   "level": 3,
+   "attribute": "FIRE",
+   "def": 200,
+   "desc": "If this card is Normal or Special Summoned: You can add 1 Level 4 or lower Fiend monster from your Deck to your hand, except \"Soul Resonator\", also you cannot Special Summon monsters from the Extra Deck for the rest of this turn, except DARK Synchro Monsters. If a card(s) you control would be destroyed by card effect, while you control \"Red Dragon Archfiend\" or a Synchro Monster that mentions it, you can banish this card from your GY instead. You can only use each effect of \"Soul Resonator\" once per turn.",
+   "card_images": [
+    {
+     "id": 62991792,
+     "image_url": "https://images.ygoprodeck.com/images/cards/62991792.jpg",
+     "image_url_small": "https://images.ygoprodeck.com/images/cards_small/62991792.jpg",
+     "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/62991792.jpg"
+    }
+   ]
+  },
+  {
+   "id": 62991792,
+   "name": "Soul Resonator",
+   "type": "Tuner Monster",
+   "humanReadableCardType": "Effect Tuner Monster",
+   "frameType": "effect",
+   "race": "Fiend",
+   "atk": 500,
+   "level": 3,
+   "attribute": "FIRE",
+   "def": 200,
+   "desc": "If this card is Normal or Special Summoned: You can add 1 Level 4 or lower Fiend monster from your Deck to your hand, except \"Soul Resonator\", also you cannot Special Summon monsters from the Extra Deck for the rest of this turn, except DARK Synchro Monsters. If a card(s) you control would be destroyed by card effect, while you control \"Red Dragon Archfiend\" or a Synchro Monster that mentions it, you can banish this card from your GY instead. You can only use each effect of \"Soul Resonator\" once per turn.",
+   "card_images": [
+    {
+     "id": 62991792,
+     "image_url": "https://images.ygoprodeck.com/images/cards/62991792.jpg",
+     "image_url_small": "https://images.ygoprodeck.com/images/cards_small/62991792.jpg",
+     "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/62991792.jpg"
+    }
+   ]
+  },
+  {
+   "id": 52589809,
+   "name": "Wandering King Wildwind",
+   "type": "Effect Monster",
+   "humanReadableCardType": "Effect Monster",
+   "frameType": "effect",
+   "race": "Fiend",
+   "atk": 1700,
+   "level": 4,
+   "attribute": "DARK",
+   "def": 1300,
+   "desc": "If you control a Fiend Tuner with 1500 or less ATK, you can Special Summon this card (from your hand). If Summoned this way, you cannot Special Summon monsters from the Extra Deck for the rest of this turn, except Synchro Monsters. During your Main Phase, except the turn this card was sent to the GY: You can banish this card from your GY; add 1 Fiend Tuner with 1500 or less ATK from your Deck to your hand.",
+   "card_images": [
+    {
+     "id": 52589809,
+     "image_url": "https://images.ygoprodeck.com/images/cards/52589809.jpg",
+     "image_url_small": "https://images.ygoprodeck.com/images/cards_small/52589809.jpg",
+     "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/52589809.jpg"
+    }
+   ]
+  },
+  {
+   "id": 52589809,
+   "name": "Wandering King Wildwind",
+   "type": "Effect Monster",
+   "humanReadableCardType": "Effect Monster",
+   "frameType": "effect",
+   "race": "Fiend",
+   "atk": 1700,
+   "level": 4,
+   "attribute": "DARK",
+   "def": 1300,
+   "desc": "If you control a Fiend Tuner with 1500 or less ATK, you can Special Summon this card (from your hand). If Summoned this way, you cannot Special Summon monsters from the Extra Deck for the rest of this turn, except Synchro Monsters. During your Main Phase, except the turn this card was sent to the GY: You can banish this card from your GY; add 1 Fiend Tuner with 1500 or less ATK from your Deck to your hand.",
+   "card_images": [
+    {
+     "id": 52589809,
+     "image_url": "https://images.ygoprodeck.com/images/cards/52589809.jpg",
+     "image_url_small": "https://images.ygoprodeck.com/images/cards_small/52589809.jpg",
+     "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/52589809.jpg"
+    }
+   ]
+  },
+  {
+   "id": 52589809,
+   "name": "Wandering King Wildwind",
+   "type": "Effect Monster",
+   "humanReadableCardType": "Effect Monster",
+   "frameType": "effect",
+   "race": "Fiend",
+   "atk": 1700,
+   "level": 4,
+   "attribute": "DARK",
+   "def": 1300,
+   "desc": "If you control a Fiend Tuner with 1500 or less ATK, you can Special Summon this card (from your hand). If Summoned this way, you cannot Special Summon monsters from the Extra Deck for the rest of this turn, except Synchro Monsters. During your Main Phase, except the turn this card was sent to the GY: You can banish this card from your GY; add 1 Fiend Tuner with 1500 or less ATK from your Deck to your hand.",
+   "card_images": [
+    {
+     "id": 52589809,
+     "image_url": "https://images.ygoprodeck.com/images/cards/52589809.jpg",
+     "image_url_small": "https://images.ygoprodeck.com/images/cards_small/52589809.jpg",
+     "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/52589809.jpg"
+    }
+   ]
+  },
+  {
+   "id": 25784595,
+   "name": "Bone Archfiend",
+   "type": "Effect Monster",
+   "humanReadableCardType": "Effect Monster",
+   "frameType": "effect",
+   "race": "Fiend",
+   "atk": 1800,
+   "level": 4,
+   "attribute": "DARK",
+   "def": 0,
+   "desc": "If this card is in your hand or GY: You can send 1 other card from your hand or field to the GY; Special Summon this card, also you cannot Special Summon monsters from the Extra Deck for the rest of this turn, except DARK Dragon Synchro Monsters. You can target 1 face-up monster you control that has a Level; send 1 Fiend Tuner from your hand or Deck to the GY, and if you do, increase or decrease that monster's Level by 1. You can only use each effect of \"Bone Archfiend\" once per turn.",
+   "card_images": [
+    {
+     "id": 25784595,
+     "image_url": "https://images.ygoprodeck.com/images/cards/25784595.jpg",
+     "image_url_small": "https://images.ygoprodeck.com/images/cards_small/25784595.jpg",
+     "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/25784595.jpg"
+    }
+   ]
+  },
+  {
+   "id": 25784595,
+   "name": "Bone Archfiend",
+   "type": "Effect Monster",
+   "humanReadableCardType": "Effect Monster",
+   "frameType": "effect",
+   "race": "Fiend",
+   "atk": 1800,
+   "level": 4,
+   "attribute": "DARK",
+   "def": 0,
+   "desc": "If this card is in your hand or GY: You can send 1 other card from your hand or field to the GY; Special Summon this card, also you cannot Special Summon monsters from the Extra Deck for the rest of this turn, except DARK Dragon Synchro Monsters. You can target 1 face-up monster you control that has a Level; send 1 Fiend Tuner from your hand or Deck to the GY, and if you do, increase or decrease that monster's Level by 1. You can only use each effect of \"Bone Archfiend\" once per turn.",
+   "card_images": [
+    {
+     "id": 25784595,
+     "image_url": "https://images.ygoprodeck.com/images/cards/25784595.jpg",
+     "image_url_small": "https://images.ygoprodeck.com/images/cards_small/25784595.jpg",
+     "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/25784595.jpg"
+    }
+   ]
+  },
+  {
+   "id": 25784595,
+   "name": "Bone Archfiend",
+   "type": "Effect Monster",
+   "humanReadableCardType": "Effect Monster",
+   "frameType": "effect",
+   "race": "Fiend",
+   "atk": 1800,
+   "level": 4,
+   "attribute": "DARK",
+   "def": 0,
+   "desc": "If this card is in your hand or GY: You can send 1 other card from your hand or field to the GY; Special Summon this card, also you cannot Special Summon monsters from the Extra Deck for the rest of this turn, except DARK Dragon Synchro Monsters. You can target 1 face-up monster you control that has a Level; send 1 Fiend Tuner from your hand or Deck to the GY, and if you do, increase or decrease that monster's Level by 1. You can only use each effect of \"Bone Archfiend\" once per turn.",
+   "card_images": [
+    {
+     "id": 25784595,
+     "image_url": "https://images.ygoprodeck.com/images/cards/25784595.jpg",
+     "image_url_small": "https://images.ygoprodeck.com/images/cards_small/25784595.jpg",
+     "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/25784595.jpg"
+    }
+   ]
+  },
+  {
+   "id": 27204311,
+   "name": "Nibiru, the Primal Being",
+   "type": "Effect Monster",
+   "humanReadableCardType": "Effect Monster",
+   "frameType": "effect",
+   "race": "Rock",
+   "atk": 3000,
+   "level": 11,
+   "attribute": "LIGHT",
+   "def": 600,
+   "desc": "During the Main Phase, if your opponent Normal or Special Summoned 5 or more monsters this turn (Quick Effect): You can Tribute as many face-up monsters on the field as possible, and if you do, Special Summon this card from your hand, then Special Summon 1 \"Primal Being Token\" (Rock/LIGHT/Level 11/ATK ?/DEF ?) to your opponent's field. (This Token's ATK/DEF become the combined original ATK/DEF of the Tributed monsters.) You can only use this effect of \"Nibiru, the Primal Being\" once per turn.",
+   "card_images": [
+    {
+     "id": 27204311,
+     "image_url": "https://images.ygoprodeck.com/images/cards/27204311.jpg",
+     "image_url_small": "https://images.ygoprodeck.com/images/cards_small/27204311.jpg",
+     "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/27204311.jpg"
+    }
+   ]
+  },
+  {
+   "id": 12580477,
+   "name": "Raigeki",
+   "type": "Spell Card",
+   "humanReadableCardType": "Normal Spell",
+   "frameType": "spell",
+   "race": "Normal",
+   "desc": "Destroy all monsters your opponent controls.",
+   "card_images": [
+    {
+     "id": 12580477,
+     "image_url": "https://images.ygoprodeck.com/images/cards/12580477.jpg",
+     "image_url_small": "https://images.ygoprodeck.com/images/cards_small/12580477.jpg",
+     "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/12580477.jpg"
+    }
+   ]
+  },
+  {
+   "id": 23008320,
+   "name": "Resonator Call",
+   "type": "Spell Card",
+   "humanReadableCardType": "Normal Spell",
+   "frameType": "spell",
+   "race": "Normal",
+   "desc": "Add 1 \"Resonator\" monster from your Deck to your hand.",
+   "card_images": [
+    {
+     "id": 23008320,
+     "image_url": "https://images.ygoprodeck.com/images/cards/23008320.jpg",
+     "image_url_small": "https://images.ygoprodeck.com/images/cards_small/23008320.jpg",
+     "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/23008320.jpg"
+    }
+   ]
+  },
+  {
+   "id": 23008320,
+   "name": "Resonator Call",
+   "type": "Spell Card",
+   "humanReadableCardType": "Normal Spell",
+   "frameType": "spell",
+   "race": "Normal",
+   "desc": "Add 1 \"Resonator\" monster from your Deck to your hand.",
+   "card_images": [
+    {
+     "id": 23008320,
+     "image_url": "https://images.ygoprodeck.com/images/cards/23008320.jpg",
+     "image_url_small": "https://images.ygoprodeck.com/images/cards_small/23008320.jpg",
+     "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/23008320.jpg"
+    }
+   ]
+  },
+  {
+   "id": 23008320,
+   "name": "Resonator Call",
+   "type": "Spell Card",
+   "humanReadableCardType": "Normal Spell",
+   "frameType": "spell",
+   "race": "Normal",
+   "desc": "Add 1 \"Resonator\" monster from your Deck to your hand.",
+   "card_images": [
+    {
+     "id": 23008320,
+     "image_url": "https://images.ygoprodeck.com/images/cards/23008320.jpg",
+     "image_url_small": "https://images.ygoprodeck.com/images/cards_small/23008320.jpg",
+     "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/23008320.jpg"
+    }
+   ]
+  },
+  {
+   "id": 25311006,
+   "name": "Triple Tactics Talent",
+   "type": "Spell Card",
+   "humanReadableCardType": "Normal Spell",
+   "frameType": "spell",
+   "race": "Normal",
+   "desc": "If your opponent has activated a monster effect during your Main Phase this turn: Activate 1 of these effects;\r\n● Draw 2 cards.\r\n● Take control of 1 monster your opponent controls until the End Phase.\r\n● Look at your opponent's hand, and choose 1 card from it to shuffle into the Deck.\r\nYou can only activate 1 \"Triple Tactics Talent\" per turn.",
+   "card_images": [
+    {
+     "id": 25311006,
+     "image_url": "https://images.ygoprodeck.com/images/cards/25311006.jpg",
+     "image_url_small": "https://images.ygoprodeck.com/images/cards_small/25311006.jpg",
+     "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/25311006.jpg"
+    }
+   ]
+  },
+  {
+   "id": 98173209,
+   "name": "Crimson Gaia",
+   "type": "Spell Card",
+   "humanReadableCardType": "Continuous Spell",
+   "frameType": "spell",
+   "race": "Continuous",
+   "desc": "During your Main Phase: You can add 1 \"Red Dragon Archfiend\" or 1 card that mentions it from your Deck or GY to your hand, except \"Crimson Gaia\". When your \"Red Dragon Archfiend\" declares an attack: You can change all monsters your opponent controls to face-down Defense Position. If a monster(s) on the field is destroyed by battle or card effect: You can Special Summon 1 \"Red Dragon Archfiend\" from your GY. You can only use each effect of \"Crimson Gaia\" once per turn.",
+   "card_images": [
+    {
+     "id": 98173209,
+     "image_url": "https://images.ygoprodeck.com/images/cards/98173209.jpg",
+     "image_url_small": "https://images.ygoprodeck.com/images/cards_small/98173209.jpg",
+     "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/98173209.jpg"
+    }
+   ]
+  },
+  {
+   "id": 98173209,
+   "name": "Crimson Gaia",
+   "type": "Spell Card",
+   "humanReadableCardType": "Continuous Spell",
+   "frameType": "spell",
+   "race": "Continuous",
+   "desc": "During your Main Phase: You can add 1 \"Red Dragon Archfiend\" or 1 card that mentions it from your Deck or GY to your hand, except \"Crimson Gaia\". When your \"Red Dragon Archfiend\" declares an attack: You can change all monsters your opponent controls to face-down Defense Position. If a monster(s) on the field is destroyed by battle or card effect: You can Special Summon 1 \"Red Dragon Archfiend\" from your GY. You can only use each effect of \"Crimson Gaia\" once per turn.",
+   "card_images": [
+    {
+     "id": 98173209,
+     "image_url": "https://images.ygoprodeck.com/images/cards/98173209.jpg",
+     "image_url_small": "https://images.ygoprodeck.com/images/cards_small/98173209.jpg",
+     "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/98173209.jpg"
+    }
+   ]
+  },
+  {
+   "id": 98173209,
+   "name": "Crimson Gaia",
+   "type": "Spell Card",
+   "humanReadableCardType": "Continuous Spell",
+   "frameType": "spell",
+   "race": "Continuous",
+   "desc": "During your Main Phase: You can add 1 \"Red Dragon Archfiend\" or 1 card that mentions it from your Deck or GY to your hand, except \"Crimson Gaia\". When your \"Red Dragon Archfiend\" declares an attack: You can change all monsters your opponent controls to face-down Defense Position. If a monster(s) on the field is destroyed by battle or card effect: You can Special Summon 1 \"Red Dragon Archfiend\" from your GY. You can only use each effect of \"Crimson Gaia\" once per turn.",
+   "card_images": [
+    {
+     "id": 98173209,
+     "image_url": "https://images.ygoprodeck.com/images/cards/98173209.jpg",
+     "image_url_small": "https://images.ygoprodeck.com/images/cards_small/98173209.jpg",
+     "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/98173209.jpg"
+    }
+   ]
+  },
+  {
+   "id": 8559524,
+   "name": "Resonator Command",
+   "type": "Spell Card",
+   "humanReadableCardType": "Quick-Play Spell",
+   "frameType": "spell",
+   "race": "Quick-Play",
+   "desc": "Discard 1 \"Resonator\" monster; add 1 Level 4 or lower Fiend monster from your Deck to your hand. You can only activate 1 \"Resonator Command\" per turn.",
+   "card_images": [
+    {
+     "id": 8559524,
+     "image_url": "https://images.ygoprodeck.com/images/cards/8559524.jpg",
+     "image_url_small": "https://images.ygoprodeck.com/images/cards_small/8559524.jpg",
+     "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/8559524.jpg"
+    }
+   ]
+  },
+  {
+   "id": 10045474,
+   "name": "Infinite Impermanence",
+   "type": "Trap Card",
+   "humanReadableCardType": "Normal Trap",
+   "frameType": "trap",
+   "race": "Normal",
+   "desc": "Target 1 face-up monster your opponent controls; negate its effects (until the end of this turn), then, if this card was Set before activation and is on the field at resolution, for the rest of this turn all other Spell/Trap effects in this column are negated. If you control no cards, you can activate this card from your hand.",
+   "card_images": [
+    {
+     "id": 10045474,
+     "image_url": "https://images.ygoprodeck.com/images/cards/10045474.jpg",
+     "image_url_small": "https://images.ygoprodeck.com/images/cards_small/10045474.jpg",
+     "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/10045474.jpg"
+    }
+   ]
+  },
+  {
+   "id": 5376159,
+   "name": "Red Reign",
+   "type": "Trap Card",
+   "humanReadableCardType": "Normal Trap",
+   "frameType": "trap",
+   "race": "Normal",
+   "desc": "If you control a Level 8 or higher Synchro Monster: Banish all monsters on the field, except the monster(s) with the highest Level, also the remaining face-up monsters on the field are unaffected by other card effects, except their own, until the end of this turn. If a DARK Dragon Synchro Monster is Synchro Summoned to your field while this card is in your GY: You can add this card to your hand. You can only use this effect of \"Red Reign\" once per turn.",
+   "card_images": [
+    {
+     "id": 5376159,
+     "image_url": "https://images.ygoprodeck.com/images/cards/5376159.jpg",
+     "image_url_small": "https://images.ygoprodeck.com/images/cards_small/5376159.jpg",
+     "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/5376159.jpg"
+    }
+   ]
+  },
+  {
+   "id": 5376159,
+   "name": "Red Reign",
+   "type": "Trap Card",
+   "humanReadableCardType": "Normal Trap",
+   "frameType": "trap",
+   "race": "Normal",
+   "desc": "If you control a Level 8 or higher Synchro Monster: Banish all monsters on the field, except the monster(s) with the highest Level, also the remaining face-up monsters on the field are unaffected by other card effects, except their own, until the end of this turn. If a DARK Dragon Synchro Monster is Synchro Summoned to your field while this card is in your GY: You can add this card to your hand. You can only use this effect of \"Red Reign\" once per turn.",
+   "card_images": [
+    {
+     "id": 5376159,
+     "image_url": "https://images.ygoprodeck.com/images/cards/5376159.jpg",
+     "image_url_small": "https://images.ygoprodeck.com/images/cards_small/5376159.jpg",
+     "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/5376159.jpg"
+    }
+   ]
+  },
+  {
+   "id": 24662957,
+   "name": "Fiendish Golem",
+   "type": "Trap Card",
+   "humanReadableCardType": "Normal Trap",
+   "frameType": "trap",
+   "race": "Normal",
+   "desc": "Target 1 monster on the field with 2000 or more ATK; banish it (until the End Phase of the next turn), then if you activated this card while you controlled \"Red Dragon Archfiend\" or a Synchro Monster that mentions it, you can Set 1 \"Fiendish Chain\" directly from your Deck or GY.",
+   "card_images": [
+    {
+     "id": 24662957,
+     "image_url": "https://images.ygoprodeck.com/images/cards/24662957.jpg",
+     "image_url_small": "https://images.ygoprodeck.com/images/cards_small/24662957.jpg",
+     "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/24662957.jpg"
+    }
+   ]
+  },
+  {
+   "id": 24662957,
+   "name": "Fiendish Golem",
+   "type": "Trap Card",
+   "humanReadableCardType": "Normal Trap",
+   "frameType": "trap",
+   "race": "Normal",
+   "desc": "Target 1 monster on the field with 2000 or more ATK; banish it (until the End Phase of the next turn), then if you activated this card while you controlled \"Red Dragon Archfiend\" or a Synchro Monster that mentions it, you can Set 1 \"Fiendish Chain\" directly from your Deck or GY.",
+   "card_images": [
+    {
+     "id": 24662957,
+     "image_url": "https://images.ygoprodeck.com/images/cards/24662957.jpg",
+     "image_url_small": "https://images.ygoprodeck.com/images/cards_small/24662957.jpg",
+     "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/24662957.jpg"
+    }
+   ]
+  },
+  {
+   "id": 24662957,
+   "name": "Fiendish Golem",
+   "type": "Trap Card",
+   "humanReadableCardType": "Normal Trap",
+   "frameType": "trap",
+   "race": "Normal",
+   "desc": "Target 1 monster on the field with 2000 or more ATK; banish it (until the End Phase of the next turn), then if you activated this card while you controlled \"Red Dragon Archfiend\" or a Synchro Monster that mentions it, you can Set 1 \"Fiendish Chain\" directly from your Deck or GY.",
+   "card_images": [
+    {
+     "id": 24662957,
+     "image_url": "https://images.ygoprodeck.com/images/cards/24662957.jpg",
+     "image_url_small": "https://images.ygoprodeck.com/images/cards_small/24662957.jpg",
+     "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/24662957.jpg"
+    }
+   ]
+  },
+  {
+   "id": 41420027,
+   "name": "Solemn Judgment",
+   "type": "Trap Card",
+   "humanReadableCardType": "Counter Trap",
+   "frameType": "trap",
+   "race": "Counter",
+   "desc": "When a monster(s) would be Summoned, OR a Spell/Trap Card is activated: Pay half your LP; negate the Summon or activation, and if you do, destroy that card.",
+   "card_images": [
+    {
+     "id": 41420027,
+     "image_url": "https://images.ygoprodeck.com/images/cards/41420027.jpg",
+     "image_url_small": "https://images.ygoprodeck.com/images/cards_small/41420027.jpg",
+     "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/41420027.jpg"
+    }
+   ]
+  },
+  {
+   "id": 50078509,
+   "name": "Fiendish Chain",
+   "type": "Trap Card",
+   "humanReadableCardType": "Continuous Trap",
+   "frameType": "trap",
+   "race": "Continuous",
+   "desc": "Activate this card by targeting 1 Effect Monster on the field; negate the effects of that face-up monster while it is on the field, also that face-up monster cannot attack. When it is destroyed, destroy this card.",
+   "card_images": [
+    {
+     "id": 50078509,
+     "image_url": "https://images.ygoprodeck.com/images/cards/50078509.jpg",
+     "image_url_small": "https://images.ygoprodeck.com/images/cards_small/50078509.jpg",
+     "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/50078509.jpg"
+    }
+   ]
+  },
+  {
+   "id": 50078509,
+   "name": "Fiendish Chain",
+   "type": "Trap Card",
+   "humanReadableCardType": "Continuous Trap",
+   "frameType": "trap",
+   "race": "Continuous",
+   "desc": "Activate this card by targeting 1 Effect Monster on the field; negate the effects of that face-up monster while it is on the field, also that face-up monster cannot attack. When it is destroyed, destroy this card.",
+   "card_images": [
+    {
+     "id": 50078509,
+     "image_url": "https://images.ygoprodeck.com/images/cards/50078509.jpg",
+     "image_url_small": "https://images.ygoprodeck.com/images/cards_small/50078509.jpg",
+     "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/50078509.jpg"
+    }
+   ]
+  },
+  {
+   "id": 50078509,
+   "name": "Fiendish Chain",
+   "type": "Trap Card",
+   "humanReadableCardType": "Continuous Trap",
+   "frameType": "trap",
+   "race": "Continuous",
+   "desc": "Activate this card by targeting 1 Effect Monster on the field; negate the effects of that face-up monster while it is on the field, also that face-up monster cannot attack. When it is destroyed, destroy this card.",
+   "card_images": [
+    {
+     "id": 50078509,
+     "image_url": "https://images.ygoprodeck.com/images/cards/50078509.jpg",
+     "image_url_small": "https://images.ygoprodeck.com/images/cards_small/50078509.jpg",
+     "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/50078509.jpg"
+    }
+   ]
+  },
+  {
+   "id": 50056656,
+   "name": "Red Zone",
+   "type": "Trap Card",
+   "humanReadableCardType": "Continuous Trap",
+   "frameType": "trap",
+   "race": "Continuous",
+   "desc": "When your opponent activates a card or effect while you control \"Red Dragon Archfiend\" or a Synchro Monster that mentions it: You can target 1 card on the field; destroy it. You can target 1 of your banished DARK Dragon Synchro Monsters; Special Summon it. You can only use each effect of \"Red Zone\" once per turn.",
+   "card_images": [
+    {
+     "id": 50056656,
+     "image_url": "https://images.ygoprodeck.com/images/cards/50056656.jpg",
+     "image_url_small": "https://images.ygoprodeck.com/images/cards_small/50056656.jpg",
+     "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/50056656.jpg"
+    }
+   ]
+  },
+  {
+   "id": 50056656,
+   "name": "Red Zone",
+   "type": "Trap Card",
+   "humanReadableCardType": "Continuous Trap",
+   "frameType": "trap",
+   "race": "Continuous",
+   "desc": "When your opponent activates a card or effect while you control \"Red Dragon Archfiend\" or a Synchro Monster that mentions it: You can target 1 card on the field; destroy it. You can target 1 of your banished DARK Dragon Synchro Monsters; Special Summon it. You can only use each effect of \"Red Zone\" once per turn.",
+   "card_images": [
+    {
+     "id": 50056656,
+     "image_url": "https://images.ygoprodeck.com/images/cards/50056656.jpg",
+     "image_url_small": "https://images.ygoprodeck.com/images/cards_small/50056656.jpg",
+     "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/50056656.jpg"
+    }
+   ]
+  }
+ ],
+ "extraDeck": [
+  {
+   "id": 66141736,
+   "name": "Red Rising Dragon",
+   "type": "Synchro Monster",
+   "humanReadableCardType": "Synchro Effect Monster",
+   "frameType": "synchro",
+   "race": "Dragon",
+   "atk": 2100,
+   "level": 6,
+   "attribute": "DARK",
+   "def": 1600,
+   "desc": "1 Fiend Tuner + 1+ non-Tuner monsters\r\nWhen this card is Synchro Summoned: You can target 1 \"Resonator\" monster in your GY; Special Summon it. You cannot Special Summon monsters from the Extra Deck the turn you activate this effect, except DARK Dragon Synchro Monsters. During your Main Phase, except the turn this card was sent to the GY: You can banish this card from your GY, then target 2 Level 1 \"Resonator\" monsters in your GY; Special Summon both.",
+   "card_images": [
+    {
+     "id": 66141736,
+     "image_url": "https://images.ygoprodeck.com/images/cards/66141736.jpg",
+     "image_url_small": "https://images.ygoprodeck.com/images/cards_small/66141736.jpg",
+     "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/66141736.jpg"
+    }
+   ]
+  },
+  {
+   "id": 66141736,
+   "name": "Red Rising Dragon",
+   "type": "Synchro Monster",
+   "humanReadableCardType": "Synchro Effect Monster",
+   "frameType": "synchro",
+   "race": "Dragon",
+   "atk": 2100,
+   "level": 6,
+   "attribute": "DARK",
+   "def": 1600,
+   "desc": "1 Fiend Tuner + 1+ non-Tuner monsters\r\nWhen this card is Synchro Summoned: You can target 1 \"Resonator\" monster in your GY; Special Summon it. You cannot Special Summon monsters from the Extra Deck the turn you activate this effect, except DARK Dragon Synchro Monsters. During your Main Phase, except the turn this card was sent to the GY: You can banish this card from your GY, then target 2 Level 1 \"Resonator\" monsters in your GY; Special Summon both.",
+   "card_images": [
+    {
+     "id": 66141736,
+     "image_url": "https://images.ygoprodeck.com/images/cards/66141736.jpg",
+     "image_url_small": "https://images.ygoprodeck.com/images/cards_small/66141736.jpg",
+     "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/66141736.jpg"
+    }
+   ]
+  },
+  {
+   "id": 66141736,
+   "name": "Red Rising Dragon",
+   "type": "Synchro Monster",
+   "humanReadableCardType": "Synchro Effect Monster",
+   "frameType": "synchro",
+   "race": "Dragon",
+   "atk": 2100,
+   "level": 6,
+   "attribute": "DARK",
+   "def": 1600,
+   "desc": "1 Fiend Tuner + 1+ non-Tuner monsters\r\nWhen this card is Synchro Summoned: You can target 1 \"Resonator\" monster in your GY; Special Summon it. You cannot Special Summon monsters from the Extra Deck the turn you activate this effect, except DARK Dragon Synchro Monsters. During your Main Phase, except the turn this card was sent to the GY: You can banish this card from your GY, then target 2 Level 1 \"Resonator\" monsters in your GY; Special Summon both.",
+   "card_images": [
+    {
+     "id": 66141736,
+     "image_url": "https://images.ygoprodeck.com/images/cards/66141736.jpg",
+     "image_url_small": "https://images.ygoprodeck.com/images/cards_small/66141736.jpg",
+     "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/66141736.jpg"
+    }
+   ]
+  },
+  {
+   "id": 87837090,
+   "name": "Kuibelt the Blade Dragon",
+   "type": "Synchro Monster",
+   "humanReadableCardType": "Synchro Effect Monster",
+   "frameType": "synchro",
+   "race": "Dragon",
+   "atk": 2500,
+   "level": 7,
+   "attribute": "DARK",
+   "def": 1900,
+   "desc": "1 Tuner + 1+ non-Tuner monsters\r\nIf this card is Synchro Summoned: You can target 1 card on the field; destroy it. If this card on the field is destroyed: You can target 1 face-up monster on the field; that monster cannot attack until the end of your opponent's turn. You can only use each effect of \"Kuibelt the Blade Dragon\" once per turn.",
+   "card_images": [
+    {
+     "id": 87837090,
+     "image_url": "https://images.ygoprodeck.com/images/cards/87837090.jpg",
+     "image_url_small": "https://images.ygoprodeck.com/images/cards_small/87837090.jpg",
+     "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/87837090.jpg"
+    }
+   ]
+  },
+  {
+   "id": 70902743,
+   "name": "Red Dragon Archfiend",
+   "type": "Synchro Monster",
+   "humanReadableCardType": "Synchro Effect Monster",
+   "frameType": "synchro",
+   "race": "Dragon",
+   "atk": 3000,
+   "level": 8,
+   "attribute": "DARK",
+   "def": 2000,
+   "desc": "1 Tuner + 1+ non-Tuner monsters\nAfter damage calculation, if this card attacked an opponent's Defense Position monster: Destroy all Defense Position monsters your opponent controls. Once per turn, during your End Phase: Destroy all other monsters you control that did not declare an attack this turn. This card must be face-up on the field to activate and to resolve this effect.",
+   "card_images": [
+    {
+     "id": 70902743,
+     "image_url": "https://images.ygoprodeck.com/images/cards/70902743.jpg",
+     "image_url_small": "https://images.ygoprodeck.com/images/cards_small/70902743.jpg",
+     "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/70902743.jpg"
+    }
+   ]
+  },
+  {
+   "id": 70902743,
+   "name": "Red Dragon Archfiend",
+   "type": "Synchro Monster",
+   "humanReadableCardType": "Synchro Effect Monster",
+   "frameType": "synchro",
+   "race": "Dragon",
+   "atk": 3000,
+   "level": 8,
+   "attribute": "DARK",
+   "def": 2000,
+   "desc": "1 Tuner + 1+ non-Tuner monsters\nAfter damage calculation, if this card attacked an opponent's Defense Position monster: Destroy all Defense Position monsters your opponent controls. Once per turn, during your End Phase: Destroy all other monsters you control that did not declare an attack this turn. This card must be face-up on the field to activate and to resolve this effect.",
+   "card_images": [
+    {
+     "id": 70902743,
+     "image_url": "https://images.ygoprodeck.com/images/cards/70902743.jpg",
+     "image_url_small": "https://images.ygoprodeck.com/images/cards_small/70902743.jpg",
+     "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/70902743.jpg"
+    }
+   ]
+  },
+  {
+   "id": 87451661,
+   "name": "Scarred Dragon Archfiend",
+   "type": "Synchro Monster",
+   "humanReadableCardType": "Synchro Effect Monster",
+   "frameType": "synchro",
+   "race": "Dragon",
+   "atk": 3000,
+   "level": 8,
+   "attribute": "DARK",
+   "def": 2500,
+   "desc": "1 Tuner + 1+ non-Tuner DARK monsters\r\nThis card's name becomes \"Red Dragon Archfiend\" while on the field or in the GY. If this card is sent from the Monster Zone to the GY: You can Special Summon 1 \"Red Dragon Archfiend\" from your Extra Deck (this is treated as a Synchro Summon), then, if this card was sent to the GY as Synchro Material for a DARK Dragon Synchro Monster, you can destroy all Attack Position monsters your opponent controls. You can only use this effect of \"Scarred Dragon Archfiend\" once per turn.",
+   "card_images": [
+    {
+     "id": 87451661,
+     "image_url": "https://images.ygoprodeck.com/images/cards/87451661.jpg",
+     "image_url_small": "https://images.ygoprodeck.com/images/cards_small/87451661.jpg",
+     "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/87451661.jpg"
+    }
+   ]
+  },
+  {
+   "id": 87451661,
+   "name": "Scarred Dragon Archfiend",
+   "type": "Synchro Monster",
+   "humanReadableCardType": "Synchro Effect Monster",
+   "frameType": "synchro",
+   "race": "Dragon",
+   "atk": 3000,
+   "level": 8,
+   "attribute": "DARK",
+   "def": 2500,
+   "desc": "1 Tuner + 1+ non-Tuner DARK monsters\r\nThis card's name becomes \"Red Dragon Archfiend\" while on the field or in the GY. If this card is sent from the Monster Zone to the GY: You can Special Summon 1 \"Red Dragon Archfiend\" from your Extra Deck (this is treated as a Synchro Summon), then, if this card was sent to the GY as Synchro Material for a DARK Dragon Synchro Monster, you can destroy all Attack Position monsters your opponent controls. You can only use this effect of \"Scarred Dragon Archfiend\" once per turn.",
+   "card_images": [
+    {
+     "id": 87451661,
+     "image_url": "https://images.ygoprodeck.com/images/cards/87451661.jpg",
+     "image_url_small": "https://images.ygoprodeck.com/images/cards_small/87451661.jpg",
+     "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/87451661.jpg"
+    }
+   ]
+  },
+  {
+   "id": 9753964,
+   "name": "Hot Red Dragon Archfiend Abyss",
+   "type": "Synchro Monster",
+   "humanReadableCardType": "Synchro Effect Monster",
+   "frameType": "synchro",
+   "race": "Dragon",
+   "atk": 3200,
+   "level": 9,
+   "attribute": "DARK",
+   "def": 2500,
+   "desc": "1 Tuner + 1 non-Tuner DARK Dragon Synchro Monster\n(Quick Effect): You can target 1 face-up card your opponent controls; negate its effects until the end of this turn. When this card inflicts battle damage to your opponent: You can target 1 Tuner in your GY; Special Summon it in Defense Position. You can only use each effect of \"Hot Red Dragon Archfiend Abyss\" once per turn.",
+   "card_images": [
+    {
+     "id": 9753964,
+     "image_url": "https://images.ygoprodeck.com/images/cards/9753964.jpg",
+     "image_url_small": "https://images.ygoprodeck.com/images/cards_small/9753964.jpg",
+     "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/9753964.jpg"
+    }
+   ]
+  },
+  {
+   "id": 9753964,
+   "name": "Hot Red Dragon Archfiend Abyss",
+   "type": "Synchro Monster",
+   "humanReadableCardType": "Synchro Effect Monster",
+   "frameType": "synchro",
+   "race": "Dragon",
+   "atk": 3200,
+   "level": 9,
+   "attribute": "DARK",
+   "def": 2500,
+   "desc": "1 Tuner + 1 non-Tuner DARK Dragon Synchro Monster\n(Quick Effect): You can target 1 face-up card your opponent controls; negate its effects until the end of this turn. When this card inflicts battle damage to your opponent: You can target 1 Tuner in your GY; Special Summon it in Defense Position. You can only use each effect of \"Hot Red Dragon Archfiend Abyss\" once per turn.",
+   "card_images": [
+    {
+     "id": 9753964,
+     "image_url": "https://images.ygoprodeck.com/images/cards/9753964.jpg",
+     "image_url_small": "https://images.ygoprodeck.com/images/cards_small/9753964.jpg",
+     "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/9753964.jpg"
+    }
+   ]
+  },
+  {
+   "id": 36857073,
+   "name": "Hot Red Dragon Archfiend Bane",
+   "type": "Synchro Monster",
+   "humanReadableCardType": "Synchro Effect Monster",
+   "frameType": "synchro",
+   "race": "Dragon",
+   "atk": 3500,
+   "level": 10,
+   "attribute": "DARK",
+   "def": 3000,
+   "desc": "1 Tuner + 1 non-Tuner DARK Dragon Synchro Monster\nYou can Tribute 1 monster, then target 1 \"Red Dragon Archfiend\" monster in your GY; Special Summon it. When this card inflicts battle damage to your opponent: You can Special Summon 2 Tuners with the same Level (1 from your Deck and 1 from your GY) in Defense Position. You can only use each effect of \"Hot Red Dragon Archfiend Bane\" once per turn.",
+   "card_images": [
+    {
+     "id": 36857073,
+     "image_url": "https://images.ygoprodeck.com/images/cards/36857073.jpg",
+     "image_url_small": "https://images.ygoprodeck.com/images/cards_small/36857073.jpg",
+     "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/36857073.jpg"
+    }
+   ]
+  },
+  {
+   "id": 36857073,
+   "name": "Hot Red Dragon Archfiend Bane",
+   "type": "Synchro Monster",
+   "humanReadableCardType": "Synchro Effect Monster",
+   "frameType": "synchro",
+   "race": "Dragon",
+   "atk": 3500,
+   "level": 10,
+   "attribute": "DARK",
+   "def": 3000,
+   "desc": "1 Tuner + 1 non-Tuner DARK Dragon Synchro Monster\nYou can Tribute 1 monster, then target 1 \"Red Dragon Archfiend\" monster in your GY; Special Summon it. When this card inflicts battle damage to your opponent: You can Special Summon 2 Tuners with the same Level (1 from your Deck and 1 from your GY) in Defense Position. You can only use each effect of \"Hot Red Dragon Archfiend Bane\" once per turn.",
+   "card_images": [
+    {
+     "id": 36857073,
+     "image_url": "https://images.ygoprodeck.com/images/cards/36857073.jpg",
+     "image_url_small": "https://images.ygoprodeck.com/images/cards_small/36857073.jpg",
+     "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/36857073.jpg"
+    }
+   ]
+  },
+  {
+   "id": 97489701,
+   "name": "Red Nova Dragon",
+   "type": "Synchro Monster",
+   "humanReadableCardType": "Synchro Effect Monster",
+   "frameType": "synchro",
+   "race": "Dragon",
+   "atk": 3500,
+   "level": 12,
+   "attribute": "DARK",
+   "def": 3000,
+   "desc": "2 Tuners + \"Red Dragon Archfiend\"\r\nGains 500 ATK for each Tuner in your GY. Cannot be destroyed by an opponent's card effects. When an opponent's monster declares an attack: You can target the attacking monster; banish this card, and if you do, negate that attack. Once per turn, during the End Phase, if this card was banished by its effect this turn: Special Summon this banished card.",
+   "card_images": [
+    {
+     "id": 97489701,
+     "image_url": "https://images.ygoprodeck.com/images/cards/97489701.jpg",
+     "image_url_small": "https://images.ygoprodeck.com/images/cards_small/97489701.jpg",
+     "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/97489701.jpg"
+    }
+   ]
+  },
+  {
+   "id": 97489701,
+   "name": "Red Nova Dragon",
+   "type": "Synchro Monster",
+   "humanReadableCardType": "Synchro Effect Monster",
+   "frameType": "synchro",
+   "race": "Dragon",
+   "atk": 3500,
+   "level": 12,
+   "attribute": "DARK",
+   "def": 3000,
+   "desc": "2 Tuners + \"Red Dragon Archfiend\"\r\nGains 500 ATK for each Tuner in your GY. Cannot be destroyed by an opponent's card effects. When an opponent's monster declares an attack: You can target the attacking monster; banish this card, and if you do, negate that attack. Once per turn, during the End Phase, if this card was banished by its effect this turn: Special Summon this banished card.",
+   "card_images": [
+    {
+     "id": 97489701,
+     "image_url": "https://images.ygoprodeck.com/images/cards/97489701.jpg",
+     "image_url_small": "https://images.ygoprodeck.com/images/cards_small/97489701.jpg",
+     "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/97489701.jpg"
+    }
+   ]
+  },
+  {
+   "id": 99585850,
+   "name": "Red Supernova Dragon",
+   "type": "Synchro Monster",
+   "humanReadableCardType": "Synchro Effect Monster",
+   "frameType": "synchro",
+   "race": "Dragon",
+   "atk": 4000,
+   "level": 12,
+   "attribute": "DARK",
+   "def": 3000,
+   "desc": "3 Tuners + 1+ non-Tuner Synchro Monsters\r\nMust first be Synchro Summoned. Gains 500 ATK for each Tuner in your GY. Cannot be destroyed by an opponent's card effects. Once per turn, when your opponent's monster effect is activated, or when an opponent's monster declares an attack (Quick Effect): You can activate this effect; banish this card, also banish all cards your opponent controls. Once per turn, during your next End Phase after this card was banished by its own effect: Special Summon this banished card.",
+   "card_images": [
+    {
+     "id": 99585850,
+     "image_url": "https://images.ygoprodeck.com/images/cards/99585850.jpg",
+     "image_url_small": "https://images.ygoprodeck.com/images/cards_small/99585850.jpg",
+     "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/99585850.jpg"
+    }
+   ]
+  }
+ ],
+ "sideDeck": []
+}

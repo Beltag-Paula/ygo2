@@ -1,0 +1,33 @@
+/* YGO 2.0 additions on top of md.css: account bar, login card, lobby, badges. Colours follow the theme (--hue). */
+.userbox{margin-left:auto;display:flex;align-items:center;gap:8px}
+.userbox .who{color:var(--gold-hi);font-weight:700;text-decoration:none;letter-spacing:.04em;padding:0 6px}
+.topbar .theme-swatches{margin-left:10px}
+.auth-card{max-width:420px;margin:48px auto}
+.auth-card .tabs{display:flex;gap:6px;margin-bottom:14px}
+.auth-card .tabs button{flex:1}
+.auth-card .field{margin-bottom:12px}
+.auth-card .err{color:#ff8d8d;min-height:20px;font-size:13px;margin:6px 0}
+.mode-chip{display:inline-block;font-size:10px;letter-spacing:.12em;padding:2px 7px;border-radius:3px;border:1px solid var(--gold-deep);color:var(--gold-hi);background:rgba(0,0,0,.35)}
+.mode-chip.modern{border-color:var(--cyan);color:var(--cyan-soft)}
+.mode-chip.bad{border-color:#c0504d;color:#ff9c9a}
+.lobby{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:18px;margin-top:14px}
+@media(max-width:900px){.lobby{grid-template-columns:1fr}}
+.lobby h2{font-size:14px;letter-spacing:.14em;color:var(--gold-hi);margin:0 0 10px}
+.actions{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-top:14px}
+.plist{display:flex;flex-direction:column;gap:6px;max-height:300px;overflow:auto}
+.prow{display:flex;align-items:center;gap:10px;padding:6px 8px;border:1px solid var(--line);border-radius:6px;background:rgba(0,0,0,.25)}
+.prow .av-mini{width:34px;height:34px;flex:none}
+.prow .nm{flex:1;min-width:0;font-weight:700;overflow:hidden;text-overflow:ellipsis}
+.prow small{color:var(--muted);display:block;font-weight:400}
+.dot{width:9px;height:9px;border-radius:50%;background:#4ad08a;display:inline-block;margin-right:6px}
+.dot.dueling{background:#e0a64a}.dot.searching{background:#6aa8ff}
+.botgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(110px,1fr));gap:8px}
+.botpick{cursor:pointer;text-align:center;padding:8px 4px;border:1px solid var(--line);border-radius:8px;background:rgba(0,0,0,.25)}
+.botpick.sel{border-color:var(--gold);box-shadow:0 0 0 1px var(--gold) inset}
+.botpick .av-mini{width:52px;height:52px;margin:0 auto 4px}
+.banner{padding:10px 14px;border:1px solid var(--gold-deep);background:rgba(217,180,92,.12);border-radius:8px;margin:12px 0;display:flex;align-items:center;gap:12px}
+.banner .btn{margin-left:auto}
+.statgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:10px}
+.statgrid div{text-align:center;padding:10px;border:1px solid var(--line);border-radius:8px;background:rgba(0,0,0,.25)}
+.statgrid b{display:block;font-size:24px;color:var(--gold-hi)}
+.bd-mode{margin-left:10px}

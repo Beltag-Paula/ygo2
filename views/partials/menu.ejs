@@ -1,0 +1,11 @@
+<nav>
+    <a href="/">Home</a> 
+    <% if (typeof currentPage !== 'undefined' && currentPage === 'home') { %>(Active)<% } %>
+    | 
+    <a href="/upload">Upload Deck</a>
+    <% if (typeof currentPage !== 'undefined' && currentPage === 'upload') { %>(Active)<% } %>
+
+    <a href="/game">Game - in construction</a> 
+    <% if (typeof currentPage !== 'undefined' && currentPage === 'game') { %>(Active)<% } %>
+</nav>
+<hr />

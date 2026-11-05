@@ -1,0 +1,18 @@
+<!DOCTYPE html><html lang="en"><head><title>YGO 2.0 — Duel Simulator</title><%- include('partials/head') %></head>
+<body class="home"><div class="page">
+<%- include('partials/nav', { page }) %>
+<div class="hero">
+  <h1>DUEL</h1><p>CLASSIC OR MODERN · BOT OR FRIEND · YOUR DECK</p>
+</div>
+<div class="menu-tiles">
+<% if (locals.user) { %>
+  <a class="tile" href="/duel" style="--art:url(/images/Kaiba-MDDG.png)"><div class="tile-body"><b>Duel</b><span>Play the bot, find an opponent or invite a friend</span></div></a>
+  <a class="tile" href="/decks" style="--art:url(/images/YamiYugi-MDDG.png)"><div class="tile-body"><b>My Decks</b><span>Upload a .ydk from ygoprodeck.com</span></div></a>
+  <a class="tile" href="/builder" style="--art:url(/images/Joey-MDDG.png)"><div class="tile-body"><b>Deck Builder</b><span>Build a Classic or Modern deck</span></div></a>
+  <a class="tile" href="/profile" style="--art:url(/images/Mai-MDDG.png)"><div class="tile-body"><b>Profile</b><span>Choose your avatar and frame</span></div></a>
+<% } else { %>
+  <a class="tile" href="/register" style="--art:url(/images/Kaiba-MDDG.png)"><div class="tile-body"><b>Create account</b><span>Pick a name, an avatar and start dueling</span></div></a>
+  <a class="tile" href="/login" style="--art:url(/images/YamiYugi-MDDG.png)"><div class="tile-body"><b>Log in</b><span>Back to your decks and duels</span></div></a>
+<% } %>
+</div>
+</div></body></html>

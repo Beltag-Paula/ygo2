@@ -1,0 +1,130 @@
+/* ============================================================================================
+   Master Duel arena theme. Loaded after duel.css: it only restyles, the duel logic is untouched.
+   Sand-stone arena, gold double-diagonal lattice zones, bronze orbs for the Graveyard/Banish,
+   round Turn/Phase button, LP bars in opposite corners, round Info/Log buttons.
+   ============================================================================================ */
+:root { --gold: #d9a642; --gold-hi: #ffe39a; --bronze: #a97a32; --wood: #2a1809; }
+
+/* ---- outer room: dark wood, torches in the corners ---- */
+#stage { background:
+  radial-gradient(circle at 3.5% 7%, #ffe6a0 0 9px, rgba(255, 170, 60, .9) 20px, rgba(255, 110, 20, .35) 70px, transparent 150px),
+  radial-gradient(circle at 96.5% 7%, #ffe6a0 0 9px, rgba(255, 170, 60, .9) 20px, rgba(255, 110, 20, .35) 70px, transparent 150px),
+  radial-gradient(circle at 3.5% 93%, #ffe6a0 0 9px, rgba(255, 170, 60, .9) 20px, rgba(255, 110, 20, .35) 70px, transparent 150px),
+  radial-gradient(circle at 96.5% 93%, #ffe6a0 0 9px, rgba(255, 170, 60, .9) 20px, rgba(255, 110, 20, .35) 70px, transparent 150px),
+  repeating-linear-gradient(90deg, rgba(0, 0, 0, .2) 0 3px, transparent 3px 96px),
+  radial-gradient(ellipse at 50% 50%, #7a4c22 0%, #4a2d14 50%, #1b0e05 100%); }
+#stage::before { display: none; }
+html, body { background: #120a04; }
+
+/* ---- the arena floor ---- */
+#mat { left: 350px; top: 46px; width: 940px; height: 712px; border: 0; border-radius: 10px; clip-path: none;
+  background: radial-gradient(ellipse at 50% 46%, rgba(225, 236, 255, .26) 0%, rgba(190, 210, 240, 0) 55%, rgba(8, 16, 36, .55) 100%), url(/static/img/floor.jpg) #8d9bb2;
+  background-size: 100% 100%, 512px 512px;
+  box-shadow: 0 0 0 3px #1f1208, 0 0 0 9px var(--bronze), 0 0 0 12px #3a2410, 0 0 0 14px #1f1208, 0 20px 40px rgba(0, 0, 0, .7); }
+#mat::before { left: 0; right: 0; top: 50%; height: 10px; margin-top: -5px; border: 0; border-radius: 0;
+  background: linear-gradient(180deg, #e3eaf6 0, #8d9bb3 30%, #4a5770 58%, #e3eaf6 100%); box-shadow: 0 2px 5px rgba(10, 20, 40, .6); }
+#mat::after { display: none; }
+/* ---- zones: gold double-diagonal lattice ---- */
+.slot.mon, .slot.st, .slot.emz { width: 124px; height: 136px; margin: 8px 0 0 -10px; border: 3px solid var(--gold); border-radius: 4px; clip-path: none; opacity: 1;
+  background:
+    repeating-linear-gradient(48deg, transparent 0 15px, rgba(217, 166, 66, .72) 15px 17px),
+    repeating-linear-gradient(-48deg, transparent 0 15px, rgba(217, 166, 66, .72) 15px 17px),
+    linear-gradient(180deg, rgba(255, 236, 188, .16), rgba(120, 80, 20, .14));
+  box-shadow: inset 0 0 0 4px rgba(150, 100, 25, .35), inset 0 0 14px rgba(255, 230, 160, .3), 0 2px 5px rgba(60, 30, 5, .35); }
+.slot.emz::before, .slot.emz::after { display: none; }
+.slot.valid { border-color: #fff4c4; box-shadow: inset 0 0 30px rgba(255, 246, 190, .75), 0 0 24px rgba(255, 235, 140, .9); background-color: rgba(255, 240, 170, .28); }
+.slot .tag, .pile-label { display: none; }
+/* pendulum zones: the two outer spell/trap zones, blue crystal on the left, red on the right */
+.slot.pz::after { content: ""; position: absolute; top: 3px; width: 0; height: 0; pointer-events: none; }
+.slot.pzl::after { left: 3px; border-top: 26px solid #46b4ff; border-right: 26px solid transparent; filter: drop-shadow(0 0 5px #46b4ff); }
+.slot.pzr::after { right: 3px; border-top: 26px solid #ff5a86; border-left: 26px solid transparent; filter: drop-shadow(0 0 5px #ff5a86); }
+
+/* ---- piles: card-back stacks on gold pads; Graveyard / Banish as bronze bowls with glowing orbs ---- */
+.slot.pile { border: 3px solid #c99a3d; border-style: solid; border-radius: 6px; background: linear-gradient(180deg, rgba(40, 28, 14, .55), rgba(16, 10, 5, .6));
+  box-shadow: 0 6px 14px rgba(0, 0, 0, .5), inset 0 0 0 3px rgba(70, 44, 10, .7); }
+#pile-you-gy, #pile-opp-gy { width: 108px; height: 108px; margin: 22px 0 0 -2px; border: 0; border-radius: 50%;
+  background: radial-gradient(circle at 38% 30%, #b4e0ff 0, #4a95f5 26%, #1a4cc0 60%, #0a2166 100%);
+  box-shadow: 0 0 0 6px #b98d3c, 0 0 0 10px #4a3010, 0 0 0 12px #d4a649, 0 0 28px 8px rgba(70, 150, 255, .7), inset 0 -12px 26px rgba(0, 0, 50, .75); }
+[id$="-field"].slot.pile { background: linear-gradient(135deg, #b9c4d6, #8393ad); box-shadow: inset 0 0 0 4px rgba(120, 85, 30, .55), 0 4px 10px rgba(0, 0, 0, .45); }
+.pile-count { clip-path: none; border-radius: 50%; min-width: 28px; height: 28px; display: grid; place-items: center; font-size: 14px; font-weight: 800; padding: 0 4px;
+  color: #fff; background: radial-gradient(circle at 40% 30%, #3b4a7a, #141c3c); border: 2px solid #d4a649; text-shadow: 0 1px 2px #000; box-shadow: 0 2px 6px rgba(0, 0, 0, .6); }
+.pile-count[id$="-ban"] { width: 54px !important; height: 54px; border-radius: 50%; font-size: 20px; border: 0 !important; margin: 0;
+  background: radial-gradient(circle at 38% 30%, #f6c6ff 0, #b04be8 32%, #55128f 74%, #2a0850 100%) !important;
+  box-shadow: 0 0 0 4px #b98d3c, 0 0 0 7px #4a3010, 0 0 18px 5px rgba(190, 80, 255, .7); }
+.pile-count[id$="-ban"].empty { opacity: .55; }
+.card.in-gy { animation: gyfade .01s .8s forwards; }
+@keyframes gyfade { to { opacity: 0; } }
+
+/* ---- ATK/DEF above each monster, with its level ---- */
+.stat { width: 124px; height: auto; margin-left: -10px; background: none; clip-path: none; text-align: center; padding: 0; box-shadow: none; }
+.stat b { display: block; font-size: 25px; line-height: 1; font-weight: 800; color: #fff; letter-spacing: .01em;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000, 0 2px 4px #000; }
+.stat .up { color: #62e4ff; } .stat .down { color: #ff8585; }
+.stat small.lv { display: block; text-align: left; margin: 2px 0 0 12px; font-size: 15px; font-weight: 800; color: #ffd24a; text-shadow: 0 1px 2px #000, 0 0 3px #000; }
+.stat small.lv.xyz { color: #cfd6e6; }
+
+/* ---- LP bars: opponent top right, you bottom left ---- */
+.plate { width: 440px; height: 100px; padding: 0; background: none; display: block; overflow: visible; }
+.plate::before { content: ""; position: absolute; z-index: -1; top: 16px; bottom: 14px; border-top: 2px solid #cfd6e6; border-bottom: 2px solid rgba(207, 214, 230, .3);
+  background: linear-gradient(90deg, rgba(4, 6, 12, .95), rgba(14, 18, 30, .8)); }
+.plate .info { position: absolute; top: 18px; margin: 0; }
+.plate .nm { font-size: 16px; letter-spacing: .03em; text-transform: none; color: #fff; text-shadow: 0 1px 2px #000; }
+.plate .dk, .plate .lpbar { display: none; }
+.plate .lpnum { position: absolute; bottom: 10px; font-size: 46px; line-height: 1; font-weight: 800; color: #fff; letter-spacing: .04em;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000, 0 3px 6px rgba(0, 0, 0, .8); }
+.plate .lpnum::before { content: "LP"; font-size: 20px; margin-right: 14px; color: #d5dcec; letter-spacing: .08em; }
+.plate .ava { width: 120px; height: 120px; margin-top: -60px; }
+.plate.you { left: 12px; top: auto; bottom: 8px; }
+.plate.you::before { left: 70px; right: 0; }
+.plate.you .ava { left: -14px; }
+.plate.you .info { left: 122px; right: 12px; }
+.plate.you .lpnum { left: 122px; }
+.plate.opp { left: auto; right: 12px; top: 6px; }
+.plate.opp::before { left: 0; right: 70px; background: linear-gradient(270deg, rgba(4, 6, 12, .95), rgba(14, 18, 30, .8)); }
+.plate.opp .ava { left: auto; right: -14px; }
+.plate.opp .info { left: 14px; right: 122px; text-align: right; }
+.plate.opp .lpnum { left: auto; right: 122px; }
+
+/* ---- card info (appears when a card is focused) ---- */
+#info { left: 14px; top: 96px; width: 330px; height: auto; min-height: 480px; max-height: 700px; padding: 10px; border: 2px solid #b98d3c; border-radius: 4px;
+  background: linear-gradient(180deg, rgba(16, 18, 28, .95), rgba(6, 8, 14, .95)); box-shadow: 0 10px 34px rgba(0, 0, 0, .65); transition: opacity .2s; }
+#info .nm { margin: -2px -2px 8px; padding: 7px 10px; background: linear-gradient(180deg, #2c3246, #14182a); border: 1px solid #b98d3c; border-bottom-width: 2px;
+  color: #fff; font-size: 17px; letter-spacing: .02em; text-shadow: 0 1px 2px #000; }
+#info .meta { color: #9fd0ff; } #info .txt { color: #e7ecf8; }
+#info:has(> .empty) { opacity: 0; pointer-events: none; }
+#stage.pin-info #info { opacity: 1 !important; }
+
+/* ---- round Turn / Phase button on the right ---- */
+#side { left: 1318px; top: 296px; width: 250px; }
+#turnBox { width: 172px; height: 172px; margin: 0 auto 16px; padding: 0; border: 0; border-radius: 50%; clip-path: none; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;
+  background: radial-gradient(circle at 50% 36%, #214aa8 0, #0d2058 55%, #050c2a 100%);
+  box-shadow: 0 0 0 5px #c99a3d, 0 0 0 9px #3a2410, 0 0 0 11px #e0b95c, 0 0 32px rgba(70, 130, 255, .55), inset 0 0 24px rgba(130, 180, 255, .45); }
+#turnBox.foe { background: radial-gradient(circle at 50% 36%, #a82a3c 0, #5a0f1c 58%, #2a050c 100%); box-shadow: 0 0 0 5px #c99a3d, 0 0 0 9px #3a2410, 0 0 0 11px #e0b95c, 0 0 32px rgba(255, 80, 90, .55), inset 0 0 24px rgba(255, 150, 150, .4); }
+#turnBox .who, #phases { display: none; }
+#turnBox small { display: block; font-size: 22px; letter-spacing: .02em; color: #cfe0ff; text-transform: lowercase; text-shadow: 0 1px 3px #000; }
+#turnBox small::first-letter { text-transform: uppercase; }
+#phaseName { font-size: 26px; font-weight: 800; color: #fff; letter-spacing: .01em; text-shadow: 0 2px 4px #000, 0 0 10px rgba(150, 190, 255, .7); }
+#phaseBtns { display: flex; flex-direction: column; align-items: center; gap: 10px; }
+#phaseBtns .btn { clip-path: none; border-radius: 30px; min-width: 200px; padding: 11px 22px; font-weight: 700; letter-spacing: .05em; text-transform: none; color: #fff;
+  background: linear-gradient(180deg, #2c55b0, #14296a); border: 2px solid #86adff; box-shadow: 0 4px 12px rgba(0, 0, 0, .55), inset 0 0 12px rgba(150, 190, 255, .35); }
+#phaseBtns .btn.ghost { background: linear-gradient(180deg, #3a2f1c, #1c140a); border-color: #d4a649; color: #ffe39a; }
+#phaseBtns .btn:hover { filter: brightness(1.25); }
+#thinking { color: #f3dca8; text-shadow: 0 1px 3px #000; }
+
+/* ---- log pop-up + round buttons ---- */
+#log { display: none; position: absolute; right: 14px; top: 112px; left: auto; width: 310px; height: 250px; z-index: 80; border: 2px solid #b98d3c; border-radius: 4px; background: rgba(8, 10, 16, .93); }
+#stage.show-log #log { display: block; }
+#rbtns { position: absolute; right: 22px; bottom: 22px; z-index: 70; display: flex; gap: 14px; }
+#rbtns button, #mini button { width: 60px; height: 60px; border-radius: 50%; clip-path: none; display: grid; place-items: center; cursor: pointer; font-size: 22px; font-weight: 800; color: #aee0ff;
+  background: radial-gradient(circle at 50% 32%, #1d3a86, #08123a); border: 3px solid #4a82ff; box-shadow: 0 0 0 2px #0a1030, 0 0 16px rgba(70, 130, 255, .6), inset 0 0 12px rgba(120, 170, 255, .35); }
+#rbtns button:hover, #mini button:hover { filter: brightness(1.3); background: radial-gradient(circle at 50% 32%, #2a4fb0, #0c1a52); color: #fff; }
+#mini { right: auto; left: 14px; top: 12px; gap: 10px; }
+#mini button { width: 46px; height: 46px; font-size: 17px; }
+#hint { top: 66px; }
+
+/* Modern layout packs the columns closer together, so the stat labels shrink a little */
+body.modern .stat b { font-size: 20px; }
+body.modern .stat small.lv { font-size: 13px; margin-left: 20px; }
+
+/* dim the whole arena behind pickers */
+#picker { left: 0; }

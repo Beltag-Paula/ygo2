@@ -1,0 +1,1394 @@
+{
+  "mainDeck": [
+    {
+      "id": 21844576,
+      "name": "Elemental HERO Avian",
+      "type": "Normal Monster",
+      "humanReadableCardType": "Normal Monster",
+      "frameType": "normal",
+      "desc": "A winged Elemental HERO who wheels through the sky and manipulates the wind. His signature move, Featherbreak, gives villainy a blow from sky-high.",
+      "race": "Warrior",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/21844576",
+      "card_images": [
+        {
+          "id": 21844576,
+          "image_url": "https://images.ygoprodeck.com/images/cards/21844576.jpg",
+          "image_url_small": "https://images.ygoprodeck.com/images/cards_small/21844576.jpg",
+          "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/21844576.jpg"
+        }
+      ],
+      "atk": 1000,
+      "def": 1000,
+      "level": 3,
+      "attribute": "WIND"
+    },
+    {
+      "id": 21844576,
+      "name": "Elemental HERO Avian",
+      "type": "Normal Monster",
+      "humanReadableCardType": "Normal Monster",
+      "frameType": "normal",
+      "desc": "A winged Elemental HERO who wheels through the sky and manipulates the wind. His signature move, Featherbreak, gives villainy a blow from sky-high.",
+      "race": "Warrior",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/21844576",
+      "card_images": [
+        {
+          "id": 21844576,
+          "image_url": "https://images.ygoprodeck.com/images/cards/21844576.jpg",
+          "image_url_small": "https://images.ygoprodeck.com/images/cards_small/21844576.jpg",
+          "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/21844576.jpg"
+        }
+      ],
+      "atk": 1000,
+      "def": 1000,
+      "level": 3,
+      "attribute": "WIND"
+    },
+    {
+      "id": 21844576,
+      "name": "Elemental HERO Avian",
+      "type": "Normal Monster",
+      "humanReadableCardType": "Normal Monster",
+      "frameType": "normal",
+      "desc": "A winged Elemental HERO who wheels through the sky and manipulates the wind. His signature move, Featherbreak, gives villainy a blow from sky-high.",
+      "race": "Warrior",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/21844576",
+      "card_images": [
+        {
+          "id": 21844576,
+          "image_url": "https://images.ygoprodeck.com/images/cards/21844576.jpg",
+          "image_url_small": "https://images.ygoprodeck.com/images/cards_small/21844576.jpg",
+          "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/21844576.jpg"
+        }
+      ],
+      "atk": 1000,
+      "def": 1000,
+      "level": 3,
+      "attribute": "WIND"
+    },
+    {
+      "id": 79979666,
+      "name": "Elemental HERO Bubbleman",
+      "type": "Effect Monster",
+      "humanReadableCardType": "Effect Monster",
+      "frameType": "effect",
+      "desc": "If this is the only card in your hand, you can Special Summon it (from your hand). When this card is Summoned: You can draw 2 cards. You must control no other cards and have no cards in your hand to activate and to resolve this effect.",
+      "race": "Warrior",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/79979666",
+      "card_images": [
+        {
+          "id": 79979666,
+          "image_url": "https://images.ygoprodeck.com/images/cards/79979666.jpg",
+          "image_url_small": "https://images.ygoprodeck.com/images/cards_small/79979666.jpg",
+          "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/79979666.jpg"
+        }
+      ],
+      "atk": 800,
+      "def": 1200,
+      "level": 4,
+      "attribute": "WATER"
+    },
+    {
+      "id": 79979666,
+      "name": "Elemental HERO Bubbleman",
+      "type": "Effect Monster",
+      "humanReadableCardType": "Effect Monster",
+      "frameType": "effect",
+      "desc": "If this is the only card in your hand, you can Special Summon it (from your hand). When this card is Summoned: You can draw 2 cards. You must control no other cards and have no cards in your hand to activate and to resolve this effect.",
+      "race": "Warrior",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/79979666",
+      "card_images": [
+        {
+          "id": 79979666,
+          "image_url": "https://images.ygoprodeck.com/images/cards/79979666.jpg",
+          "image_url_small": "https://images.ygoprodeck.com/images/cards_small/79979666.jpg",
+          "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/79979666.jpg"
+        }
+      ],
+      "atk": 800,
+      "def": 1200,
+      "level": 4,
+      "attribute": "WATER"
+    },
+    {
+      "id": 58932615,
+      "name": "Elemental HERO Burstinatrix",
+      "type": "Normal Monster",
+      "humanReadableCardType": "Normal Monster",
+      "frameType": "normal",
+      "desc": "A flame manipulator who was the first Elemental HERO woman. Her Burstfire burns away villainy.",
+      "race": "Warrior",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/58932615",
+      "card_images": [
+        {
+          "id": 58932615,
+          "image_url": "https://images.ygoprodeck.com/images/cards/58932615.jpg",
+          "image_url_small": "https://images.ygoprodeck.com/images/cards_small/58932615.jpg",
+          "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/58932615.jpg"
+        }
+      ],
+      "atk": 1200,
+      "def": 800,
+      "level": 3,
+      "attribute": "FIRE"
+    },
+    {
+      "id": 58932615,
+      "name": "Elemental HERO Burstinatrix",
+      "type": "Normal Monster",
+      "humanReadableCardType": "Normal Monster",
+      "frameType": "normal",
+      "desc": "A flame manipulator who was the first Elemental HERO woman. Her Burstfire burns away villainy.",
+      "race": "Warrior",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/58932615",
+      "card_images": [
+        {
+          "id": 58932615,
+          "image_url": "https://images.ygoprodeck.com/images/cards/58932615.jpg",
+          "image_url_small": "https://images.ygoprodeck.com/images/cards_small/58932615.jpg",
+          "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/58932615.jpg"
+        }
+      ],
+      "atk": 1200,
+      "def": 800,
+      "level": 3,
+      "attribute": "FIRE"
+    },
+    {
+      "id": 58932615,
+      "name": "Elemental HERO Burstinatrix",
+      "type": "Normal Monster",
+      "humanReadableCardType": "Normal Monster",
+      "frameType": "normal",
+      "desc": "A flame manipulator who was the first Elemental HERO woman. Her Burstfire burns away villainy.",
+      "race": "Warrior",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/58932615",
+      "card_images": [
+        {
+          "id": 58932615,
+          "image_url": "https://images.ygoprodeck.com/images/cards/58932615.jpg",
+          "image_url_small": "https://images.ygoprodeck.com/images/cards_small/58932615.jpg",
+          "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/58932615.jpg"
+        }
+      ],
+      "atk": 1200,
+      "def": 800,
+      "level": 3,
+      "attribute": "FIRE"
+    },
+    {
+      "id": 84327329,
+      "name": "Elemental HERO Clayman",
+      "type": "Normal Monster",
+      "humanReadableCardType": "Normal Monster",
+      "frameType": "normal",
+      "desc": "An Elemental HERO with a clay body built-to-last. He'll preserve his Elemental HERO colleagues at any cost.",
+      "race": "Warrior",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/84327329",
+      "card_images": [
+        {
+          "id": 84327329,
+          "image_url": "https://images.ygoprodeck.com/images/cards/84327329.jpg",
+          "image_url_small": "https://images.ygoprodeck.com/images/cards_small/84327329.jpg",
+          "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/84327329.jpg"
+        }
+      ],
+      "atk": 800,
+      "def": 2000,
+      "level": 4,
+      "attribute": "EARTH"
+    },
+    {
+      "id": 84327329,
+      "name": "Elemental HERO Clayman",
+      "type": "Normal Monster",
+      "humanReadableCardType": "Normal Monster",
+      "frameType": "normal",
+      "desc": "An Elemental HERO with a clay body built-to-last. He'll preserve his Elemental HERO colleagues at any cost.",
+      "race": "Warrior",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/84327329",
+      "card_images": [
+        {
+          "id": 84327329,
+          "image_url": "https://images.ygoprodeck.com/images/cards/84327329.jpg",
+          "image_url_small": "https://images.ygoprodeck.com/images/cards_small/84327329.jpg",
+          "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/84327329.jpg"
+        }
+      ],
+      "atk": 800,
+      "def": 2000,
+      "level": 4,
+      "attribute": "EARTH"
+    },
+    {
+      "id": 89252153,
+      "name": "Elemental HERO Necroshade",
+      "type": "Effect Monster",
+      "humanReadableCardType": "Effect Monster",
+      "frameType": "effect",
+      "desc": "Once, while this card is in the GY, you can Normal Summon 1 Level 5 or higher \"Elemental HERO\" monster without Tributing.",
+      "race": "Warrior",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/89252153",
+      "card_images": [
+        {
+          "id": 89252153,
+          "image_url": "https://images.ygoprodeck.com/images/cards/89252153.jpg",
+          "image_url_small": "https://images.ygoprodeck.com/images/cards_small/89252153.jpg",
+          "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/89252153.jpg"
+        }
+      ],
+      "atk": 1600,
+      "def": 1800,
+      "level": 5,
+      "attribute": "DARK"
+    },
+    {
+      "id": 20721928,
+      "name": "Elemental HERO Sparkman",
+      "type": "Normal Monster",
+      "humanReadableCardType": "Normal Monster",
+      "frameType": "normal",
+      "desc": "An Elemental HERO and a warrior of light who proficiently wields many kinds of armaments. His Static Shockwave cuts off the path of villainy.",
+      "race": "Warrior",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/20721928",
+      "card_images": [
+        {
+          "id": 20721928,
+          "image_url": "https://images.ygoprodeck.com/images/cards/20721928.jpg",
+          "image_url_small": "https://images.ygoprodeck.com/images/cards_small/20721928.jpg",
+          "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/20721928.jpg"
+        }
+      ],
+      "atk": 1600,
+      "def": 1400,
+      "level": 4,
+      "attribute": "LIGHT"
+    },
+    {
+      "id": 20721928,
+      "name": "Elemental HERO Sparkman",
+      "type": "Normal Monster",
+      "humanReadableCardType": "Normal Monster",
+      "frameType": "normal",
+      "desc": "An Elemental HERO and a warrior of light who proficiently wields many kinds of armaments. His Static Shockwave cuts off the path of villainy.",
+      "race": "Warrior",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/20721928",
+      "card_images": [
+        {
+          "id": 20721928,
+          "image_url": "https://images.ygoprodeck.com/images/cards/20721928.jpg",
+          "image_url_small": "https://images.ygoprodeck.com/images/cards_small/20721928.jpg",
+          "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/20721928.jpg"
+        }
+      ],
+      "atk": 1600,
+      "def": 1400,
+      "level": 4,
+      "attribute": "LIGHT"
+    },
+    {
+      "id": 86188410,
+      "name": "Elemental HERO Wildheart",
+      "type": "Effect Monster",
+      "humanReadableCardType": "Effect Monster",
+      "frameType": "effect",
+      "desc": "Unaffected by Trap effects.",
+      "race": "Warrior",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/86188410",
+      "card_images": [
+        {
+          "id": 86188410,
+          "image_url": "https://images.ygoprodeck.com/images/cards/86188410.jpg",
+          "image_url_small": "https://images.ygoprodeck.com/images/cards_small/86188410.jpg",
+          "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/86188410.jpg"
+        }
+      ],
+      "atk": 1500,
+      "def": 1600,
+      "level": 4,
+      "attribute": "EARTH"
+    },
+    {
+      "id": 86188410,
+      "name": "Elemental HERO Wildheart",
+      "type": "Effect Monster",
+      "humanReadableCardType": "Effect Monster",
+      "frameType": "effect",
+      "desc": "Unaffected by Trap effects.",
+      "race": "Warrior",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/86188410",
+      "card_images": [
+        {
+          "id": 86188410,
+          "image_url": "https://images.ygoprodeck.com/images/cards/86188410.jpg",
+          "image_url_small": "https://images.ygoprodeck.com/images/cards_small/86188410.jpg",
+          "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/86188410.jpg"
+        }
+      ],
+      "atk": 1500,
+      "def": 1600,
+      "level": 4,
+      "attribute": "EARTH"
+    },
+    {
+      "id": 59793705,
+      "name": "Elemental HERO Bladedge",
+      "type": "Effect Monster",
+      "humanReadableCardType": "Effect Monster",
+      "frameType": "effect",
+      "desc": "If this card attacks a Defense Position monster, inflict piercing battle damage.",
+      "race": "Warrior",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/59793705",
+      "card_images": [
+        {
+          "id": 59793705,
+          "image_url": "https://images.ygoprodeck.com/images/cards/59793705.jpg",
+          "image_url_small": "https://images.ygoprodeck.com/images/cards_small/59793705.jpg",
+          "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/59793705.jpg"
+        }
+      ],
+      "atk": 2600,
+      "def": 1800,
+      "level": 7,
+      "attribute": "EARTH"
+    },
+    {
+      "id": 59793705,
+      "name": "Elemental HERO Bladedge",
+      "type": "Effect Monster",
+      "humanReadableCardType": "Effect Monster",
+      "frameType": "effect",
+      "desc": "If this card attacks a Defense Position monster, inflict piercing battle damage.",
+      "race": "Warrior",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/59793705",
+      "card_images": [
+        {
+          "id": 59793705,
+          "image_url": "https://images.ygoprodeck.com/images/cards/59793705.jpg",
+          "image_url_small": "https://images.ygoprodeck.com/images/cards_small/59793705.jpg",
+          "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/59793705.jpg"
+        }
+      ],
+      "atk": 2600,
+      "def": 1800,
+      "level": 7,
+      "attribute": "EARTH"
+    },
+    {
+      "id": 21597117,
+      "name": "A Hero Emerges",
+      "type": "Trap Card",
+      "humanReadableCardType": "Trap Card",
+      "frameType": "trap",
+      "desc": "When an opponent's monster declares an attack: Your opponent chooses 1 random card from your hand, then if it is a monster that can be Special Summoned, Special Summon it. Otherwise, send it to the GY.",
+      "race": "Normal",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/21597117",
+      "card_images": [
+        {
+          "id": 21597117,
+          "image_url": "https://images.ygoprodeck.com/images/cards/21597117.jpg",
+          "image_url_small": "https://images.ygoprodeck.com/images/cards_small/21597117.jpg",
+          "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/21597117.jpg"
+        }
+      ]
+    },
+    {
+      "id": 21597117,
+      "name": "A Hero Emerges",
+      "type": "Trap Card",
+      "humanReadableCardType": "Trap Card",
+      "frameType": "trap",
+      "desc": "When an opponent's monster declares an attack: Your opponent chooses 1 random card from your hand, then if it is a monster that can be Special Summoned, Special Summon it. Otherwise, send it to the GY.",
+      "race": "Normal",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/21597117",
+      "card_images": [
+        {
+          "id": 21597117,
+          "image_url": "https://images.ygoprodeck.com/images/cards/21597117.jpg",
+          "image_url_small": "https://images.ygoprodeck.com/images/cards_small/21597117.jpg",
+          "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/21597117.jpg"
+        }
+      ]
+    },
+    {
+      "id": 53586134,
+      "name": "Bubble Blaster",
+      "type": "Spell Card",
+      "humanReadableCardType": "Spell Card",
+      "frameType": "spell",
+      "desc": "You can only equip this card to \"Elemental HERO Bubbleman\". Increase the ATK of the equipped monster by 800 points. If the equipped monster would be destroyed as a result of battle, destroy this card instead, and make the Battle Damage to the controller of the equipped monster 0.",
+      "race": "Equip",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/53586134",
+      "card_images": [
+        {
+          "id": 53586134,
+          "image_url": "https://images.ygoprodeck.com/images/cards/53586134.jpg",
+          "image_url_small": "https://images.ygoprodeck.com/images/cards_small/53586134.jpg",
+          "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/53586134.jpg"
+        }
+      ]
+    },
+    {
+      "id": 53586134,
+      "name": "Bubble Blaster",
+      "type": "Spell Card",
+      "humanReadableCardType": "Spell Card",
+      "frameType": "spell",
+      "desc": "You can only equip this card to \"Elemental HERO Bubbleman\". Increase the ATK of the equipped monster by 800 points. If the equipped monster would be destroyed as a result of battle, destroy this card instead, and make the Battle Damage to the controller of the equipped monster 0.",
+      "race": "Equip",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/53586134",
+      "card_images": [
+        {
+          "id": 53586134,
+          "image_url": "https://images.ygoprodeck.com/images/cards/53586134.jpg",
+          "image_url_small": "https://images.ygoprodeck.com/images/cards_small/53586134.jpg",
+          "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/53586134.jpg"
+        }
+      ]
+    },
+    {
+      "id": 95286165,
+      "name": "De-Fusion",
+      "type": "Spell Card",
+      "humanReadableCardType": "Spell Card",
+      "frameType": "spell",
+      "desc": "Target 1 Fusion Monster on the field; return that target to the Extra Deck, then, if all its listed materials that were used for its Fusion Summon are in your GY, you can Special Summon all of them.\r\n\r\n* The above text is unofficial and describes the card's functionality in the OCG.",
+      "race": "Quick-Play",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/95286165",
+      "card_images": [
+        {
+          "id": 95286165,
+          "image_url": "https://images.ygoprodeck.com/images/cards/95286165.jpg",
+          "image_url_small": "https://images.ygoprodeck.com/images/cards_small/95286165.jpg",
+          "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/95286165.jpg"
+        }
+      ]
+    },
+    {
+      "id": 95286165,
+      "name": "De-Fusion",
+      "type": "Spell Card",
+      "humanReadableCardType": "Spell Card",
+      "frameType": "spell",
+      "desc": "Target 1 Fusion Monster on the field; return that target to the Extra Deck, then, if all its listed materials that were used for its Fusion Summon are in your GY, you can Special Summon all of them.\r\n\r\n* The above text is unofficial and describes the card's functionality in the OCG.",
+      "race": "Quick-Play",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/95286165",
+      "card_images": [
+        {
+          "id": 95286165,
+          "image_url": "https://images.ygoprodeck.com/images/cards/95286165.jpg",
+          "image_url_small": "https://images.ygoprodeck.com/images/cards_small/95286165.jpg",
+          "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/95286165.jpg"
+        }
+      ]
+    },
+    {
+      "id": 213326,
+      "name": "E - Emergency Call",
+      "type": "Spell Card",
+      "humanReadableCardType": "Spell Card",
+      "frameType": "spell",
+      "desc": "Add 1 \"Elemental HERO\" monster from your Deck to your hand.",
+      "race": "Normal",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/213326",
+      "card_images": [
+        {
+          "id": 213326,
+          "image_url": "https://images.ygoprodeck.com/images/cards/213326.jpg",
+          "image_url_small": "https://images.ygoprodeck.com/images/cards_small/213326.jpg",
+          "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/213326.jpg"
+        }
+      ]
+    },
+    {
+      "id": 213326,
+      "name": "E - Emergency Call",
+      "type": "Spell Card",
+      "humanReadableCardType": "Spell Card",
+      "frameType": "spell",
+      "desc": "Add 1 \"Elemental HERO\" monster from your Deck to your hand.",
+      "race": "Normal",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/213326",
+      "card_images": [
+        {
+          "id": 213326,
+          "image_url": "https://images.ygoprodeck.com/images/cards/213326.jpg",
+          "image_url_small": "https://images.ygoprodeck.com/images/cards_small/213326.jpg",
+          "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/213326.jpg"
+        }
+      ]
+    },
+    {
+      "id": 213326,
+      "name": "E - Emergency Call",
+      "type": "Spell Card",
+      "humanReadableCardType": "Spell Card",
+      "frameType": "spell",
+      "desc": "Add 1 \"Elemental HERO\" monster from your Deck to your hand.",
+      "race": "Normal",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/213326",
+      "card_images": [
+        {
+          "id": 213326,
+          "image_url": "https://images.ygoprodeck.com/images/cards/213326.jpg",
+          "image_url_small": "https://images.ygoprodeck.com/images/cards_small/213326.jpg",
+          "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/213326.jpg"
+        }
+      ]
+    },
+    {
+      "id": 19394153,
+      "name": "Feather Shot",
+      "type": "Spell Card",
+      "humanReadableCardType": "Spell Card",
+      "frameType": "spell",
+      "desc": "Target 1 face-up \"Elemental HERO Avian\" you control; during this turn, that target can attack a number of times equal to the number of monsters you control when this card resolves, but cannot attack directly, and other monsters you control cannot attack this turn.",
+      "race": "Normal",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/19394153",
+      "card_images": [
+        {
+          "id": 19394153,
+          "image_url": "https://images.ygoprodeck.com/images/cards/19394153.jpg",
+          "image_url_small": "https://images.ygoprodeck.com/images/cards_small/19394153.jpg",
+          "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/19394153.jpg"
+        }
+      ]
+    },
+    {
+      "id": 19394153,
+      "name": "Feather Shot",
+      "type": "Spell Card",
+      "humanReadableCardType": "Spell Card",
+      "frameType": "spell",
+      "desc": "Target 1 face-up \"Elemental HERO Avian\" you control; during this turn, that target can attack a number of times equal to the number of monsters you control when this card resolves, but cannot attack directly, and other monsters you control cannot attack this turn.",
+      "race": "Normal",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/19394153",
+      "card_images": [
+        {
+          "id": 19394153,
+          "image_url": "https://images.ygoprodeck.com/images/cards/19394153.jpg",
+          "image_url_small": "https://images.ygoprodeck.com/images/cards_small/19394153.jpg",
+          "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/19394153.jpg"
+        }
+      ]
+    },
+    {
+      "id": 18511384,
+      "name": "Fusion Recovery",
+      "type": "Spell Card",
+      "humanReadableCardType": "Spell Card",
+      "frameType": "spell",
+      "desc": "Target 1 \"Polymerization\" in your GY, and 1 monster in your GY that was used as material for a Fusion Summon; add them to your hand.",
+      "race": "Normal",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/18511384",
+      "card_images": [
+        {
+          "id": 18511384,
+          "image_url": "https://images.ygoprodeck.com/images/cards/18511384.jpg",
+          "image_url_small": "https://images.ygoprodeck.com/images/cards_small/18511384.jpg",
+          "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/18511384.jpg"
+        }
+      ]
+    },
+    {
+      "id": 18511384,
+      "name": "Fusion Recovery",
+      "type": "Spell Card",
+      "humanReadableCardType": "Spell Card",
+      "frameType": "spell",
+      "desc": "Target 1 \"Polymerization\" in your GY, and 1 monster in your GY that was used as material for a Fusion Summon; add them to your hand.",
+      "race": "Normal",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/18511384",
+      "card_images": [
+        {
+          "id": 18511384,
+          "image_url": "https://images.ygoprodeck.com/images/cards/18511384.jpg",
+          "image_url_small": "https://images.ygoprodeck.com/images/cards_small/18511384.jpg",
+          "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/18511384.jpg"
+        }
+      ]
+    },
+    {
+      "id": 37412656,
+      "name": "Hero Blast",
+      "type": "Trap Card",
+      "humanReadableCardType": "Trap Card",
+      "frameType": "trap",
+      "desc": "Target 1 \"Elemental HERO\" Normal Monster in your Graveyard; add that target to your hand, then if your opponent controls any monsters with ATK less than or equal to that target's ATK, destroy 1 of them.",
+      "race": "Normal",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/37412656",
+      "card_images": [
+        {
+          "id": 37412656,
+          "image_url": "https://images.ygoprodeck.com/images/cards/37412656.jpg",
+          "image_url_small": "https://images.ygoprodeck.com/images/cards_small/37412656.jpg",
+          "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/37412656.jpg"
+        }
+      ]
+    },
+    {
+      "id": 37412656,
+      "name": "Hero Blast",
+      "type": "Trap Card",
+      "humanReadableCardType": "Trap Card",
+      "frameType": "trap",
+      "desc": "Target 1 \"Elemental HERO\" Normal Monster in your Graveyard; add that target to your hand, then if your opponent controls any monsters with ATK less than or equal to that target's ATK, destroy 1 of them.",
+      "race": "Normal",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/37412656",
+      "card_images": [
+        {
+          "id": 37412656,
+          "image_url": "https://images.ygoprodeck.com/images/cards/37412656.jpg",
+          "image_url_small": "https://images.ygoprodeck.com/images/cards_small/37412656.jpg",
+          "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/37412656.jpg"
+        }
+      ]
+    },
+    {
+      "id": 19024706,
+      "name": "Hero Counterattack",
+      "type": "Trap Card",
+      "humanReadableCardType": "Trap Card",
+      "frameType": "trap",
+      "desc": "When an \"Elemental HERO\" monster you control is destroyed by battle: Your opponent chooses 1 random card from your hand, then, if it is an \"Elemental HERO\" monster, you destroy 1 monster your opponent controls, and if you do, Special Summon the chosen monster.",
+      "race": "Normal",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/19024706",
+      "card_images": [
+        {
+          "id": 19024706,
+          "image_url": "https://images.ygoprodeck.com/images/cards/19024706.jpg",
+          "image_url_small": "https://images.ygoprodeck.com/images/cards_small/19024706.jpg",
+          "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/19024706.jpg"
+        }
+      ]
+    },
+    {
+      "id": 19024706,
+      "name": "Hero Counterattack",
+      "type": "Trap Card",
+      "humanReadableCardType": "Trap Card",
+      "frameType": "trap",
+      "desc": "When an \"Elemental HERO\" monster you control is destroyed by battle: Your opponent chooses 1 random card from your hand, then, if it is an \"Elemental HERO\" monster, you destroy 1 monster your opponent controls, and if you do, Special Summon the chosen monster.",
+      "race": "Normal",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/19024706",
+      "card_images": [
+        {
+          "id": 19024706,
+          "image_url": "https://images.ygoprodeck.com/images/cards/19024706.jpg",
+          "image_url_small": "https://images.ygoprodeck.com/images/cards_small/19024706.jpg",
+          "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/19024706.jpg"
+        }
+      ]
+    },
+    {
+      "id": 75141056,
+      "name": "Hero Mask",
+      "type": "Spell Card",
+      "humanReadableCardType": "Spell Card",
+      "frameType": "spell",
+      "desc": "Target 1 face-up monster you control; send 1 \"Elemental HERO\" monster from your Deck to the Graveyard, and if you do, that target's name becomes the sent monster's name, until the End Phase.",
+      "race": "Normal",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/75141056",
+      "card_images": [
+        {
+          "id": 75141056,
+          "image_url": "https://images.ygoprodeck.com/images/cards/75141056.jpg",
+          "image_url_small": "https://images.ygoprodeck.com/images/cards_small/75141056.jpg",
+          "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/75141056.jpg"
+        }
+      ]
+    },
+    {
+      "id": 75141056,
+      "name": "Hero Mask",
+      "type": "Spell Card",
+      "humanReadableCardType": "Spell Card",
+      "frameType": "spell",
+      "desc": "Target 1 face-up monster you control; send 1 \"Elemental HERO\" monster from your Deck to the Graveyard, and if you do, that target's name becomes the sent monster's name, until the End Phase.",
+      "race": "Normal",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/75141056",
+      "card_images": [
+        {
+          "id": 75141056,
+          "image_url": "https://images.ygoprodeck.com/images/cards/75141056.jpg",
+          "image_url_small": "https://images.ygoprodeck.com/images/cards_small/75141056.jpg",
+          "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/75141056.jpg"
+        }
+      ]
+    },
+    {
+      "id": 22020907,
+      "name": "Hero Signal",
+      "type": "Trap Card",
+      "humanReadableCardType": "Trap Card",
+      "frameType": "trap",
+      "desc": "When a monster you control is destroyed by battle and sent to the GY: Special Summon 1 Level 4 or lower \"Elemental HERO\" monster from your hand or Deck.",
+      "race": "Normal",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/22020907",
+      "card_images": [
+        {
+          "id": 22020907,
+          "image_url": "https://images.ygoprodeck.com/images/cards/22020907.jpg",
+          "image_url_small": "https://images.ygoprodeck.com/images/cards_small/22020907.jpg",
+          "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/22020907.jpg"
+        }
+      ]
+    },
+    {
+      "id": 22020907,
+      "name": "Hero Signal",
+      "type": "Trap Card",
+      "humanReadableCardType": "Trap Card",
+      "frameType": "trap",
+      "desc": "When a monster you control is destroyed by battle and sent to the GY: Special Summon 1 Level 4 or lower \"Elemental HERO\" monster from your hand or Deck.",
+      "race": "Normal",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/22020907",
+      "card_images": [
+        {
+          "id": 22020907,
+          "image_url": "https://images.ygoprodeck.com/images/cards/22020907.jpg",
+          "image_url_small": "https://images.ygoprodeck.com/images/cards_small/22020907.jpg",
+          "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/22020907.jpg"
+        }
+      ]
+    },
+    {
+      "id": 43452193,
+      "name": "Mirror Gate",
+      "type": "Trap Card",
+      "humanReadableCardType": "Trap Card",
+      "frameType": "trap",
+      "desc": "When an opponent's monster declares an attack targeting a face-up \"Elemental HERO\" monster you control: Switch control of the opponent's attacking monster with the attack target you control, then perform damage calculation. The change of control lasts until the End Phase.\r\n\r\n* The above text is unofficial and describes the card's functionality in the OCG.",
+      "race": "Normal",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/43452193",
+      "card_images": [
+        {
+          "id": 43452193,
+          "image_url": "https://images.ygoprodeck.com/images/cards/43452193.jpg",
+          "image_url_small": "https://images.ygoprodeck.com/images/cards_small/43452193.jpg",
+          "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/43452193.jpg"
+        }
+      ]
+    },
+    {
+      "id": 43452193,
+      "name": "Mirror Gate",
+      "type": "Trap Card",
+      "humanReadableCardType": "Trap Card",
+      "frameType": "trap",
+      "desc": "When an opponent's monster declares an attack targeting a face-up \"Elemental HERO\" monster you control: Switch control of the opponent's attacking monster with the attack target you control, then perform damage calculation. The change of control lasts until the End Phase.\r\n\r\n* The above text is unofficial and describes the card's functionality in the OCG.",
+      "race": "Normal",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/43452193",
+      "card_images": [
+        {
+          "id": 43452193,
+          "image_url": "https://images.ygoprodeck.com/images/cards/43452193.jpg",
+          "image_url_small": "https://images.ygoprodeck.com/images/cards_small/43452193.jpg",
+          "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/43452193.jpg"
+        }
+      ]
+    },
+    {
+      "id": 63703130,
+      "name": "O - Oversoul",
+      "type": "Spell Card",
+      "humanReadableCardType": "Spell Card",
+      "frameType": "spell",
+      "desc": "Target 1 \"Elemental HERO\" Normal Monster in your GY; Special Summon that target.",
+      "race": "Normal",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/63703130",
+      "card_images": [
+        {
+          "id": 63703130,
+          "image_url": "https://images.ygoprodeck.com/images/cards/63703130.jpg",
+          "image_url_small": "https://images.ygoprodeck.com/images/cards_small/63703130.jpg",
+          "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/63703130.jpg"
+        }
+      ]
+    },
+    {
+      "id": 63703130,
+      "name": "O - Oversoul",
+      "type": "Spell Card",
+      "humanReadableCardType": "Spell Card",
+      "frameType": "spell",
+      "desc": "Target 1 \"Elemental HERO\" Normal Monster in your GY; Special Summon that target.",
+      "race": "Normal",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/63703130",
+      "card_images": [
+        {
+          "id": 63703130,
+          "image_url": "https://images.ygoprodeck.com/images/cards/63703130.jpg",
+          "image_url_small": "https://images.ygoprodeck.com/images/cards_small/63703130.jpg",
+          "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/63703130.jpg"
+        }
+      ]
+    },
+    {
+      "id": 24094653,
+      "name": "Polymerization",
+      "type": "Spell Card",
+      "humanReadableCardType": "Spell Card",
+      "frameType": "spell",
+      "desc": "Fusion Summon 1 Fusion Monster from your Extra Deck, using monsters from your hand or field as Fusion Material.",
+      "race": "Normal",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/24094653",
+      "card_images": [
+        {
+          "id": 24094653,
+          "image_url": "https://images.ygoprodeck.com/images/cards/24094653.jpg",
+          "image_url_small": "https://images.ygoprodeck.com/images/cards_small/24094653.jpg",
+          "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/24094653.jpg"
+        }
+      ]
+    },
+    {
+      "id": 24094653,
+      "name": "Polymerization",
+      "type": "Spell Card",
+      "humanReadableCardType": "Spell Card",
+      "frameType": "spell",
+      "desc": "Fusion Summon 1 Fusion Monster from your Extra Deck, using monsters from your hand or field as Fusion Material.",
+      "race": "Normal",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/24094653",
+      "card_images": [
+        {
+          "id": 24094653,
+          "image_url": "https://images.ygoprodeck.com/images/cards/24094653.jpg",
+          "image_url_small": "https://images.ygoprodeck.com/images/cards_small/24094653.jpg",
+          "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/24094653.jpg"
+        }
+      ]
+    },
+    {
+      "id": 24094653,
+      "name": "Polymerization",
+      "type": "Spell Card",
+      "humanReadableCardType": "Spell Card",
+      "frameType": "spell",
+      "desc": "Fusion Summon 1 Fusion Monster from your Extra Deck, using monsters from your hand or field as Fusion Material.",
+      "race": "Normal",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/24094653",
+      "card_images": [
+        {
+          "id": 24094653,
+          "image_url": "https://images.ygoprodeck.com/images/cards/24094653.jpg",
+          "image_url_small": "https://images.ygoprodeck.com/images/cards_small/24094653.jpg",
+          "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/24094653.jpg"
+        }
+      ]
+    },
+    {
+      "id": 32807846,
+      "name": "Reinforcement of the Army",
+      "type": "Spell Card",
+      "humanReadableCardType": "Spell Card",
+      "frameType": "spell",
+      "desc": "Add 1 Level 4 or lower Warrior monster from your Deck to your hand.",
+      "race": "Normal",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/32807846",
+      "card_images": [
+        {
+          "id": 32807846,
+          "image_url": "https://images.ygoprodeck.com/images/cards/32807846.jpg",
+          "image_url_small": "https://images.ygoprodeck.com/images/cards_small/32807846.jpg",
+          "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/32807846.jpg"
+        }
+      ]
+    },
+    {
+      "id": 37318031,
+      "name": "R - Righteous Justice",
+      "type": "Spell Card",
+      "humanReadableCardType": "Spell Card",
+      "frameType": "spell",
+      "desc": "Destroy Spells/Traps on the field equal to the number of \"Elemental HERO\" cards you control.",
+      "race": "Normal",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/37318031",
+      "card_images": [
+        {
+          "id": 37318031,
+          "image_url": "https://images.ygoprodeck.com/images/cards/37318031.jpg",
+          "image_url_small": "https://images.ygoprodeck.com/images/cards_small/37318031.jpg",
+          "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/37318031.jpg"
+        }
+      ]
+    },
+    {
+      "id": 37318031,
+      "name": "R - Righteous Justice",
+      "type": "Spell Card",
+      "humanReadableCardType": "Spell Card",
+      "frameType": "spell",
+      "desc": "Destroy Spells/Traps on the field equal to the number of \"Elemental HERO\" cards you control.",
+      "race": "Normal",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/37318031",
+      "card_images": [
+        {
+          "id": 37318031,
+          "image_url": "https://images.ygoprodeck.com/images/cards/37318031.jpg",
+          "image_url_small": "https://images.ygoprodeck.com/images/cards_small/37318031.jpg",
+          "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/37318031.jpg"
+        }
+      ]
+    },
+    {
+      "id": 37318031,
+      "name": "R - Righteous Justice",
+      "type": "Spell Card",
+      "humanReadableCardType": "Spell Card",
+      "frameType": "spell",
+      "desc": "Destroy Spells/Traps on the field equal to the number of \"Elemental HERO\" cards you control.",
+      "race": "Normal",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/37318031",
+      "card_images": [
+        {
+          "id": 37318031,
+          "image_url": "https://images.ygoprodeck.com/images/cards/37318031.jpg",
+          "image_url_small": "https://images.ygoprodeck.com/images/cards_small/37318031.jpg",
+          "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/37318031.jpg"
+        }
+      ]
+    },
+    {
+      "id": 63035430,
+      "name": "Skyscraper",
+      "type": "Spell Card",
+      "humanReadableCardType": "Spell Card",
+      "frameType": "spell",
+      "desc": "If an \"Elemental HERO\" monster attacks a monster that has a higher ATK, the attacking monster gains 1000 ATK during damage calculation only.",
+      "race": "Field",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/63035430",
+      "card_images": [
+        {
+          "id": 63035430,
+          "image_url": "https://images.ygoprodeck.com/images/cards/63035430.jpg",
+          "image_url_small": "https://images.ygoprodeck.com/images/cards_small/63035430.jpg",
+          "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/63035430.jpg"
+        }
+      ]
+    },
+    {
+      "id": 63035430,
+      "name": "Skyscraper",
+      "type": "Spell Card",
+      "humanReadableCardType": "Spell Card",
+      "frameType": "spell",
+      "desc": "If an \"Elemental HERO\" monster attacks a monster that has a higher ATK, the attacking monster gains 1000 ATK during damage calculation only.",
+      "race": "Field",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/63035430",
+      "card_images": [
+        {
+          "id": 63035430,
+          "image_url": "https://images.ygoprodeck.com/images/cards/63035430.jpg",
+          "image_url_small": "https://images.ygoprodeck.com/images/cards_small/63035430.jpg",
+          "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/63035430.jpg"
+        }
+      ]
+    },
+    {
+      "id": 97362768,
+      "name": "Spark Blaster",
+      "type": "Spell Card",
+      "humanReadableCardType": "Spell Card",
+      "frameType": "spell",
+      "desc": "Equip only to \"Elemental HERO Sparkman\". During your Main Phase: You can target 1 face-up monster; change the battle position of that target. After you use this effect 3 times, destroy this card.",
+      "race": "Equip",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/97362768",
+      "card_images": [
+        {
+          "id": 97362768,
+          "image_url": "https://images.ygoprodeck.com/images/cards/97362768.jpg",
+          "image_url_small": "https://images.ygoprodeck.com/images/cards_small/97362768.jpg",
+          "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/97362768.jpg"
+        }
+      ]
+    },
+    {
+      "id": 97362768,
+      "name": "Spark Blaster",
+      "type": "Spell Card",
+      "humanReadableCardType": "Spell Card",
+      "frameType": "spell",
+      "desc": "Equip only to \"Elemental HERO Sparkman\". During your Main Phase: You can target 1 face-up monster; change the battle position of that target. After you use this effect 3 times, destroy this card.",
+      "race": "Equip",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/97362768",
+      "card_images": [
+        {
+          "id": 97362768,
+          "image_url": "https://images.ygoprodeck.com/images/cards/97362768.jpg",
+          "image_url_small": "https://images.ygoprodeck.com/images/cards_small/97362768.jpg",
+          "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/97362768.jpg"
+        }
+      ]
+    },
+    {
+      "id": 95281259,
+      "name": "The Warrior Returning Alive",
+      "type": "Spell Card",
+      "humanReadableCardType": "Spell Card",
+      "frameType": "spell",
+      "desc": "Target 1 Warrior monster in your GY; add that target to your hand.",
+      "race": "Normal",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/95281259",
+      "card_images": [
+        {
+          "id": 95281259,
+          "image_url": "https://images.ygoprodeck.com/images/cards/95281259.jpg",
+          "image_url_small": "https://images.ygoprodeck.com/images/cards_small/95281259.jpg",
+          "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/95281259.jpg"
+        }
+      ]
+    },
+    {
+      "id": 95281259,
+      "name": "The Warrior Returning Alive",
+      "type": "Spell Card",
+      "humanReadableCardType": "Spell Card",
+      "frameType": "spell",
+      "desc": "Target 1 Warrior monster in your GY; add that target to your hand.",
+      "race": "Normal",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/95281259",
+      "card_images": [
+        {
+          "id": 95281259,
+          "image_url": "https://images.ygoprodeck.com/images/cards/95281259.jpg",
+          "image_url_small": "https://images.ygoprodeck.com/images/cards_small/95281259.jpg",
+          "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/95281259.jpg"
+        }
+      ]
+    },
+    {
+      "id": 95281259,
+      "name": "The Warrior Returning Alive",
+      "type": "Spell Card",
+      "humanReadableCardType": "Spell Card",
+      "frameType": "spell",
+      "desc": "Target 1 Warrior monster in your GY; add that target to your hand.",
+      "race": "Normal",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/95281259",
+      "card_images": [
+        {
+          "id": 95281259,
+          "image_url": "https://images.ygoprodeck.com/images/cards/95281259.jpg",
+          "image_url_small": "https://images.ygoprodeck.com/images/cards_small/95281259.jpg",
+          "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/95281259.jpg"
+        }
+      ]
+    }
+  ],
+  "extraDeck": [
+    {
+      "id": 29343734,
+      "name": "Elemental HERO Electrum",
+      "type": "Fusion Monster",
+      "humanReadableCardType": "Fusion Monster",
+      "frameType": "fusion",
+      "desc": "\"Elemental HERO Avian\" + \"Elemental HERO Burstinatrix\" + \"Elemental HERO Clayman\" + \"Elemental HERO Bubbleman\"\r\nMust be Fusion Summoned. While face-up on the field, this card is also WIND, WATER, FIRE, and EARTH Attribute. When this card is Fusion Summoned: Shuffle all banished cards into the Deck(s). Gains 300 ATK for each monster your opponent controls with the same Attribute as this card.",
+      "race": "Warrior",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/29343734",
+      "card_images": [
+        {
+          "id": 29343734,
+          "image_url": "https://images.ygoprodeck.com/images/cards/29343734.jpg",
+          "image_url_small": "https://images.ygoprodeck.com/images/cards_small/29343734.jpg",
+          "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/29343734.jpg"
+        }
+      ],
+      "atk": 2900,
+      "def": 2600,
+      "level": 10,
+      "attribute": "LIGHT"
+    },
+    {
+      "id": 29343734,
+      "name": "Elemental HERO Electrum",
+      "type": "Fusion Monster",
+      "humanReadableCardType": "Fusion Monster",
+      "frameType": "fusion",
+      "desc": "\"Elemental HERO Avian\" + \"Elemental HERO Burstinatrix\" + \"Elemental HERO Clayman\" + \"Elemental HERO Bubbleman\"\r\nMust be Fusion Summoned. While face-up on the field, this card is also WIND, WATER, FIRE, and EARTH Attribute. When this card is Fusion Summoned: Shuffle all banished cards into the Deck(s). Gains 300 ATK for each monster your opponent controls with the same Attribute as this card.",
+      "race": "Warrior",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/29343734",
+      "card_images": [
+        {
+          "id": 29343734,
+          "image_url": "https://images.ygoprodeck.com/images/cards/29343734.jpg",
+          "image_url_small": "https://images.ygoprodeck.com/images/cards_small/29343734.jpg",
+          "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/29343734.jpg"
+        }
+      ],
+      "atk": 2900,
+      "def": 2600,
+      "level": 10,
+      "attribute": "LIGHT"
+    },
+    {
+      "id": 14225239,
+      "name": "Elemental HERO Mariner",
+      "type": "Fusion Monster",
+      "humanReadableCardType": "Fusion Monster",
+      "frameType": "fusion",
+      "desc": "\"Elemental HERO Bubbleman\" + \"Elemental HERO Avian\"\r\nMust be Fusion Summoned. While you have any Set card(s) in your Spell & Trap Zone, this card can attack your opponent directly.",
+      "race": "Warrior",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/14225239",
+      "card_images": [
+        {
+          "id": 14225239,
+          "image_url": "https://images.ygoprodeck.com/images/cards/14225239.jpg",
+          "image_url_small": "https://images.ygoprodeck.com/images/cards_small/14225239.jpg",
+          "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/14225239.jpg"
+        }
+      ],
+      "atk": 1400,
+      "def": 1000,
+      "level": 5,
+      "attribute": "WATER"
+    },
+    {
+      "id": 14225239,
+      "name": "Elemental HERO Mariner",
+      "type": "Fusion Monster",
+      "humanReadableCardType": "Fusion Monster",
+      "frameType": "fusion",
+      "desc": "\"Elemental HERO Bubbleman\" + \"Elemental HERO Avian\"\r\nMust be Fusion Summoned. While you have any Set card(s) in your Spell & Trap Zone, this card can attack your opponent directly.",
+      "race": "Warrior",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/14225239",
+      "card_images": [
+        {
+          "id": 14225239,
+          "image_url": "https://images.ygoprodeck.com/images/cards/14225239.jpg",
+          "image_url_small": "https://images.ygoprodeck.com/images/cards_small/14225239.jpg",
+          "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/14225239.jpg"
+        }
+      ],
+      "atk": 1400,
+      "def": 1000,
+      "level": 5,
+      "attribute": "WATER"
+    },
+    {
+      "id": 52031567,
+      "name": "Elemental HERO Mudballman",
+      "type": "Fusion Monster",
+      "humanReadableCardType": "Fusion Monster",
+      "frameType": "fusion",
+      "desc": "\"Elemental HERO Bubbleman\" + \"Elemental HERO Clayman\"\nMust be Fusion Summoned and cannot be Special Summoned by other ways.",
+      "race": "Warrior",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/52031567",
+      "card_images": [
+        {
+          "id": 52031567,
+          "image_url": "https://images.ygoprodeck.com/images/cards/52031567.jpg",
+          "image_url_small": "https://images.ygoprodeck.com/images/cards_small/52031567.jpg",
+          "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/52031567.jpg"
+        }
+      ],
+      "atk": 1900,
+      "def": 3000,
+      "level": 6,
+      "attribute": "EARTH"
+    },
+    {
+      "id": 52031567,
+      "name": "Elemental HERO Mudballman",
+      "type": "Fusion Monster",
+      "humanReadableCardType": "Fusion Monster",
+      "frameType": "fusion",
+      "desc": "\"Elemental HERO Bubbleman\" + \"Elemental HERO Clayman\"\nMust be Fusion Summoned and cannot be Special Summoned by other ways.",
+      "race": "Warrior",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/52031567",
+      "card_images": [
+        {
+          "id": 52031567,
+          "image_url": "https://images.ygoprodeck.com/images/cards/52031567.jpg",
+          "image_url_small": "https://images.ygoprodeck.com/images/cards_small/52031567.jpg",
+          "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/52031567.jpg"
+        }
+      ],
+      "atk": 1900,
+      "def": 3000,
+      "level": 6,
+      "attribute": "EARTH"
+    },
+    {
+      "id": 60493189,
+      "name": "Elemental HERO Plasma Vice",
+      "type": "Fusion Monster",
+      "humanReadableCardType": "Fusion Monster",
+      "frameType": "fusion",
+      "desc": "\"Elemental HERO Sparkman\" + \"Elemental HERO Bladedge\"\r\nMust be Fusion Summoned. If this card attacks a Defense Position monster, inflict piercing battle damage. You can discard 1 card, then target 1 Attack Position monster your opponent controls; destroy that target.",
+      "race": "Warrior",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/60493189",
+      "card_images": [
+        {
+          "id": 60493189,
+          "image_url": "https://images.ygoprodeck.com/images/cards/60493189.jpg",
+          "image_url_small": "https://images.ygoprodeck.com/images/cards_small/60493189.jpg",
+          "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/60493189.jpg"
+        }
+      ],
+      "atk": 2600,
+      "def": 2300,
+      "level": 8,
+      "attribute": "EARTH"
+    },
+    {
+      "id": 60493189,
+      "name": "Elemental HERO Plasma Vice",
+      "type": "Fusion Monster",
+      "humanReadableCardType": "Fusion Monster",
+      "frameType": "fusion",
+      "desc": "\"Elemental HERO Sparkman\" + \"Elemental HERO Bladedge\"\r\nMust be Fusion Summoned. If this card attacks a Defense Position monster, inflict piercing battle damage. You can discard 1 card, then target 1 Attack Position monster your opponent controls; destroy that target.",
+      "race": "Warrior",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/60493189",
+      "card_images": [
+        {
+          "id": 60493189,
+          "image_url": "https://images.ygoprodeck.com/images/cards/60493189.jpg",
+          "image_url_small": "https://images.ygoprodeck.com/images/cards_small/60493189.jpg",
+          "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/60493189.jpg"
+        }
+      ],
+      "atk": 2600,
+      "def": 2300,
+      "level": 8,
+      "attribute": "EARTH"
+    },
+    {
+      "id": 81197327,
+      "name": "Elemental HERO Steam Healer",
+      "type": "Fusion Monster",
+      "humanReadableCardType": "Fusion Monster",
+      "frameType": "fusion",
+      "desc": "\"Elemental HERO Burstinatrix\" + \"Elemental HERO Bubbleman\"\r\nMust be Fusion Summoned. If this card destroys a monster by battle and sends it to the GY: Gain LP equal to that monster's original ATK in the GY.",
+      "race": "Warrior",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/81197327",
+      "card_images": [
+        {
+          "id": 81197327,
+          "image_url": "https://images.ygoprodeck.com/images/cards/81197327.jpg",
+          "image_url_small": "https://images.ygoprodeck.com/images/cards_small/81197327.jpg",
+          "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/81197327.jpg"
+        }
+      ],
+      "atk": 1800,
+      "def": 1000,
+      "level": 5,
+      "attribute": "WATER"
+    },
+    {
+      "id": 81197327,
+      "name": "Elemental HERO Steam Healer",
+      "type": "Fusion Monster",
+      "humanReadableCardType": "Fusion Monster",
+      "frameType": "fusion",
+      "desc": "\"Elemental HERO Burstinatrix\" + \"Elemental HERO Bubbleman\"\r\nMust be Fusion Summoned. If this card destroys a monster by battle and sends it to the GY: Gain LP equal to that monster's original ATK in the GY.",
+      "race": "Warrior",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/81197327",
+      "card_images": [
+        {
+          "id": 81197327,
+          "image_url": "https://images.ygoprodeck.com/images/cards/81197327.jpg",
+          "image_url_small": "https://images.ygoprodeck.com/images/cards_small/81197327.jpg",
+          "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/81197327.jpg"
+        }
+      ],
+      "atk": 1800,
+      "def": 1000,
+      "level": 5,
+      "attribute": "WATER"
+    },
+    {
+      "id": 61204971,
+      "name": "Elemental HERO Thunder Giant",
+      "type": "Fusion Monster",
+      "humanReadableCardType": "Fusion Monster",
+      "frameType": "fusion",
+      "desc": "\"Elemental HERO Sparkman\" + \"Elemental HERO Clayman\"\r\nMust be Fusion Summoned. Once per turn: You can discard 1 card, then target 1 monster on the field with original ATK less than the ATK of this card; destroy that target.",
+      "race": "Warrior",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/61204971",
+      "card_images": [
+        {
+          "id": 61204971,
+          "image_url": "https://images.ygoprodeck.com/images/cards/61204971.jpg",
+          "image_url_small": "https://images.ygoprodeck.com/images/cards_small/61204971.jpg",
+          "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/61204971.jpg"
+        }
+      ],
+      "atk": 2400,
+      "def": 1500,
+      "level": 6,
+      "attribute": "LIGHT"
+    },
+    {
+      "id": 61204971,
+      "name": "Elemental HERO Thunder Giant",
+      "type": "Fusion Monster",
+      "humanReadableCardType": "Fusion Monster",
+      "frameType": "fusion",
+      "desc": "\"Elemental HERO Sparkman\" + \"Elemental HERO Clayman\"\r\nMust be Fusion Summoned. Once per turn: You can discard 1 card, then target 1 monster on the field with original ATK less than the ATK of this card; destroy that target.",
+      "race": "Warrior",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/61204971",
+      "card_images": [
+        {
+          "id": 61204971,
+          "image_url": "https://images.ygoprodeck.com/images/cards/61204971.jpg",
+          "image_url_small": "https://images.ygoprodeck.com/images/cards_small/61204971.jpg",
+          "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/61204971.jpg"
+        }
+      ],
+      "atk": 2400,
+      "def": 1500,
+      "level": 6,
+      "attribute": "LIGHT"
+    },
+    {
+      "id": 10526791,
+      "name": "Elemental HERO Wildedge",
+      "type": "Fusion Monster",
+      "humanReadableCardType": "Fusion Monster",
+      "frameType": "fusion",
+      "desc": "\"Elemental HERO Wildheart\" + \"Elemental HERO Bladedge\"\nMust be Fusion Summoned and cannot be Special Summoned by other ways. This card can attack every monster your opponent controls (one attack on each monster per Battle Phase).",
+      "race": "Warrior",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/10526791",
+      "card_images": [
+        {
+          "id": 10526791,
+          "image_url": "https://images.ygoprodeck.com/images/cards/10526791.jpg",
+          "image_url_small": "https://images.ygoprodeck.com/images/cards_small/10526791.jpg",
+          "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/10526791.jpg"
+        }
+      ],
+      "atk": 2600,
+      "def": 2300,
+      "level": 8,
+      "attribute": "EARTH"
+    },
+    {
+      "id": 10526791,
+      "name": "Elemental HERO Wildedge",
+      "type": "Fusion Monster",
+      "humanReadableCardType": "Fusion Monster",
+      "frameType": "fusion",
+      "desc": "\"Elemental HERO Wildheart\" + \"Elemental HERO Bladedge\"\nMust be Fusion Summoned and cannot be Special Summoned by other ways. This card can attack every monster your opponent controls (one attack on each monster per Battle Phase).",
+      "race": "Warrior",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/10526791",
+      "card_images": [
+        {
+          "id": 10526791,
+          "image_url": "https://images.ygoprodeck.com/images/cards/10526791.jpg",
+          "image_url_small": "https://images.ygoprodeck.com/images/cards_small/10526791.jpg",
+          "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/10526791.jpg"
+        }
+      ],
+      "atk": 2600,
+      "def": 2300,
+      "level": 8,
+      "attribute": "EARTH"
+    }
+  ],
+  "sideDeck": [],
+  "name": "Jaden's Deck Elemental Heroes",
+  "createdAt": "2026-10-23T19:19:43.115Z",
+  "owner": "jaden"
+}

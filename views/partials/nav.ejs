@@ -1,0 +1,70 @@
+<div class="bg-rays"></div><div class="bg-grid"></div>
+<div class="topbar">
+  <a class="brand" href="/">YU-GI-OH! <small>DUEL SIMULATOR</small></a>
+  <nav class="nav">
+    <a href="/" class="<%= page==='home'?'on':'' %>">Home</a>
+    <% if (locals.user) { %>
+    <a href="/duel" class="<%= page==='duel'?'on':'' %>">Duel</a>
+    <a href="/decks" class="<%= page==='decks'?'on':'' %>">Decks</a>
+    <a href="/builder" class="<%= page==='builder'?'on':'' %>">Builder</a>
+    <% } %>
+  </nav>
+  <div class="userbox">
+    <% if (locals.user) { %>
+      <a href="/profile" class="who" title="Profile"><%= user.username %></a>
+      <button class="btn ghost small" id="btnLogout">Log out</button>
+    <% } else { %>
+      <a class="btn small" href="/login">Log in</a><a class="btn ghost small" href="/register">Sign up</a>
+    <% } %>
+  </div>
+  <div class="theme-swatches" id="themeSw" title="Colour theme"><button data-t="blue"></button><button data-t="red"></button><button data-t="yellow"></button><button data-t="purple"></button></div>
+</div>
+<script>document.querySelectorAll('#themeSw button').forEach(b => { b.onclick = () => setTheme(b.dataset.t); }); setTheme(document.documentElement.dataset.theme);</script>
+<div class="toast-host" id="toasts"></div>
+<script>{ const b = document.getElementById('btnLogout'); if (b) b.onclick = async () => { try { await fetch('/api/auth/logout', { method: 'POST' }); } finally { location.href = '/'; } }; }</script>
+<script>
+  window.toast = function (msg, err) {
+    const h = document.getElementById('toasts'); const t = document.createElement('div');
+    t.className = 'toast' + (err ? ' err' : ''); t.textContent = msg; h.appendChild(t); setTimeout(() => t.remove(), 3600);
+  };
+  window.api = async function (url, opts) {
+    const r = await fetch(url, opts); let j = null; try { j = await r.json(); } catch (e) {}
+    if (!r.ok) { const e = new Error((j && j.error) || ('Request failed (' + r.status + ')')); e.data = j; throw e; } return j;
+  };
+  window.esc = s => String(s == null ? '' : s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  window.deckCaseHTML = function (d, extra) {
+    const cov = d.script ? d.script.pct : null;
+    const cls = cov == null ? '' : cov >= 85 ? 'ok' : cov >= 50 ? 'mid' : 'low';
+    return '<div class="art" style="background-image:url(' + esc(d.cover ? d.cover.image : '') + ')"></div>' +
+      (d.portrait ? '<div class="portrait" style="background-image:url(' + esc(d.portrait) + ')"></div><div class="owner-tag">' + esc(d.ownerName) + '</div>' : '') +
+      '<div class="badge-row"><span class="chip">' + d.counts.main + ' CARDS</span>' + (d.mode ? '<span class="mode-chip ' + (d.valid === false ? 'bad' : d.mode === 'modern' ? 'modern' : '') + '">' + (d.valid === false ? 'INCOMPLETE' : d.mode.toUpperCase()) + '</span>' : '') +
+      (cov == null ? '' : '<span class="chip ' + cls + '" title="Share of this deck\'s cards whose effects are scripted">FX ' + cov + '%</span>') + '</div>' +
+      '<div class="meta"><b>' + esc(d.name) + '</b><small>' + d.counts.monsters + ' Monsters · ' + d.counts.spells + ' Spells · ' + d.counts.traps + ' Traps' +
+      (d.counts.extra ? ' · ' + d.counts.extra + ' Extra' : '') + '</small></div>';
+  };
+  window.caseClass = d => 'deck-case' + (d && d.portrait ? ' has-owner' : '');
+  // Avatar + frame picker. Resolves to { avatar, frame } ('' = use the default) or null when cancelled.
+  window.pickAvatar = async function (cur) {
+    cur = typeof cur === 'object' && cur ? cur : { avatar: cur || '', frame: '' };
+    const { avatars, frames } = await (await fetch('/api/avatars')).json();
+    return new Promise(res => {
+      let av = cur.avatar || '', fr = cur.frame || '';
+      const back = document.createElement('div'); back.className = 'modal-back on';
+      back.innerHTML = '<div class="panel modal pick-modal"><h3>Choose your duelist</h3><div class="pick-top"><div class="pick-preview" id="pkPrev"></div>' +
+        '<div class="pick-main"><div class="sec">AVATAR</div><div class="avatar-grid" id="pkAv"></div></div></div>' +
+        '<div class="sec">FRAME</div><div class="frame-strip" id="pkFr"></div>' +
+        '<div class="row-end"><button class="btn ghost small" data-d>Use defaults</button><button class="btn ghost small" data-c>Cancel</button><button class="btn gold small" data-ok>Confirm</button></div></div>';
+      const $q = s => back.querySelector(s), paint = () => {
+        $q('#pkPrev').innerHTML = avatarHTML(av || '/images/avatar/Kuriboh-DAR.png', fr || DEFAULT_FRAME, 'You');
+        $q('#pkAv').querySelectorAll('.av').forEach(b => b.classList.toggle('on', b.dataset.u === av));
+        $q('#pkFr').querySelectorAll('button').forEach(b => b.classList.toggle('on', b.dataset.f === (fr || DEFAULT_FRAME)));
+      };
+      avatars.forEach(a => { const b = document.createElement('button'); b.className = 'av'; b.dataset.u = a.url; b.title = a.name; b.innerHTML = '<span class="av-round"><img loading="lazy" src="' + a.url + '" alt=""></span><span>' + a.name + '</span>'; b.onclick = () => { av = a.url; paint(); }; $q('#pkAv').appendChild(b); });
+      frames.forEach(f => { const b = document.createElement('button'); b.dataset.f = f; b.title = (FRAME_GEO[f] || {}).name || f; b.innerHTML = avatarHTML('/images/avatar/Kuriboh-DAR.png', f, ''); b.onclick = () => { fr = f; paint(); }; $q('#pkFr').appendChild(b); });
+      const done = v => { back.remove(); res(v); };
+      $q('[data-c]').onclick = () => done(null); $q('[data-d]').onclick = () => done({ avatar: '', frame: '' }); $q('[data-ok]').onclick = () => done({ avatar: av, frame: fr });
+      back.onclick = e => { if (e.target === back) done(null); };
+      document.body.appendChild(back); paint();
+    });
+  };
+</script>

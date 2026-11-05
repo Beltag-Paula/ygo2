@@ -1,0 +1,32 @@
+<!DOCTYPE html><html lang="en"><head><title>Log in — YGO 2.0</title><%- include('partials/head') %></head>
+<body><div class="page">
+<%- include('partials/nav', { page }) %>
+<div class="panel panel-pad auth-card">
+  <div class="tabs"><button class="btn small <%= tab==='login' ? 'gold' : 'ghost' %>" id="tLogin" type="button">Log in</button><button class="btn small <%= tab==='register' ? 'gold' : 'ghost' %>" id="tReg" type="button">Create account</button></div>
+  <div class="field"><label for="u">Username</label><input type="text" id="u" maxlength="20" autocomplete="username" autofocus></div>
+  <div class="field"><label for="p">Password</label><input type="password" id="p" maxlength="200" autocomplete="current-password"></div>
+  <div class="field" id="p2row" style="display:none"><label for="p2">Repeat password</label><input type="password" id="p2" maxlength="200" autocomplete="new-password"></div>
+  <p class="sub" id="hint" style="font-size:12px;margin:0"></p>
+  <div class="err" id="err"></div>
+  <button class="btn gold" id="go" type="button" style="width:100%">Log in</button>
+</div>
+<script>
+let mode = '<%= tab %>'; const $ = id => document.getElementById(id), NEXT = <%- JSON.stringify(next) %>;
+function paint() {
+  $('tLogin').className = 'btn small ' + (mode === 'login' ? 'gold' : 'ghost'); $('tReg').className = 'btn small ' + (mode === 'register' ? 'gold' : 'ghost');
+  $('p2row').style.display = mode === 'register' ? '' : 'none'; $('go').textContent = mode === 'register' ? 'Create account' : 'Log in';
+  $('p').autocomplete = mode === 'register' ? 'new-password' : 'current-password'; $('err').textContent = '';
+  $('hint').textContent = mode === 'register' ? '3–20 letters, numbers, _ or - · password at least 8 characters. You start with five ready-to-play Classic decks.' : '';
+}
+$('tLogin').onclick = () => { mode = 'login'; paint(); }; $('tReg').onclick = () => { mode = 'register'; paint(); };
+async function submit() {
+  const u = $('u').value.trim(), p = $('p').value;
+  if (mode === 'register' && p !== $('p2').value) { $('err').textContent = 'The two passwords differ.'; return; }
+  $('go').disabled = true;
+  try { await api('/api/auth/' + (mode === 'register' ? 'register' : 'login'), { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ username: u, password: p }) }); location.href = mode === 'register' && NEXT === '/' ? '/profile?welcome=1' : NEXT; }
+  catch (e) { $('err').textContent = e.message; $('go').disabled = false; }
+}
+$('go').onclick = submit; document.querySelectorAll('input').forEach(i => i.addEventListener('keydown', e => { if (e.key === 'Enter') submit(); }));
+paint();
+</script>
+</div></body></html>

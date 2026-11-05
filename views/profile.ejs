@@ -1,0 +1,26 @@
+<!DOCTYPE html><html lang="en"><head><title>Profile — YGO 2.0</title><%- include('partials/head') %></head>
+<body><div class="page">
+<%- include('partials/nav', { page }) %>
+<h1 class="title">Your duelist</h1>
+<p class="sub" id="welcome" style="display:none">Welcome! Pick an avatar and frame — the other player sees them during duels. Then head to <a href="/duel" style="color:var(--gold-hi)">Duel</a>: five Classic decks are already in your account.</p>
+<div class="panel panel-pad" style="max-width:640px">
+  <div style="display:flex;align-items:center;gap:18px">
+    <button class="avatar-btn" id="bAvatar" style="transform:scale(1.25);margin:10px 18px"><span class="av-mini" id="avImg"></span><span>Change</span></button>
+    <div><h2 style="margin:0"><%= user.username %></h2><div class="sub" style="margin:4px 0 0">Duelist</div></div>
+  </div>
+  <div class="statgrid">
+    <div><b><%= user.pvp_wins %></b>PvP wins</div><div><b><%= user.pvp_losses %></b>PvP losses</div>
+    <div><b><%= user.bot_wins %></b>Bot wins</div><div><b><%= user.bot_losses %></b>Bot losses</div>
+  </div>
+</div>
+<script>
+let av = <%- JSON.stringify(user.avatar || '') %>, fr = <%- JSON.stringify(user.frame || '') %>;
+if (location.search.includes('welcome')) document.getElementById('welcome').style.display = '';
+function paint() { document.getElementById('avImg').innerHTML = avatarHTML(av || '/images/avatar/Kuriboh-DAR.png', fr || DEFAULT_FRAME, <%- JSON.stringify(user.username) %>); }
+document.getElementById('bAvatar').onclick = async () => {
+  const v = await pickAvatar({ avatar: av, frame: fr }); if (v === null) return;
+  try { const r = await api('/api/me', { method: 'PATCH', headers: { 'content-type': 'application/json' }, body: JSON.stringify(v) }); av = r.avatar || ''; fr = r.frame || ''; paint(); toast('Saved'); } catch (e) { toast(e.message, true); }
+};
+paint();
+</script>
+</div></body></html>

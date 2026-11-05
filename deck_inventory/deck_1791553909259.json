@@ -1,0 +1,1421 @@
+{
+  "mainDeck": [
+    {
+      "id": 598988,
+      "name": "Malefic Rainbow Dragon",
+      "typeline": [
+        "Dragon",
+        "Effect"
+      ],
+      "type": "Effect Monster",
+      "humanReadableCardType": "Effect Monster",
+      "frameType": "effect",
+      "desc": "This card cannot be Normal Summoned or Set. This card cannot be Special Summoned, except by removing from play 1 \"Rainbow Dragon\" from your hand or Deck. There can only be 1 face-up \"Malefic\" monster on the field. Other monsters you control cannot declare an attack. If there is no face-up Field Spell Card on the field, destroy this card.",
+      "race": "Dragon",
+      "atk": 4000,
+      "def": 0,
+      "level": 10,
+      "attribute": "DARK",
+      "archetype": "Malefic",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/malefic-rainbow-dragon-57",
+      "card_images": [
+        {
+          "id": 598988,
+          "image_url": "https://images.ygoprodeck.com/images/cards/598988.jpg",
+          "image_url_small": "https://images.ygoprodeck.com/images/cards_small/598988.jpg",
+          "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/598988.jpg"
+        }
+      ]
+    },
+    {
+      "id": 79407975,
+      "name": "Rainbow Dark Dragon",
+      "typeline": [
+        "Dragon",
+        "Effect"
+      ],
+      "type": "Effect Monster",
+      "humanReadableCardType": "Effect Monster",
+      "frameType": "effect",
+      "desc": "(This card is always treated as an \"Ultimate Crystal\" card.)\r\nCannot be Normal Summoned/Set. Must be Special Summoned (from your hand) by banishing 7 DARK monsters with different names from your GY. You can banish all other DARK monsters from your field and GY; this card gains 500 ATK for each card banished this way.",
+      "race": "Dragon",
+      "atk": 4000,
+      "def": 0,
+      "level": 10,
+      "attribute": "DARK",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/rainbow-dark-dragon-6659",
+      "card_images": [
+        {
+          "id": 79407975,
+          "image_url": "https://images.ygoprodeck.com/images/cards/79407975.jpg",
+          "image_url_small": "https://images.ygoprodeck.com/images/cards_small/79407975.jpg",
+          "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/79407975.jpg"
+        }
+      ]
+    },
+    {
+      "id": 79856792,
+      "name": "Rainbow Dragon",
+      "typeline": [
+        "Dragon",
+        "Effect"
+      ],
+      "type": "Effect Monster",
+      "humanReadableCardType": "Effect Monster",
+      "frameType": "effect",
+      "desc": "(This card is always treated as an \"Ultimate Crystal\" card.)\r\nCannot be Normal Summoned/Set. Must be Special Summoned (from your hand) by having 7 \"Crystal Beast\" cards with different names on your field and/or GY. This card cannot activate the following effects the turn it is Special Summoned. (Quick Effect): You can send all face-up \"Crystal Beast\" monsters you control to the GY; this card gains 1000 ATK for each monster sent to the GY. You can banish all \"Crystal Beast\" monsters from your GY; shuffle all cards on the field into the Deck.",
+      "race": "Dragon",
+      "atk": 4000,
+      "def": 0,
+      "level": 10,
+      "attribute": "LIGHT",
+      "archetype": "Crystal Beast",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/rainbow-dragon-6698",
+      "card_images": [
+        {
+          "id": 79856792,
+          "image_url": "https://images.ygoprodeck.com/images/cards/79856792.jpg",
+          "image_url_small": "https://images.ygoprodeck.com/images/cards_small/79856792.jpg",
+          "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/79856792.jpg"
+        }
+      ]
+    },
+    {
+      "id": 78371393,
+      "name": "Yubel",
+      "typeline": [
+        "Fiend",
+        "Effect"
+      ],
+      "type": "Effect Monster",
+      "humanReadableCardType": "Effect Monster",
+      "frameType": "effect",
+      "desc": "This card cannot be destroyed by battle. You take no Battle Damage from battles involving this card. Before damage calculation, when this face-up Attack Position card is attacked by an opponent's monster: Inflict damage to your opponent equal to that monster's ATK. During your End Phase: Tribute 1 other monster or destroy this card. When this card is destroyed, except by its own effect: Its owner can Special Summon 1 \"Yubel - Terror Incarnate\" from their hand, Deck, or Graveyard.",
+      "race": "Fiend",
+      "atk": 0,
+      "def": 0,
+      "level": 10,
+      "attribute": "DARK",
+      "archetype": "Yubel",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/yubel-6585",
+      "card_images": [
+        {
+          "id": 78371393,
+          "image_url": "https://images.ygoprodeck.com/images/cards/78371393.jpg",
+          "image_url_small": "https://images.ygoprodeck.com/images/cards_small/78371393.jpg",
+          "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/78371393.jpg"
+        }
+      ]
+    },
+    {
+      "id": 36795102,
+      "name": "Crystal Beast Rainbow Dragon",
+      "typeline": [
+        "Dragon",
+        "Effect"
+      ],
+      "type": "Effect Monster",
+      "humanReadableCardType": "Effect Monster",
+      "frameType": "effect",
+      "desc": "If this face-up card is destroyed in a Monster Zone, you can place it face-up in your Spell & Trap Zone as a Continuous Spell, instead of sending it to the GY. You can only use each of the following effects of \"Crystal Beast Rainbow Dragon\" once per turn. When an attack is declared involving a \"Crystal Beast\" monster: You can Special Summon this card from your hand. You can banish this Continuous Spell; Special Summon 1 Level 4 or lower \"Crystal Beast\" monster from your Deck, but negate its effects (if any), and if you do, add 1 \"Ultimate Crystal\" monster from your Deck to your hand.",
+      "race": "Dragon",
+      "atk": 3000,
+      "def": 0,
+      "level": 8,
+      "attribute": "LIGHT",
+      "archetype": "Crystal Beast",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/crystal-beast-rainbow-dragon-10762",
+      "card_images": [
+        {
+          "id": 36795102,
+          "image_url": "https://images.ygoprodeck.com/images/cards/36795102.jpg",
+          "image_url_small": "https://images.ygoprodeck.com/images/cards_small/36795102.jpg",
+          "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/36795102.jpg"
+        }
+      ]
+    },
+    {
+      "id": 13302026,
+      "name": "Queen Butterfly Danaus",
+      "typeline": [
+        "Insect",
+        "Effect"
+      ],
+      "type": "Effect Monster",
+      "humanReadableCardType": "Effect Monster",
+      "frameType": "effect",
+      "desc": "If you control this Normal Summoned/Set card (Quick Effect): You can target up to 3 Level 4 or lower Insect monsters in your GY; change this card's ATK to 0, and if you do, Special Summon those monsters, but their effects are negated. You can only use this effect of \"Queen Butterfly Danaus\" once per turn.",
+      "race": "Insect",
+      "atk": 2800,
+      "def": 1900,
+      "level": 8,
+      "attribute": "WIND",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/queen-butterfly-danaus-13517",
+      "card_images": [
+        {
+          "id": 13302026,
+          "image_url": "https://images.ygoprodeck.com/images/cards/13302026.jpg",
+          "image_url_small": "https://images.ygoprodeck.com/images/cards_small/13302026.jpg",
+          "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/13302026.jpg"
+        }
+      ]
+    },
+    {
+      "id": 3912064,
+      "name": "The Tripper Mercury",
+      "typeline": [
+        "Aqua",
+        "Effect"
+      ],
+      "type": "Effect Monster",
+      "humanReadableCardType": "Effect Monster",
+      "frameType": "effect",
+      "desc": "When this card is Tribute Summoned: You can change all monsters on the field to face-up Attack Position. You can Tribute 3 monsters to Tribute Summon (but not Set) this card. If Summoned this way, while this card is on the field all monsters your opponent controls lose ATK equal to their original ATK. This card can make a second attack during each Battle Phase.",
+      "race": "Aqua",
+      "atk": 2000,
+      "def": 2000,
+      "level": 8,
+      "attribute": "WATER",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/the-tripper-mercury-351",
+      "card_images": [
+        {
+          "id": 3912064,
+          "image_url": "https://images.ygoprodeck.com/images/cards/3912064.jpg",
+          "image_url_small": "https://images.ygoprodeck.com/images/cards_small/3912064.jpg",
+          "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/3912064.jpg"
+        }
+      ]
+    },
+    {
+      "id": 71620241,
+      "name": "Advanced Crystal Beast Sapphire Pegasus",
+      "typeline": [
+        "Beast",
+        "Effect"
+      ],
+      "type": "Effect Monster",
+      "humanReadableCardType": "Effect Monster",
+      "frameType": "effect",
+      "desc": "If \"Advanced Dark\" is not in a Field Zone, send this monster to the GY. If this card is Summoned: You can place 1 of your \"Advanced Crystal Beast\" monsters that is banished, or in your hand, Deck, or GY, face-up in your Spell & Trap Zone as a Continuous Spell. If this face-up card is destroyed in a Monster Zone, you can place it face-up in your Spell & Trap Zone as a Continuous Spell, instead of sending it to the GY.",
+      "race": "Beast",
+      "atk": 1800,
+      "def": 1200,
+      "level": 4,
+      "attribute": "WIND",
+      "archetype": "Advanced Crystal Beast",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/advanced-crystal-beast-sapphire-pegasus-13309",
+      "card_images": [
+        {
+          "id": 71620241,
+          "image_url": "https://images.ygoprodeck.com/images/cards/71620241.jpg",
+          "image_url_small": "https://images.ygoprodeck.com/images/cards_small/71620241.jpg",
+          "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/71620241.jpg"
+        }
+      ]
+    },
+    {
+      "id": 7093411,
+      "name": "Crystal Beast Sapphire Pegasus",
+      "typeline": [
+        "Beast",
+        "Effect"
+      ],
+      "type": "Effect Monster",
+      "humanReadableCardType": "Effect Monster",
+      "frameType": "effect",
+      "desc": "When this card is Summoned: You can place 1 \"Crystal Beast\" monster from your hand, Deck, or GY, face-up in your Spell & Trap Zone as a Continuous Spell. If this face-up card is destroyed in a Monster Zone, you can place it face-up in your Spell & Trap Zone as a Continuous Spell, instead of sending it to the GY.",
+      "race": "Beast",
+      "atk": 1800,
+      "def": 1200,
+      "level": 4,
+      "attribute": "WIND",
+      "archetype": "Crystal Beast",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/crystal-beast-sapphire-pegasus-610",
+      "card_images": [
+        {
+          "id": 7093411,
+          "image_url": "https://images.ygoprodeck.com/images/cards/7093411.jpg",
+          "image_url_small": "https://images.ygoprodeck.com/images/cards_small/7093411.jpg",
+          "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/7093411.jpg"
+        }
+      ]
+    },
+    {
+      "id": 18847598,
+      "name": "Advanced Crystal Beast Amber Mammoth",
+      "typeline": [
+        "Beast",
+        "Effect"
+      ],
+      "type": "Effect Monster",
+      "humanReadableCardType": "Effect Monster",
+      "frameType": "effect",
+      "desc": "If \"Advanced Dark\" is not in a Field Zone, send this monster to the GY. Once per turn, when your opponent activates a card or effect that targets your \"Advanced Crystal Beast\" card(s) or \"Advanced Dark\" (Quick Effect): You can negate the activation. Once per turn, when your \"Advanced Crystal Beast\" monster is targeted for an attack: You can negate that attack. If this face-up card is destroyed in a Monster Zone, you can place it face-up in your Spell & Trap Zone as a Continuous Spell, instead of sending it to the GY.",
+      "race": "Beast",
+      "atk": 1700,
+      "def": 1600,
+      "level": 4,
+      "attribute": "EARTH",
+      "archetype": "Advanced Crystal Beast",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/advanced-crystal-beast-amber-mammoth-13304",
+      "card_images": [
+        {
+          "id": 18847598,
+          "image_url": "https://images.ygoprodeck.com/images/cards/18847598.jpg",
+          "image_url_small": "https://images.ygoprodeck.com/images/cards_small/18847598.jpg",
+          "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/18847598.jpg"
+        }
+      ]
+    },
+    {
+      "id": 69937550,
+      "name": "Crystal Beast Amber Mammoth",
+      "typeline": [
+        "Beast",
+        "Effect"
+      ],
+      "type": "Effect Monster",
+      "humanReadableCardType": "Effect Monster",
+      "frameType": "effect",
+      "desc": "When another face-up \"Crystal Beast\" monster you control is targeted for an attack: You can make this card the attack target instead. If this face-up card is destroyed while it is in a Monster Card Zone, you can place it face-up in your Spell & Trap Card Zone as a Continuous Spell Card, instead of sending it to the Graveyard.",
+      "race": "Beast",
+      "atk": 1700,
+      "def": 1600,
+      "level": 4,
+      "attribute": "EARTH",
+      "archetype": "Crystal Beast",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/crystal-beast-amber-mammoth-5882",
+      "card_images": [
+        {
+          "id": 69937550,
+          "image_url": "https://images.ygoprodeck.com/images/cards/69937550.jpg",
+          "image_url_small": "https://images.ygoprodeck.com/images/cards_small/69937550.jpg",
+          "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/69937550.jpg"
+        }
+      ]
+    },
+    {
+      "id": 72843899,
+      "name": "Advanced Crystal Beast Topaz Tiger",
+      "typeline": [
+        "Beast",
+        "Effect"
+      ],
+      "type": "Effect Monster",
+      "humanReadableCardType": "Effect Monster",
+      "frameType": "effect",
+      "desc": "If \"Advanced Dark\" is not in a Field Zone, send this monster to the GY. All \"Advanced Crystal Beast\" monsters you control gain 400 ATK/DEF, also monsters your opponent controls lose 400 ATK/DEF. If this face-up card is destroyed in a Monster Zone, you can place it face-up in your Spell & Trap Zone as a Continuous Spell, instead of sending it to the GY.",
+      "race": "Beast",
+      "atk": 1600,
+      "def": 1000,
+      "level": 4,
+      "attribute": "EARTH",
+      "archetype": "Advanced Crystal Beast",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/advanced-crystal-beast-topaz-tiger-13310",
+      "card_images": [
+        {
+          "id": 72843899,
+          "image_url": "https://images.ygoprodeck.com/images/cards/72843899.jpg",
+          "image_url_small": "https://images.ygoprodeck.com/images/cards_small/72843899.jpg",
+          "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/72843899.jpg"
+        }
+      ]
+    },
+    {
+      "id": 95600067,
+      "name": "Crystal Beast Topaz Tiger",
+      "typeline": [
+        "Beast",
+        "Effect"
+      ],
+      "type": "Effect Monster",
+      "humanReadableCardType": "Effect Monster",
+      "frameType": "effect",
+      "desc": "If this card attacks an opponent's monster, it gains 400 ATK during the Damage Step only. If this face-up card is destroyed while it is in a Monster Card Zone, you can place it face-up in your Spell & Trap Card Zone as a Continuous Spell Card, instead of sending it to the Graveyard.",
+      "race": "Beast",
+      "atk": 1600,
+      "def": 1000,
+      "level": 4,
+      "attribute": "EARTH",
+      "archetype": "Crystal Beast",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/crystal-beast-topaz-tiger-7962",
+      "card_images": [
+        {
+          "id": 95600067,
+          "image_url": "https://images.ygoprodeck.com/images/cards/95600067.jpg",
+          "image_url_small": "https://images.ygoprodeck.com/images/cards_small/95600067.jpg",
+          "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/95600067.jpg"
+        }
+      ]
+    },
+    {
+      "id": 14469229,
+      "name": "Crystal Keeper",
+      "typeline": [
+        "Warrior",
+        "Pendulum",
+        "Effect"
+      ],
+      "type": "Pendulum Effect Monster",
+      "humanReadableCardType": "Pendulum Effect Monster",
+      "frameType": "effect_pendulum",
+      "desc": "[ Pendulum Effect ] \nEach turn, the first time an \"Ultimate Crystal\" monster(s) and/or \"Crystal Beast\" card(s) you control would be destroyed by card effect that turn, it is not destroyed.\n\n[ Monster Effect ] \nIf a \"Crystal Beast\" monster you control battles an opponent's monster, during damage calculation (Quick Effect): You can Tribute this card from your hand or face-up field; your battling monster's ATK/DEF become double its original ATK/DEF during that damage calculation only, but it is destroyed at the end of this Damage Step.",
+      "race": "Warrior",
+      "pend_desc": "Each turn, the first time an \"Ultimate Crystal\" monster(s) and/or \"Crystal Beast\" card(s) you control would be destroyed by card effect that turn, it is not destroyed.",
+      "monster_desc": "If a \"Crystal Beast\" monster you control battles an opponent's monster, during damage calculation (Quick Effect): You can Tribute this card from your hand or face-up field; your battling monster's ATK/DEF become double its original ATK/DEF during that damage calculation only, but it is destroyed at the end of this Damage Step.",
+      "atk": 1500,
+      "def": 1800,
+      "level": 4,
+      "attribute": "FIRE",
+      "archetype": "Crystal Beast",
+      "scale": 2,
+      "ygoprodeck_url": "https://ygoprodeck.com/card/crystal-keeper-1237",
+      "card_images": [
+        {
+          "id": 14469229,
+          "image_url": "https://images.ygoprodeck.com/images/cards/14469229.jpg",
+          "image_url_small": "https://images.ygoprodeck.com/images/cards_small/14469229.jpg",
+          "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/14469229.jpg"
+        }
+      ]
+    },
+    {
+      "id": 45236142,
+      "name": "Advanced Crystal Beast Cobalt Eagle",
+      "typeline": [
+        "Winged Beast",
+        "Effect"
+      ],
+      "type": "Effect Monster",
+      "humanReadableCardType": "Effect Monster",
+      "frameType": "effect",
+      "desc": "If \"Advanced Dark\" is not in a Field Zone, send this monster to the GY. You can send this card from your hand or field to the GY; add 1 \"Advanced Dark\" from your Deck to your hand. Once per turn: You can target 1 \"Advanced Crystal Beast\" card you control; return it to the hand or place it on top of the Deck. If this face-up card is destroyed in a Monster Zone, you can place it face-up in your Spell & Trap Zone as a Continuous Spell, instead of sending it to the GY.",
+      "race": "Winged Beast",
+      "atk": 1400,
+      "def": 800,
+      "level": 4,
+      "attribute": "WIND",
+      "archetype": "Advanced Crystal Beast",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/advanced-crystal-beast-cobalt-eagle-13306",
+      "card_images": [
+        {
+          "id": 45236142,
+          "image_url": "https://images.ygoprodeck.com/images/cards/45236142.jpg",
+          "image_url_small": "https://images.ygoprodeck.com/images/cards_small/45236142.jpg",
+          "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/45236142.jpg"
+        }
+      ]
+    },
+    {
+      "id": 21698716,
+      "name": "Crystal Beast Cobalt Eagle",
+      "typeline": [
+        "Winged Beast",
+        "Effect"
+      ],
+      "type": "Effect Monster",
+      "humanReadableCardType": "Effect Monster",
+      "frameType": "effect",
+      "desc": "Once per turn: You can target 1 face-up \"Crystal Beast\" card you control; return that target to the top of the Deck. If this face-up card is destroyed while it is in a Monster Card Zone, you can place it face-up in your Spell & Trap Card Zone as a Continuous Spell Card, instead of sending it to the Graveyard.",
+      "race": "Winged Beast",
+      "atk": 1400,
+      "def": 800,
+      "level": 4,
+      "attribute": "WIND",
+      "archetype": "Crystal Beast",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/crystal-beast-cobalt-eagle-1867",
+      "card_images": [
+        {
+          "id": 21698716,
+          "image_url": "https://images.ygoprodeck.com/images/cards/21698716.jpg",
+          "image_url_small": "https://images.ygoprodeck.com/images/cards_small/21698716.jpg",
+          "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/21698716.jpg"
+        }
+      ]
+    },
+    {
+      "id": 12958919,
+      "name": "Phantom Skyblaster",
+      "typeline": [
+        "Fiend",
+        "Effect"
+      ],
+      "type": "Effect Monster",
+      "humanReadableCardType": "Effect Monster",
+      "frameType": "effect",
+      "desc": "When this card is Normal or Flip Summoned: You can Special Summon any number of \"Skyblaster Tokens\" (Fiend/DARK/Level 4/ATK 500/DEF 500), up to the number of monsters you control. Once per turn, during your Standby Phase: You can inflict 300 damage to your opponent for each \"Skyblaster\" monster you control. \"Skyblaster\" monsters you control cannot declare an attack during the turn you activate this effect.",
+      "race": "Fiend",
+      "atk": 1100,
+      "def": 800,
+      "level": 4,
+      "attribute": "DARK",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/phantom-skyblaster-1114",
+      "card_images": [
+        {
+          "id": 12958919,
+          "image_url": "https://images.ygoprodeck.com/images/cards/12958919.jpg",
+          "image_url_small": "https://images.ygoprodeck.com/images/cards_small/12958919.jpg",
+          "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/12958919.jpg"
+        }
+      ]
+    },
+    {
+      "id": 8910240,
+      "name": "Rose Papillon",
+      "typeline": [
+        "Insect",
+        "Effect"
+      ],
+      "type": "Effect Monster",
+      "humanReadableCardType": "Effect Monster",
+      "frameType": "effect",
+      "desc": "During your Main Phase, you can Tribute Summon 1 Level 7 or higher monster in Attack Position in addition to your Normal Summon/Set. (You can only gain this effect once per turn.) While you control another Insect monster, this card can attack directly.",
+      "race": "Insect",
+      "atk": 1400,
+      "def": 800,
+      "level": 3,
+      "attribute": "WIND",
+      "archetype": "Rose",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/rose-papillon-13830",
+      "card_images": [
+        {
+          "id": 8910240,
+          "image_url": "https://images.ygoprodeck.com/images/cards/8910240.jpg",
+          "image_url_small": "https://images.ygoprodeck.com/images/cards_small/8910240.jpg",
+          "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/8910240.jpg"
+        }
+      ]
+    },
+    {
+      "id": 8910240,
+      "name": "Rose Papillon",
+      "typeline": [
+        "Insect",
+        "Effect"
+      ],
+      "type": "Effect Monster",
+      "humanReadableCardType": "Effect Monster",
+      "frameType": "effect",
+      "desc": "During your Main Phase, you can Tribute Summon 1 Level 7 or higher monster in Attack Position in addition to your Normal Summon/Set. (You can only gain this effect once per turn.) While you control another Insect monster, this card can attack directly.",
+      "race": "Insect",
+      "atk": 1400,
+      "def": 800,
+      "level": 3,
+      "attribute": "WIND",
+      "archetype": "Rose",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/rose-papillon-13830",
+      "card_images": [
+        {
+          "id": 8910240,
+          "image_url": "https://images.ygoprodeck.com/images/cards/8910240.jpg",
+          "image_url_small": "https://images.ygoprodeck.com/images/cards_small/8910240.jpg",
+          "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/8910240.jpg"
+        }
+      ]
+    },
+    {
+      "id": 87475570,
+      "name": "Crystal Master",
+      "typeline": [
+        "Spellcaster",
+        "Pendulum",
+        "Effect"
+      ],
+      "type": "Pendulum Effect Monster",
+      "humanReadableCardType": "Pendulum Effect Monster",
+      "frameType": "effect_pendulum",
+      "desc": "[ Pendulum Effect ] \nYour opponent cannot target \"Ultimate Crystal\" monsters or \"Crystal Beast\" cards you control with card effects.\n\n[ Monster Effect ] \nYou can Tribute this card; add 1 \"Ultimate Crystal\" monster, \"Crystal Beast\" monster, or \"Crystal\" Spell/Trap from your Deck to your hand.",
+      "race": "Spellcaster",
+      "pend_desc": "Your opponent cannot target \"Ultimate Crystal\" monsters or \"Crystal Beast\" cards you control with card effects.",
+      "monster_desc": "You can Tribute this card; add 1 \"Ultimate Crystal\" monster, \"Crystal Beast\" monster, or \"Crystal\" Spell/Trap from your Deck to your hand.",
+      "atk": 1300,
+      "def": 1000,
+      "level": 3,
+      "attribute": "DARK",
+      "archetype": "Crystal Beast",
+      "scale": 5,
+      "ygoprodeck_url": "https://ygoprodeck.com/card/crystal-master-7319",
+      "card_images": [
+        {
+          "id": 87475570,
+          "image_url": "https://images.ygoprodeck.com/images/cards/87475570.jpg",
+          "image_url_small": "https://images.ygoprodeck.com/images/cards_small/87475570.jpg",
+          "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/87475570.jpg"
+        }
+      ]
+    },
+    {
+      "id": 19963185,
+      "name": "Advanced Crystal Beast Amethyst Cat",
+      "typeline": [
+        "Beast",
+        "Effect"
+      ],
+      "type": "Effect Monster",
+      "humanReadableCardType": "Effect Monster",
+      "frameType": "effect",
+      "desc": "If \"Advanced Dark\" is not in a Field Zone, send this monster to the GY. Your \"Advanced Crystal Beast\" monsters can attack directly, but when they do so using this effect, the battle damage inflicted to your opponent is halved. If this face-up card is destroyed in a Monster Zone, you can place it face-up in your Spell & Trap Zone as a Continuous Spell, instead of sending it to the GY.",
+      "race": "Beast",
+      "atk": 1200,
+      "def": 400,
+      "level": 3,
+      "attribute": "EARTH",
+      "archetype": "Advanced Crystal Beast",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/advanced-crystal-beast-amethyst-cat-13305",
+      "card_images": [
+        {
+          "id": 19963185,
+          "image_url": "https://images.ygoprodeck.com/images/cards/19963185.jpg",
+          "image_url_small": "https://images.ygoprodeck.com/images/cards_small/19963185.jpg",
+          "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/19963185.jpg"
+        }
+      ]
+    },
+    {
+      "id": 32933942,
+      "name": "Crystal Beast Amethyst Cat",
+      "typeline": [
+        "Beast",
+        "Effect"
+      ],
+      "type": "Effect Monster",
+      "humanReadableCardType": "Effect Monster",
+      "frameType": "effect",
+      "desc": "This card can attack your opponent directly, but when it uses this effect, any Battle Damage it inflicts to your opponent is halved. If this face-up card is destroyed while it is in a Monster Card Zone, you can place it face-up in your Spell & Trap Card Zone as a Continuous Spell Card, instead of sending it to the Graveyard.",
+      "race": "Beast",
+      "atk": 1200,
+      "def": 400,
+      "level": 3,
+      "attribute": "EARTH",
+      "archetype": "Crystal Beast",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/crystal-beast-amethyst-cat-2803",
+      "card_images": [
+        {
+          "id": 32933942,
+          "image_url": "https://images.ygoprodeck.com/images/cards/32933942.jpg",
+          "image_url_small": "https://images.ygoprodeck.com/images/cards_small/32933942.jpg",
+          "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/32933942.jpg"
+        }
+      ]
+    },
+    {
+      "id": 46358784,
+      "name": "Advanced Crystal Beast Emerald Tortoise",
+      "typeline": [
+        "Aqua",
+        "Effect"
+      ],
+      "type": "Effect Monster",
+      "humanReadableCardType": "Effect Monster",
+      "frameType": "effect",
+      "desc": "If \"Advanced Dark\" is not in a Field Zone, send this monster to the GY. Once per turn (Quick Effect): You can target 1 face-up monster on the field; change its battle position. If this face-up card is destroyed in a Monster Zone, you can place it face-up in your Spell & Trap Zone as a Continuous Spell, instead of sending it to the GY.",
+      "race": "Aqua",
+      "atk": 600,
+      "def": 2000,
+      "level": 3,
+      "attribute": "WATER",
+      "archetype": "Advanced Crystal Beast",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/advanced-crystal-beast-emerald-tortoise-13307",
+      "card_images": [
+        {
+          "id": 46358784,
+          "image_url": "https://images.ygoprodeck.com/images/cards/46358784.jpg",
+          "image_url_small": "https://images.ygoprodeck.com/images/cards_small/46358784.jpg",
+          "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/46358784.jpg"
+        }
+      ]
+    },
+    {
+      "id": 68215963,
+      "name": "Crystal Beast Emerald Tortoise",
+      "typeline": [
+        "Aqua",
+        "Effect"
+      ],
+      "type": "Effect Monster",
+      "humanReadableCardType": "Effect Monster",
+      "frameType": "effect",
+      "desc": "Once per turn: You can target 1 monster you control that attacked this turn; change that target to Defense Position. If this face-up card is destroyed while it is in a Monster Card Zone, you can place it face-up in your Spell & Trap Card Zone as a Continuous Spell Card, instead of sending it to the Graveyard.",
+      "race": "Aqua",
+      "atk": 600,
+      "def": 2000,
+      "level": 3,
+      "attribute": "WATER",
+      "archetype": "Crystal Beast",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/crystal-beast-emerald-tortoise-5735",
+      "card_images": [
+        {
+          "id": 68215963,
+          "image_url": "https://images.ygoprodeck.com/images/cards/68215963.jpg",
+          "image_url_small": "https://images.ygoprodeck.com/images/cards_small/68215963.jpg",
+          "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/68215963.jpg"
+        }
+      ]
+    },
+    {
+      "id": 83575471,
+      "name": "Advanced Crystal Beast Ruby Carbuncle",
+      "typeline": [
+        "Fairy",
+        "Effect"
+      ],
+      "type": "Effect Monster",
+      "humanReadableCardType": "Effect Monster",
+      "frameType": "effect",
+      "desc": "If \"Advanced Dark\" is not in a Field Zone, send this monster to the GY. If this face-up card is destroyed in a Monster Zone, you can place it face-up in your Spell & Trap Zone as a Continuous Spell, instead of sending it to the GY. While this card is treated as a Continuous Spell: You can Special Summon this card, then you can Special Summon as many \"Advanced Crystal Beast\" Monster Cards as possible from your Spell & Trap Zones. You can only use this effect of \"Advanced Crystal Beast Ruby Carbuncle\" once per turn.",
+      "race": "Fairy",
+      "atk": 300,
+      "def": 300,
+      "level": 3,
+      "attribute": "LIGHT",
+      "archetype": "Advanced Crystal Beast",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/advanced-crystal-beast-ruby-carbuncle-13308",
+      "card_images": [
+        {
+          "id": 83575471,
+          "image_url": "https://images.ygoprodeck.com/images/cards/83575471.jpg",
+          "image_url_small": "https://images.ygoprodeck.com/images/cards_small/83575471.jpg",
+          "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/83575471.jpg"
+        }
+      ]
+    },
+    {
+      "id": 32710364,
+      "name": "Crystal Beast Ruby Carbuncle",
+      "typeline": [
+        "Fairy",
+        "Effect"
+      ],
+      "type": "Effect Monster",
+      "humanReadableCardType": "Effect Monster",
+      "frameType": "effect",
+      "desc": "When this card is Special Summoned: You can Special Summon as many \"Crystal Beast\" Monster Cards as possible from your Spell & Trap Zones. If this face-up card is destroyed in a Monster Zone, you can place it face-up in your Spell & Trap Zone as a Continuous Spell, instead of sending it to the GY.",
+      "race": "Fairy",
+      "atk": 300,
+      "def": 300,
+      "level": 3,
+      "attribute": "LIGHT",
+      "archetype": "Crystal Beast",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/crystal-beast-ruby-carbuncle-2784",
+      "card_images": [
+        {
+          "id": 32710364,
+          "image_url": "https://images.ygoprodeck.com/images/cards/32710364.jpg",
+          "image_url_small": "https://images.ygoprodeck.com/images/cards_small/32710364.jpg",
+          "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/32710364.jpg"
+        }
+      ]
+    },
+    {
+      "id": 48343627,
+      "name": "Grave Squirmer",
+      "typeline": [
+        "Fiend",
+        "Effect"
+      ],
+      "type": "Effect Monster",
+      "humanReadableCardType": "Effect Monster",
+      "frameType": "effect",
+      "desc": "If this card is destroyed by battle and sent to the Graveyard: Target 1 card on the field; destroy that target.",
+      "race": "Fiend",
+      "atk": 0,
+      "def": 0,
+      "level": 1,
+      "attribute": "DARK",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/grave-squirmer-4125",
+      "card_images": [
+        {
+          "id": 48343627,
+          "image_url": "https://images.ygoprodeck.com/images/cards/48343627.jpg",
+          "image_url_small": "https://images.ygoprodeck.com/images/cards_small/48343627.jpg",
+          "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/48343627.jpg"
+        }
+      ]
+    },
+    {
+      "id": 47408488,
+      "name": "Crystal Tree",
+      "type": "Spell Card",
+      "humanReadableCardType": "Continuous Spell",
+      "frameType": "spell",
+      "desc": "Each time a \"Crystal Beast\" monster(s) is placed in either player's Spell & Trap Zone, place 1 Crystal Counter on this card. You can send this card to the GY; take a number of \"Crystal Beast\" monsters from your Deck equal to the number of Crystal Counters that were on this card, and place them face-up in your Spell & Trap Zone as Continuous Spells.",
+      "race": "Continuous",
+      "archetype": "Crystal Beast",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/crystal-tree-4044",
+      "card_images": [
+        {
+          "id": 47408488,
+          "image_url": "https://images.ygoprodeck.com/images/cards/47408488.jpg",
+          "image_url_small": "https://images.ygoprodeck.com/images/cards_small/47408488.jpg",
+          "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/47408488.jpg"
+        }
+      ]
+    },
+    {
+      "id": 10938846,
+      "name": "Rainbow Bridge of the Heart",
+      "type": "Spell Card",
+      "humanReadableCardType": "Continuous Spell",
+      "frameType": "spell",
+      "desc": "During your Main Phase, you can Normal Summon 1 \"Crystal Beast\" monster, in addition to your Normal Summon/Set. (You can only gain this effect once per turn.) You can only use each of the following effects of \"Rainbow Bridge of the Heart\" once per turn. During your Main Phase: You can destroy 1 \"Crystal Beast\" card you control or in your hand, and if you do, add 1 \"Crystal\" Spell/Trap from your Deck to your hand. If a \"Crystal Beast\" card(s) is placed in your Spell & Trap Zone, even during the Damage Step: You can target 1 card your opponent controls; return both that card and this card to the hand.",
+      "race": "Continuous",
+      "archetype": "Rainbow Bridge",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/rainbow-bridge-of-the-heart-13313",
+      "card_images": [
+        {
+          "id": 10938846,
+          "image_url": "https://images.ygoprodeck.com/images/cards/10938846.jpg",
+          "image_url_small": "https://images.ygoprodeck.com/images/cards_small/10938846.jpg",
+          "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/10938846.jpg"
+        }
+      ]
+    },
+    {
+      "id": 10004783,
+      "name": "Crystal Release",
+      "type": "Spell Card",
+      "humanReadableCardType": "Equip Spell",
+      "frameType": "spell",
+      "desc": "Equip only to a \"Crystal Beast\" monster. It gains 800 ATK. When this card is sent from the field to the GY: You can place 1 \"Crystal Beast\" monster from your Deck face-up in your Spell & Trap Zone as a Continuous Spell.",
+      "race": "Equip",
+      "archetype": "Crystal Beast",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/crystal-release-865",
+      "card_images": [
+        {
+          "id": 10004783,
+          "image_url": "https://images.ygoprodeck.com/images/cards/10004783.jpg",
+          "image_url_small": "https://images.ygoprodeck.com/images/cards_small/10004783.jpg",
+          "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/10004783.jpg"
+        }
+      ]
+    },
+    {
+      "id": 3574681,
+      "name": "Golden Rule",
+      "type": "Spell Card",
+      "humanReadableCardType": "Equip Spell",
+      "frameType": "spell",
+      "desc": "(This card is always treated as a \"Crystal\" card.)\r\nPlace 2 \"Crystal Beast\" monsters from your Deck face-up in your Spell & Trap Zone as Continuous Spells, then Special Summon 1 \"Crystal Beast\" monster from your hand or GY with a different name than those cards, and if you do, equip it with this card. When this card leaves the field, destroy that monster. You can only activate 1 \"Golden Rule\" per turn.",
+      "race": "Equip",
+      "archetype": "Crystal",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/golden-rule-13635",
+      "card_images": [
+        {
+          "id": 3574681,
+          "image_url": "https://images.ygoprodeck.com/images/cards/3574681.jpg",
+          "image_url_small": "https://images.ygoprodeck.com/images/cards_small/3574681.jpg",
+          "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/3574681.jpg"
+        }
+      ]
+    },
+    {
+      "id": 12644061,
+      "name": "Advanced Dark",
+      "type": "Spell Card",
+      "humanReadableCardType": "Field Spell",
+      "frameType": "spell",
+      "desc": "All \"Crystal Beast\" monsters on the field and in the GY become DARK. If an \"Ultimate Crystal\" monster attacks, negate the effects of the attack target during that Battle Phase. During damage calculation, if a \"Crystal Beast\" monster you control battles and you would take damage: You can send 1 \"Crystal Beast\" monster from your Deck to the GY; you take no battle damage from that battle.",
+      "race": "Field",
+      "archetype": "Crystal Beast",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/advanced-dark-1093",
+      "card_images": [
+        {
+          "id": 12644061,
+          "image_url": "https://images.ygoprodeck.com/images/cards/12644061.jpg",
+          "image_url_small": "https://images.ygoprodeck.com/images/cards_small/12644061.jpg",
+          "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/12644061.jpg"
+        }
+      ]
+    },
+    {
+      "id": 34487429,
+      "name": "Ancient City - Rainbow Ruins",
+      "type": "Spell Card",
+      "humanReadableCardType": "Field Spell",
+      "frameType": "spell",
+      "desc": "You must have this many \"Crystal Beast\" cards in your Spell & Trap Card Zone to activate and to resolve these effects. ● 1+: This card cannot be destroyed by card effects. ● 2+: Once per turn (including the opponent's) you can halve the Battle Damage you take. ● 3+: During either player's turn, when a Spell/Trap Card is activated: You can send 1 \"Crystal Beast\" monster you control to the Graveyard; negate the activation, and if you do, destroy it. ● 4+: Once per turn, during your Main Phase: You can draw 1 card. ● 5: Once per turn, during your Main Phase: You can target 1 \"Crystal Beast\" card in your Spell & Trap Card Zone; Special Summon that target.",
+      "race": "Field",
+      "archetype": "Crystal Beast",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/ancient-city-rainbow-ruins-2929",
+      "card_images": [
+        {
+          "id": 34487429,
+          "image_url": "https://images.ygoprodeck.com/images/cards/34487429.jpg",
+          "image_url_small": "https://images.ygoprodeck.com/images/cards_small/34487429.jpg",
+          "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/34487429.jpg"
+        }
+      ]
+    },
+    {
+      "id": 72881007,
+      "name": "Crystal Abundance",
+      "type": "Spell Card",
+      "humanReadableCardType": "Normal Spell",
+      "frameType": "spell",
+      "desc": "Send 4 \"Crystal Beast\" cards from your Spell & Trap Card Zone to the Graveyard; send all cards on the field to the Graveyard, then Special Summon as many \"Crystal Beast\" monsters as possible from your Graveyard, up to the number of cards your opponent controlled that were sent to the Graveyard by this card's effect.",
+      "race": "Normal",
+      "archetype": "Crystal Beast",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/crystal-abundance-6115",
+      "card_images": [
+        {
+          "id": 72881007,
+          "image_url": "https://images.ygoprodeck.com/images/cards/72881007.jpg",
+          "image_url_small": "https://images.ygoprodeck.com/images/cards_small/72881007.jpg",
+          "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/72881007.jpg"
+        }
+      ]
+    },
+    {
+      "id": 58371671,
+      "name": "Crystal Aegis",
+      "type": "Spell Card",
+      "humanReadableCardType": "Normal Spell",
+      "frameType": "spell",
+      "desc": "Target 1 \"Crystal Beast\" Monster Card you control; destroy it, then Special Summon 1 \"Crystal Beast Token\" with the destroyed monster's original Type, Attribute, Level, and ATK/DEF. If a \"Crystal Beast\" card(s) is placed in your Spell & Trap Zone while this card is in your GY, even during the Damage Step: You can banish this card; Special Summon 1 \"Crystal Beast\" Monster Card from your Spell & Trap Zone. You can only use this effect of \"Crystal Aegis\" once per turn.",
+      "race": "Normal",
+      "archetype": "Crystal",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/crystal-aegis-13254",
+      "card_images": [
+        {
+          "id": 58371671,
+          "image_url": "https://images.ygoprodeck.com/images/cards/58371671.jpg",
+          "image_url_small": "https://images.ygoprodeck.com/images/cards_small/58371671.jpg",
+          "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/58371671.jpg"
+        }
+      ]
+    },
+    {
+      "id": 95326659,
+      "name": "Crystal Beacon",
+      "type": "Spell Card",
+      "humanReadableCardType": "Normal Spell",
+      "frameType": "spell",
+      "desc": "Special Summon 1 \"Crystal Beast\" monster from your Deck. You must have 2 or more \"Crystal Beast\" cards in your Spell & Trap Card Zone to activate and to resolve this effect.",
+      "race": "Normal",
+      "archetype": "Crystal Beast",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/crystal-beacon-7937",
+      "card_images": [
+        {
+          "id": 95326659,
+          "image_url": "https://images.ygoprodeck.com/images/cards/95326659.jpg",
+          "image_url_small": "https://images.ygoprodeck.com/images/cards_small/95326659.jpg",
+          "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/95326659.jpg"
+        }
+      ]
+    },
+    {
+      "id": 35486099,
+      "name": "Crystal Blessing",
+      "type": "Spell Card",
+      "humanReadableCardType": "Normal Spell",
+      "frameType": "spell",
+      "desc": "Target up to 2 \"Crystal Beast\" monsters in your Graveyard; place those targets face-up in your Spell & Trap Card Zone as Continuous Spell Cards.",
+      "race": "Normal",
+      "archetype": "Crystal Beast",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/crystal-blessing-3006",
+      "card_images": [
+        {
+          "id": 35486099,
+          "image_url": "https://images.ygoprodeck.com/images/cards/35486099.jpg",
+          "image_url_small": "https://images.ygoprodeck.com/images/cards_small/35486099.jpg",
+          "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/35486099.jpg"
+        }
+      ]
+    },
+    {
+      "id": 9334391,
+      "name": "Crystal Bond",
+      "type": "Spell Card",
+      "humanReadableCardType": "Normal Spell",
+      "frameType": "spell",
+      "desc": "Add 1 \"Crystal Beast\" monster from your Deck to your hand, and place 1 \"Crystal Beast\" monster with a different name from your Deck face-up in your Spell & Trap Zone as a Continuous Spell. You can only activate 1 \"Crystal Bond\" per turn.",
+      "race": "Normal",
+      "archetype": "Crystal Beast",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/crystal-bond-9076",
+      "card_images": [
+        {
+          "id": 9334391,
+          "image_url": "https://images.ygoprodeck.com/images/cards/9334391.jpg",
+          "image_url_small": "https://images.ygoprodeck.com/images/cards_small/9334391.jpg",
+          "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/9334391.jpg"
+        }
+      ]
+    },
+    {
+      "id": 8275702,
+      "name": "Crystal Promise",
+      "type": "Spell Card",
+      "humanReadableCardType": "Normal Spell",
+      "frameType": "spell",
+      "desc": "Target 1 \"Crystal Beast\" card in your Spell & Trap Card Zone; Special Summon that target.",
+      "race": "Normal",
+      "archetype": "Crystal Beast",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/crystal-promise-701",
+      "card_images": [
+        {
+          "id": 8275702,
+          "image_url": "https://images.ygoprodeck.com/images/cards/8275702.jpg",
+          "image_url_small": "https://images.ygoprodeck.com/images/cards_small/8275702.jpg",
+          "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/8275702.jpg"
+        }
+      ]
+    },
+    {
+      "id": 60876124,
+      "name": "Rare Value",
+      "type": "Spell Card",
+      "humanReadableCardType": "Normal Spell",
+      "frameType": "spell",
+      "desc": "If you control 2 or more \"Crystal Beast\" cards in your Spell & Trap Zone: Your opponent chooses 1 \"Crystal Beast\" card in your Spell & Trap Zone, you send it to the GY, and if you do, you draw 2 cards.",
+      "race": "Normal",
+      "archetype": "Crystal Beast",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/rare-value-5165",
+      "card_images": [
+        {
+          "id": 60876124,
+          "image_url": "https://images.ygoprodeck.com/images/cards/60876124.jpg",
+          "image_url_small": "https://images.ygoprodeck.com/images/cards_small/60876124.jpg",
+          "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/60876124.jpg"
+        }
+      ]
+    },
+    {
+      "id": 12877076,
+      "name": "Awakening of the Crystal Ultimates",
+      "type": "Spell Card",
+      "humanReadableCardType": "Quick-Play Spell",
+      "frameType": "spell",
+      "desc": "Reveal 1 \"Ultimate Crystal\" monster in your hand, then activate 1 of these effects. If you control an \"Ultimate Crystal\" monster, you can activate 1 or 2 of these effects in sequence, instead (and do not have to reveal a monster).\r\n● Take 1 \"Rainbow Bridge\" card or 1 \"Rainbow Refraction\" from your Deck, and either add it to your hand or send it to the GY.\r\n● Special Summon 1 \"Crystal Beast\" Monster Card from your hand, Deck, GY, or Spell & Trap Zone.\r\nYou can only activate 1 \"Awakening of the Crystal Ultimates\" per turn.",
+      "race": "Quick-Play",
+      "archetype": "Crystal",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/awakening-of-the-crystal-ultimates-13274",
+      "card_images": [
+        {
+          "id": 12877076,
+          "image_url": "https://images.ygoprodeck.com/images/cards/12877076.jpg",
+          "image_url_small": "https://images.ygoprodeck.com/images/cards_small/12877076.jpg",
+          "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/12877076.jpg"
+        }
+      ]
+    },
+    {
+      "id": 74519184,
+      "name": "Hand Destruction",
+      "type": "Spell Card",
+      "humanReadableCardType": "Quick-Play Spell",
+      "frameType": "spell",
+      "desc": "Each player sends 2 cards from their hand to the GY, then draws 2 cards.",
+      "race": "Quick-Play",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/hand-destruction-6263",
+      "card_images": [
+        {
+          "id": 74519184,
+          "image_url": "https://images.ygoprodeck.com/images/cards/74519184.jpg",
+          "image_url_small": "https://images.ygoprodeck.com/images/cards_small/74519184.jpg",
+          "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/74519184.jpg"
+        }
+      ]
+    },
+    {
+      "id": 40854824,
+      "name": "Rainbow Refraction",
+      "type": "Spell Card",
+      "humanReadableCardType": "Quick-Play Spell",
+      "frameType": "spell",
+      "desc": "If a monster(s) you control whose original name is \"Rainbow Dragon\" or \"Rainbow Dark Dragon\" activated its effect this turn: Special Summon any number of \"Crystal Beast\" monsters with different names from your Deck.",
+      "race": "Quick-Play",
+      "archetype": "Crystal Beast",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/rainbow-refraction-3476",
+      "card_images": [
+        {
+          "id": 40854824,
+          "image_url": "https://images.ygoprodeck.com/images/cards/40854824.jpg",
+          "image_url_small": "https://images.ygoprodeck.com/images/cards_small/40854824.jpg",
+          "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/40854824.jpg"
+        }
+      ]
+    },
+    {
+      "id": 45939841,
+      "name": "Twister",
+      "type": "Spell Card",
+      "humanReadableCardType": "Quick-Play Spell",
+      "frameType": "spell",
+      "desc": "Pay 500 LP, then target 1 face-up Spell/Trap on the field; destroy that target.",
+      "race": "Quick-Play",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/twister-3912",
+      "card_images": [
+        {
+          "id": 45939841,
+          "image_url": "https://images.ygoprodeck.com/images/cards/45939841.jpg",
+          "image_url_small": "https://images.ygoprodeck.com/images/cards_small/45939841.jpg",
+          "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/45939841.jpg"
+        }
+      ]
+    },
+    {
+      "id": 47149093,
+      "name": "Crystal Brilliance",
+      "type": "Trap Card",
+      "humanReadableCardType": "Continuous Trap",
+      "frameType": "trap",
+      "desc": "You can only control 1 \"Crystal Brilliance\". Each \"Crystal Beast\" monster you control gains ATK equal to its original DEF. If a \"Crystal Beast\" card(s) is placed in your Spell & Trap Zone, even during the Damage Step: You can send this face-up card to the GY; Special Summon 1 \"Crystal Beast\" monster from your hand or GY, also any damage you take this turn is halved.",
+      "race": "Continuous",
+      "archetype": "Crystal",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/crystal-brilliance-13283",
+      "card_images": [
+        {
+          "id": 47149093,
+          "image_url": "https://images.ygoprodeck.com/images/cards/47149093.jpg",
+          "image_url_small": "https://images.ygoprodeck.com/images/cards_small/47149093.jpg",
+          "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/47149093.jpg"
+        }
+      ]
+    },
+    {
+      "id": 87259933,
+      "name": "Crystal Conclave",
+      "type": "Trap Card",
+      "humanReadableCardType": "Continuous Trap",
+      "frameType": "trap",
+      "desc": "Once per turn, if a face-up \"Crystal Beast\" monster(s) you control is destroyed by battle or card effect: You can Special Summon 1 \"Crystal Beast\" monster from your Deck. You can send this face-up card from the field to the GY, then target 1 \"Crystal Beast\" card you control and 1 card on the field; return them to the hand. You cannot activate these effects in the same Chain.",
+      "race": "Continuous",
+      "archetype": "Crystal Beast",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/crystal-conclave-7301",
+      "card_images": [
+        {
+          "id": 87259933,
+          "image_url": "https://images.ygoprodeck.com/images/cards/87259933.jpg",
+          "image_url_small": "https://images.ygoprodeck.com/images/cards_small/87259933.jpg",
+          "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/87259933.jpg"
+        }
+      ]
+    },
+    {
+      "id": 11155484,
+      "name": "Crystal Miracle",
+      "type": "Trap Card",
+      "humanReadableCardType": "Counter Trap",
+      "frameType": "trap",
+      "desc": "When a Spell/Trap Card, or monster effect, is activated: Destroy 1 \"Crystal Beast\" card you control, and if you do, negate that activation, and if you do that, destroy that card. If a \"Crystal Beast\" card(s) is placed in your Spell & Trap Zone while this card is in your GY, even during the Damage Step: You can banish this card; place 1 \"Crystal Beast\" monster from your hand, Deck, or GY, face-up in your Spell & Trap Zone as a Continuous Spell. You can only use this effect of \"Crystal Miracle\" once per turn.",
+      "race": "Counter",
+      "archetype": "Crystal",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/crystal-miracle-13253",
+      "card_images": [
+        {
+          "id": 11155484,
+          "image_url": "https://images.ygoprodeck.com/images/cards/11155484.jpg",
+          "image_url_small": "https://images.ygoprodeck.com/images/cards_small/11155484.jpg",
+          "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/11155484.jpg"
+        }
+      ]
+    },
+    {
+      "id": 11136371,
+      "name": "Counter Gem",
+      "type": "Trap Card",
+      "humanReadableCardType": "Normal Trap",
+      "frameType": "trap",
+      "desc": "Send all cards in your Spell & Trap Card Zone to the Graveyard. Place as many \"Crystal Beast\" monsters as possible from your Graveyard in your Spell & Trap Card Zone, face-up, as Continuous Spell Cards. During the End Phase, destroy all face-up \"Crystal Beast\" cards you control.",
+      "race": "Normal",
+      "archetype": "Crystal Beast",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/counter-gem-963",
+      "card_images": [
+        {
+          "id": 11136371,
+          "image_url": "https://images.ygoprodeck.com/images/cards/11136371.jpg",
+          "image_url_small": "https://images.ygoprodeck.com/images/cards_small/11136371.jpg",
+          "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/11136371.jpg"
+        }
+      ]
+    },
+    {
+      "id": 85766789,
+      "name": "Crystal Boon",
+      "type": "Trap Card",
+      "humanReadableCardType": "Normal Trap",
+      "frameType": "trap",
+      "desc": "Special Summon up to 2 \"Crystal Beast\" Monster Cards from your Spell & Trap Zone, and if you do, gain LP equal to their combined original ATK. If a \"Crystal Beast\" card(s) is placed in your Spell & Trap Zone while this card is in your GY, even during the Damage Step: You can banish this card; excavate the top card of your Deck, and if it is a \"Crystal Beast\" monster, either add it to your hand or Special Summon it. Otherwise, send that card to the GY. You can only use this effect of \"Crystal Boon\" once per turn.",
+      "race": "Normal",
+      "archetype": "Crystal",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/crystal-boon-13252",
+      "card_images": [
+        {
+          "id": 85766789,
+          "image_url": "https://images.ygoprodeck.com/images/cards/85766789.jpg",
+          "image_url_small": "https://images.ygoprodeck.com/images/cards_small/85766789.jpg",
+          "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/85766789.jpg"
+        }
+      ]
+    },
+    {
+      "id": 47121070,
+      "name": "Crystal Pair",
+      "type": "Trap Card",
+      "humanReadableCardType": "Normal Trap",
+      "frameType": "trap",
+      "desc": "When a \"Crystal Beast\" monster you control is destroyed by battle and sent to the Graveyard: Place 1 \"Crystal Beast\" monster from your Deck face-up in your Spell & Trap Card Zone as a Continuous Spell Card, then you take no Battle Damage for the rest of this turn.",
+      "race": "Normal",
+      "archetype": "Crystal Beast",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/crystal-pair-4022",
+      "card_images": [
+        {
+          "id": 47121070,
+          "image_url": "https://images.ygoprodeck.com/images/cards/47121070.jpg",
+          "image_url_small": "https://images.ygoprodeck.com/images/cards_small/47121070.jpg",
+          "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/47121070.jpg"
+        }
+      ]
+    },
+    {
+      "id": 96331676,
+      "name": "Crystal Raigeki",
+      "type": "Trap Card",
+      "humanReadableCardType": "Normal Trap",
+      "frameType": "trap",
+      "desc": "Send 1 \"Crystal Beast\" card from your Spell & Trap Card Zone to the Graveyard to target 1 card your opponent controls; destroy that target.",
+      "race": "Normal",
+      "archetype": "Crystal Beast",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/crystal-raigeki-8015",
+      "card_images": [
+        {
+          "id": 96331676,
+          "image_url": "https://images.ygoprodeck.com/images/cards/96331676.jpg",
+          "image_url_small": "https://images.ygoprodeck.com/images/cards_small/96331676.jpg",
+          "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/96331676.jpg"
+        }
+      ]
+    },
+    {
+      "id": 97970833,
+      "name": "Last Resort",
+      "type": "Trap Card",
+      "humanReadableCardType": "Normal Trap",
+      "frameType": "trap",
+      "desc": "Activate only when your opponent's monster declares an attack. You can select 1 \"Ancient City - Rainbow Ruins\" from your Deck and activate it. If your opponent had an active Field Spell Card when this card was activated, they can draw 1 card.",
+      "race": "Normal",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/last-resort-8141",
+      "card_images": [
+        {
+          "id": 97970833,
+          "image_url": "https://images.ygoprodeck.com/images/cards/97970833.jpg",
+          "image_url_small": "https://images.ygoprodeck.com/images/cards_small/97970833.jpg",
+          "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/97970833.jpg"
+        }
+      ]
+    },
+    {
+      "id": 44095762,
+      "name": "Mirror Force",
+      "type": "Trap Card",
+      "humanReadableCardType": "Normal Trap",
+      "frameType": "trap",
+      "desc": "When an opponent's monster declares an attack: Destroy all your opponent's Attack Position monsters.",
+      "race": "Normal",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/mirror-force-3764",
+      "banlist_info": {
+        "ban_goat": "Limited"
+      },
+      "card_images": [
+        {
+          "id": 44095762,
+          "image_url": "https://images.ygoprodeck.com/images/cards/44095762.jpg",
+          "image_url_small": "https://images.ygoprodeck.com/images/cards_small/44095762.jpg",
+          "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/44095762.jpg"
+        }
+      ]
+    },
+    {
+      "id": 5611760,
+      "name": "Rainbow Bridge of Salvation",
+      "type": "Trap Card",
+      "humanReadableCardType": "Normal Trap",
+      "frameType": "trap",
+      "desc": "If there are 2 or more different Monster Types among the Level 10 or higher monsters on the field: Shuffle all cards except this one from both players' hands, fields, and GYs into the Deck, then each player draws 5 cards. You can banish this card from your GY; add 1 \"Crystal Beast\" monster and 1 Field Spell from your Deck to your hand. You can only apply each effect of \"Rainbow Bridge of Salvation\" once per Duel.",
+      "race": "Normal",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/rainbow-bridge-of-salvation-13037",
+      "card_images": [
+        {
+          "id": 5611760,
+          "image_url": "https://images.ygoprodeck.com/images/cards/5611760.jpg",
+          "image_url_small": "https://images.ygoprodeck.com/images/cards_small/5611760.jpg",
+          "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/5611760.jpg"
+        }
+      ]
+    },
+    {
+      "id": 63806265,
+      "name": "Rainbow Gravity",
+      "type": "Trap Card",
+      "humanReadableCardType": "Normal Trap",
+      "frameType": "trap",
+      "desc": "If you have 7 \"Crystal Beast\" cards with different names on the field or in your Graveyard: Special Summon 1 \"Ultimate Crystal\" monster from your Deck or Graveyard, ignoring the Summoning conditions.",
+      "race": "Normal",
+      "archetype": "Crystal Beast",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/rainbow-gravity-5390",
+      "card_images": [
+        {
+          "id": 63806265,
+          "image_url": "https://images.ygoprodeck.com/images/cards/63806265.jpg",
+          "image_url_small": "https://images.ygoprodeck.com/images/cards_small/63806265.jpg",
+          "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/63806265.jpg"
+        }
+      ]
+    },
+    {
+      "id": 34002992,
+      "name": "Rainbow Life",
+      "type": "Trap Card",
+      "humanReadableCardType": "Normal Trap",
+      "frameType": "trap",
+      "desc": "Discard 1 card. Until the end of this turn, whenever you would take damage you gain that amount of Life Points instead.",
+      "race": "Normal",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/rainbow-life-2887",
+      "card_images": [
+        {
+          "id": 34002992,
+          "image_url": "https://images.ygoprodeck.com/images/cards/34002992.jpg",
+          "image_url_small": "https://images.ygoprodeck.com/images/cards_small/34002992.jpg",
+          "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/34002992.jpg"
+        }
+      ]
+    },
+    {
+      "id": 7617253,
+      "name": "Rainbow Path",
+      "type": "Trap Card",
+      "humanReadableCardType": "Normal Trap",
+      "frameType": "trap",
+      "desc": "When an opponent's monster declares an attack: Send 1 \"Crystal Beast\" card from your Spell & Trap Card Zone to the Graveyard to target the attacking monster; negate the attack, then you can add 1 \"Rainbow Dragon\" or \"Rainbow Dark Dragon\" from your Deck to your hand.",
+      "race": "Normal",
+      "archetype": "Crystal Beast",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/rainbow-path-654",
+      "card_images": [
+        {
+          "id": 7617253,
+          "image_url": "https://images.ygoprodeck.com/images/cards/7617253.jpg",
+          "image_url_small": "https://images.ygoprodeck.com/images/cards_small/7617253.jpg",
+          "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/7617253.jpg"
+        }
+      ]
+    },
+    {
+      "id": 53582587,
+      "name": "Torrential Tribute",
+      "type": "Trap Card",
+      "humanReadableCardType": "Normal Trap",
+      "frameType": "trap",
+      "desc": "When a monster(s) is Summoned: Destroy all monsters on the field.",
+      "race": "Normal",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/torrential-tribute-4567",
+      "banlist_info": {
+        "ban_goat": "Limited"
+      },
+      "card_images": [
+        {
+          "id": 53582587,
+          "image_url": "https://images.ygoprodeck.com/images/cards/53582587.jpg",
+          "image_url_small": "https://images.ygoprodeck.com/images/cards_small/53582587.jpg",
+          "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/53582587.jpg"
+        }
+      ]
+    },
+    {
+      "id": 96148285,
+      "name": "Triggered Summon",
+      "type": "Trap Card",
+      "humanReadableCardType": "Normal Trap",
+      "frameType": "trap",
+      "desc": "Activate only when a monster is Special Summoned to your opponent's side of the field. Each player can Special Summon 1 Level 4 or lower monster from their hand.",
+      "race": "Normal",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/triggered-summon-8004",
+      "card_images": [
+        {
+          "id": 96148285,
+          "image_url": "https://images.ygoprodeck.com/images/cards/96148285.jpg",
+          "image_url_small": "https://images.ygoprodeck.com/images/cards_small/96148285.jpg",
+          "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/96148285.jpg"
+        }
+      ]
+    },
+    {
+      "id": 36328300,
+      "name": "Ultimate Crystal Magic",
+      "type": "Trap Card",
+      "humanReadableCardType": "Normal Trap",
+      "frameType": "trap",
+      "desc": "When your \"Crystal Beast\" monster is destroyed by battle: You can send 7 \"Crystal Beast\" cards with different names from your hand, Deck and/or face-up field to the GY; Special Summon 1 \"Ultimate Crystal\" Fusion Monster from your Extra Deck. (This is treated as a Fusion Summon.) If a face-up \"Ultimate Crystal\" monster you control leaves the field because of an opponent's card effect: You can banish this card from your GY; place any number of \"Crystal Beast\" monsters from your GY, face-up in your Spell & Trap Zone as Continuous Spells.",
+      "race": "Normal",
+      "archetype": "Crystal Beast",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/ultimate-crystal-magic-8984",
+      "card_images": [
+        {
+          "id": 36328300,
+          "image_url": "https://images.ygoprodeck.com/images/cards/36328300.jpg",
+          "image_url_small": "https://images.ygoprodeck.com/images/cards_small/36328300.jpg",
+          "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/36328300.jpg"
+        }
+      ]
+    }
+  ],
+  "extraDeck": [
+    {
+      "id": 37440988,
+      "name": "Rainbow Overdragon",
+      "typeline": [
+        "Dragon",
+        "Fusion",
+        "Effect"
+      ],
+      "type": "Fusion Monster",
+      "humanReadableCardType": "Fusion Effect Monster",
+      "frameType": "fusion",
+      "desc": "7 \"Crystal Beast\" monsters\r\n(This card is always treated as an \"Ultimate Crystal\" card.)\r\nMust be either Fusion Summoned, or Special Summoned by Tributing 1 Level 10 \"Ultimate Crystal\" monster (in which case you do not use \"Polymerization\"). Once per turn: You can banish 1 \"Crystal Beast\" monster from your GY; this card gains ATK equal to the banished monster's, until the end of this turn. (Quick Effect): You can Tribute this Fusion Summoned card; shuffle all cards on the field into the Deck.",
+      "race": "Dragon",
+      "atk": 4000,
+      "def": 0,
+      "level": 12,
+      "attribute": "LIGHT",
+      "archetype": "Crystal Beast",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/rainbow-overdragon-8979",
+      "card_images": [
+        {
+          "id": 37440988,
+          "image_url": "https://images.ygoprodeck.com/images/cards/37440988.jpg",
+          "image_url_small": "https://images.ygoprodeck.com/images/cards_small/37440988.jpg",
+          "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/37440988.jpg"
+        }
+      ]
+    },
+    {
+      "id": 84544192,
+      "name": "Ultimate Crystal Rainbow Dragon Overdrive",
+      "typeline": [
+        "Dragon",
+        "Fusion",
+        "Effect"
+      ],
+      "type": "Fusion Monster",
+      "humanReadableCardType": "Fusion Effect Monster",
+      "frameType": "fusion",
+      "desc": "1 \"Ultimate Crystal\" monster + 7 \"Crystal Beast\" monsters\r\nMust be Special Summoned (from your Extra Deck) during a Duel you Special Summoned an \"Ultimate Crystal\" monster, by banishing the above monsters from your field and/or GY. While 7 or more of your \"Crystal Beast\" monsters with different names are banished, this card gains 7000 ATK. If this card has not battled this turn (Quick Effect): You can Tribute this card; shuffle as many cards on the field as possible into the Deck, and if you do, Special Summon any number of your banished \"Crystal Beast\" monsters.",
+      "race": "Dragon",
+      "atk": 4000,
+      "def": 0,
+      "level": 12,
+      "attribute": "LIGHT",
+      "archetype": "Crystal",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/ultimate-crystal-rainbow-dragon-overdrive-13240",
+      "card_images": [
+        {
+          "id": 84544192,
+          "image_url": "https://images.ygoprodeck.com/images/cards/84544192.jpg",
+          "image_url_small": "https://images.ygoprodeck.com/images/cards_small/84544192.jpg",
+          "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/84544192.jpg"
+        }
+      ]
+    }
+  ],
+  "sideDeck": [],
+  "owner": "jesse"
+}

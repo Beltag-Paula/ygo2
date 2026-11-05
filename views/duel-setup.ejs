@@ -1,0 +1,117 @@
+<!DOCTYPE html><html lang="en"><head><title>Duel — YGO 2.0</title><%- include('partials/head') %></head>
+<body><div class="page">
+<%- include('partials/nav', { page }) %>
+<h1 class="title">Duel</h1>
+<p class="sub">Pick a mode and a deck, then play the computer, find an opponent, or invite a friend.</p>
+
+<div class="banner" id="resume" style="display:none"><span>You have a duel in progress.</span><a class="btn gold small" href="/duel/play">Resume duel</a></div>
+
+<div class="setup-footer" style="margin:0 0 14px">
+  <div><div class="sub" style="margin:0 0 6px;font-size:12px">PLAY STYLE</div>
+    <div class="seg" id="mode"><button data-v="classic" class="on" type="button" title="Cards from 2002–2008, traditional board with five monster zones">Classic</button><button data-v="modern" type="button" title="Every card, the two Extra Monster Zones, Links and Pendulum">Modern</button></div></div>
+  <div style="flex:1"></div><span class="warn" id="warn"></span>
+</div>
+
+<div class="vs-col"><h2>YOUR DECK</h2><div class="pick-grid" id="mine"></div><div class="panel selected-bar" id="mineBar"></div></div>
+
+<div class="lobby">
+  <div class="panel panel-pad">
+    <h2>PLAY THE COMPUTER</h2>
+    <div class="botgrid" id="bots"></div>
+    <div class="actions"><button class="btn gold" id="goBot" type="button">Duel the bot</button></div>
+    <h2 style="margin-top:22px">QUICK MATCH</h2>
+    <p class="sub" style="margin:0 0 8px;font-size:12px" id="qHint"></p>
+    <div class="actions" style="margin-top:0"><button class="btn" id="goQ" type="button">Find opponent</button></div>
+  </div>
+
+  <div class="panel panel-pad">
+    <h2>INVITATIONS</h2>
+    <div class="plist" id="incoming"></div>
+    <div class="plist" id="outgoing" style="margin-top:6px"></div>
+    <div class="actions">
+      <input type="text" id="inviteName" maxlength="20" placeholder="Invite a player by username" style="flex:1;min-width:150px">
+      <button class="btn small" id="goInvite" type="button">Invite</button>
+      <button class="btn ghost small" id="goLink" type="button" title="Anyone with the link can accept (they need an account)">Copy invite link</button>
+    </div>
+    <h2 style="margin-top:22px">ONLINE NOW <span id="onlineN" class="sub" style="font-size:12px"></span></h2>
+    <div class="plist" id="online"></div>
+    <p class="sub" style="font-size:12px;margin:8px 0 0">Not online? You can still invite them by username: the invitation waits 24 hours and they see it next time they open this page. Stay on this page so you are online when they accept.</p>
+  </div>
+</div>
+
+<script>
+const $ = id => document.getElementById(id), params = new URLSearchParams(location.search);
+let decks = [], mine = null, mode = 'classic', bots = [], bot = null, status = 'idle', linkInvite = null, busy = false;
+const ls = (k, v) => { try { if (v === undefined) return localStorage.getItem(k); localStorage.setItem(k, v); } catch (e) { return null; } };
+const post = (url, body) => api(url, { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify(body || {}) });
+
+const usable = d => d.valid && (mode === 'modern' || d.mode === 'classic');
+function paintDecks() {
+  const list = decks.filter(usable), m = $('mine'); m.innerHTML = '';
+  if (!list.find(d => d.id === mine)) mine = list[0] ? list[0].id : null;
+  list.forEach(d => { const el = document.createElement('div'); el.className = caseClass(d) + (mine === d.id ? ' sel' : ''); el.innerHTML = deckCaseHTML(d); el.onclick = () => { mine = d.id; ls('ygo.mine', mine); paintDecks(); }; m.appendChild(el); });
+  const d = list.find(x => x.id === mine);
+  $('mineBar').innerHTML = '<span class="who">YOU</span>' + (d ? '<span>' + esc(d.name) + ' — ' + d.counts.main + ' cards · ' + d.mode.toUpperCase() + '</span>' : '<span>No usable deck for ' + mode + ' mode. <a href="/decks" style="color:var(--gold-hi)">Upload</a> or <a href="/builder" style="color:var(--gold-hi)">build</a> one.</span>');
+  const hidden = decks.length - list.length; $('warn').textContent = hidden ? hidden + ' deck(s) hidden: incomplete, or Modern-only in Classic mode' : '';
+  if (d && d.script.pct < 50) $('warn').textContent = 'Many cards in this deck have no script, so they play as plain cards.';
+  paintBots(); updateButtons();
+}
+function paintBots() {
+  const g = $('bots'); g.innerHTML = ''; const list = bots.filter(b => mode === 'modern' || b.mode === 'classic');
+  if (!list.find(b => b.key === bot)) bot = list[0] ? list[0].key : null;
+  list.forEach(b => { const el = document.createElement('div'); el.className = 'botpick' + (bot === b.key ? ' sel' : ''); el.innerHTML = '<div class="av-mini">' + avatarHTML(b.portrait, b.frame, b.name) + '</div><b>' + esc(b.name) + '</b>'; el.onclick = () => { bot = b.key; paintBots(); }; g.appendChild(el); });
+}
+function updateButtons() {
+  const ok = !!mine && !busy; $('goBot').disabled = !ok || status === 'waiting'; $('goInvite').disabled = !ok; $('goLink').disabled = !ok;
+  $('goQ').disabled = !mine || busy; $('goQ').textContent = status === 'waiting' ? 'Cancel search' : 'Find opponent';
+  $('qHint').textContent = status === 'waiting' ? 'Searching… waiting for another player to press Find opponent in ' + mode + ' mode.' : 'Wait in the queue until another player who chose the same mode looks for a duel.';
+}
+const person = (u, right) => '<div class="prow"><span class="av-mini">' + avatarHTML(u.avatar || '/images/avatar/Kuriboh-DAR.png', u.frame || DEFAULT_FRAME, u.name || u.username) + '</span><div class="nm">' + (u.status ? '<i class="dot ' + u.status + '"></i>' : '') + esc(u.name || u.username) + '<small>' + (right.sub || '') + '</small></div>' + right.btns + '</div>';
+
+function paintLobby(p) {
+  $('onlineN').textContent = p.online.length ? '(' + p.online.length + ')' : '';
+  $('online').innerHTML = p.online.length ? p.online.map(u => person(u, { sub: esc(u.status) + ' · ' + u.pvp_wins + 'W ' + u.pvp_losses + 'L', btns: '<button class="btn small" data-inv="' + esc(u.username) + '" ' + (u.status === 'dueling' ? 'disabled' : '') + '>Invite</button>' })).join('') : '<p class="sub" style="margin:0">Nobody else is online right now.</p>';
+  $('online').querySelectorAll('[data-inv]').forEach(b => b.onclick = () => invite(b.dataset.inv));
+  const inc = [...p.incoming]; if (linkInvite && !inc.find(i => i.id === linkInvite.id)) inc.unshift(linkInvite);
+  $('incoming').innerHTML = inc.map(i => person(i.from, { sub: 'challenges you · ' + i.mode.toUpperCase() + (i.fromOnline ? '' : ' · <b>offline now</b>'), btns: '<button class="btn gold small" data-acc="' + i.id + '">Accept</button><button class="btn ghost small" data-dec="' + i.id + '">Decline</button>' })).join('');
+  $('incoming').querySelectorAll('[data-acc]').forEach(b => b.onclick = () => accept(+b.dataset.acc));
+  $('incoming').querySelectorAll('[data-dec]').forEach(b => b.onclick = async () => { await post('/api/invites/' + b.dataset.dec + '/decline').catch(e => toast(e.message, true)); if (linkInvite && linkInvite.id === +b.dataset.dec) linkInvite = null; poll(); });
+  $('outgoing').innerHTML = p.outgoing.map(i => '<div class="prow"><div class="nm">' + (i.to ? 'Invited ' + esc(i.to.name) : 'Open invite link') + '<small>' + i.mode.toUpperCase() + ' · waiting for an answer</small></div><button class="btn ghost small" data-can="' + i.id + '">Cancel</button></div>').join('');
+  $('outgoing').querySelectorAll('[data-can]').forEach(b => b.onclick = async () => { await post('/api/invites/' + b.dataset.can + '/cancel').catch(e => toast(e.message, true)); poll(); });
+}
+async function poll() {
+  try {
+    const p = await api('/api/lobby/poll'); status = p.status;
+    if (p.status === 'started' && !busy && $('resume').style.display === 'none') { location.href = '/duel/play'; return; }   // matched, or an invitation was accepted
+    paintLobby(p); updateButtons();
+  } catch (e) { /* keep polling */ }
+}
+async function go(fn) { busy = true; updateButtons(); try { const r = await fn(); if (r && r.status === 'started') location.href = '/duel/play'; return r; } catch (e) { toast(e.message, true); } finally { busy = false; updateButtons(); } }
+
+$('goBot').onclick = () => go(() => post('/api/duel/bot', { deckId: mine, mode, bot }));
+$('goQ').onclick = () => go(async () => { if (status === 'waiting') { await post('/api/duel/leave'); status = 'idle'; return; } const r = await post('/api/duel/join', { deckId: mine, mode }); status = r.status; return r; });
+async function invite(name) { const r = await go(() => post('/api/invites', { to: name, mode, deckId: mine })); if (r) { toast('Invitation sent to ' + name); poll(); } }
+$('goInvite').onclick = () => { const n = $('inviteName').value.trim(); if (!n) return toast('Type a username first', true); invite(n); $('inviteName').value = ''; };
+$('goLink').onclick = async () => {
+  const r = await go(() => post('/api/invites', { link: true, mode, deckId: mine })); if (!r) return;
+  const url = location.origin + '/invite/' + r.invite.code;
+  try { await navigator.clipboard.writeText(url); toast('Invite link copied — send it to your friend'); } catch (e) { prompt('Copy this invite link:', url); } poll();
+};
+async function accept(id) { await go(() => post('/api/invites/' + id + '/accept', { deckId: mine })); poll(); }
+function setMode(m) { mode = m; ls('ygo.mode', m); document.querySelectorAll('#mode button').forEach(x => x.classList.toggle('on', x.dataset.v === m)); }
+document.querySelectorAll('#mode button').forEach(b => b.onclick = () => { setMode(b.dataset.v); paintDecks(); });
+
+(async () => {
+  const m = ls('ygo.mode'); if (m === 'classic' || m === 'modern') setMode(m);
+  [decks, bots] = await Promise.all([api('/api/decks').then(r => r.decks), api('/api/bots').then(r => r.bots)]);
+  const want = +params.get('deck') || +ls('ygo.mine'); if (decks.find(d => d.id === want)) mine = want;
+  const code = params.get('invite');
+  if (code) { try { const r = await api('/api/invites/code/' + encodeURIComponent(code)); linkInvite = r.invite; setMode(r.invite.mode); toast(r.invite.from.name + ' invited you to a ' + r.invite.mode + ' duel — pick a deck and press Accept'); } catch (e) { toast(e.message, true); } }
+  paintDecks();
+  const p = await api('/api/lobby/poll'); status = p.status;
+  if (p.status === 'started') $('resume').style.display = '';
+  paintLobby(p); updateButtons();
+  setInterval(poll, 3000);
+})();
+</script>
+</div></body></html>

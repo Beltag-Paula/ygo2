@@ -1,0 +1,186 @@
+<!DOCTYPE html><html lang="en"><head><title>Deck Builder — YGO 2.0</title><%- include('partials/head') %></head>
+<body><div class="page bd-page">
+<%- include('partials/nav', { page }) %>
+<div class="bd-bar">
+  <h1 class="title" style="margin:0;font-size:26px">Deck Builder</h1>
+  <input type="text" id="dName" maxlength="60" placeholder="Deck name" style="margin-left:18px">
+  <div class="seg bd-mode" id="mode" title="Classic: only cards from the 2002–2008 pool. Modern: every card."><button data-v="classic" class="on" type="button">Classic</button><button data-v="modern" type="button">Modern</button></div>
+  <div class="owner-pick" id="owners" title="Pick a duelist portrait for this deck"></div>
+  <button class="avatar-btn" id="bAvatar" title="Pick an avatar and frame for this deck"><span class="av-mini" id="avImg"></span><span>Avatar</span></button>
+  <span class="bd-dirty" id="dirty"></span>
+  <span class="spacer"></span>
+  <button class="btn gold small" id="bSave">Save deck</button>
+  <button class="btn small" id="bCopy">Save as copy</button>
+  <button class="btn ghost small" id="bSort">Sort</button>
+  <button class="btn ghost small" id="bClear">Clear</button>
+  <button class="btn ghost small" id="bExport">Export</button>
+  <button class="btn danger small" id="bDel" style="display:none">Delete</button>
+</div>
+
+<div class="bd-grid">
+  <div class="panel bd-info" id="info"><div class="empty">HOVER A CARD</div></div>
+
+  <div class="panel bd-deck">
+    <div class="bd-zone"><h4>MAIN DECK <span id="cMain"></span><span id="cKinds"></span></h4><div class="bd-cards main" id="zMain" data-empty="Click cards on the right to add them"></div></div>
+    <div class="bd-zone"><h4>EXTRA DECK <span id="cExtra"></span></h4><div class="bd-cards extra" id="zExtra" data-empty="Fusion / Synchro monsters go here automatically"></div></div>
+    <div class="bd-zone"><h4>SIDE DECK <span id="cSide"></span></h4><div class="bd-cards side" id="zSide" data-empty="Shift-click a card to put it in the Side Deck"></div></div>
+    <div class="bd-count" id="problems"></div>
+  </div>
+
+  <div class="panel bd-pool">
+    <input type="search" id="fQ" placeholder="Search name, effect text or passcode…">
+    <div class="bd-filters">
+      <select id="fKind"><option value="">All cards</option><option value="monster">Monsters</option><option value="spell">Spells</option><option value="trap">Traps</option></select>
+      <select id="fAttr"><option value="">Attribute</option></select>
+      <select id="fRace"><option value="">Type / Race</option></select>
+      <select id="fFrame"><option value="">Card frame</option></select>
+      <select id="fLv"><option value="">Level</option></select>
+      <select id="fScript"><option value="">Any script status</option><option value="playable">Playable (not a stub)</option><option value="scripted">Scripted</option><option value="vanilla">Vanilla</option><option value="partial">Partial</option><option value="stub">No script</option></select>
+      <select id="fSort" class="full"><option value="name">Sort: Name</option><option value="atk">Sort: ATK ↓</option><option value="def">Sort: DEF ↓</option><option value="level">Sort: Level ↓</option><option value="newest">Sort: Newest</option></select>
+    </div>
+    <div class="bd-results" id="results"></div>
+    <div class="bd-pager"><span id="pgInfo"></span><button class="btn ghost small" id="more" style="display:none">Load more</button></div>
+  </div>
+</div>
+
+<script>
+const $ = id => document.getElementById(id);
+const params = new URLSearchParams(location.search);
+const LIM = { mainMin: 40, mainMax: 60, extraMax: 15, sideMax: 15, copies: 3 };
+const deck = { main: [], extra: [], side: [] };         // arrays of card briefs (one entry per copy)
+let mode = 'classic', editing = null, builtin = false, owner = null, avatar = '', frame = '', dirty = false, offset = 0, total = 0, loading = 0;
+
+const markDirty = v => { dirty = v; $('dirty').textContent = v ? '● UNSAVED CHANGES' : ''; };
+window.addEventListener('beforeunload', e => { if (dirty) { e.preventDefault(); e.returnValue = ''; } });
+const all = () => [...deck.main, ...deck.extra, ...deck.side];
+const copies = name => all().filter(c => c.name === name).length;
+const order = c => (c.kind === 'monster' ? 0 : c.kind === 'spell' ? 1 : 2);
+
+function sortZone(z) {
+  deck[z].sort((a, b) => order(a) - order(b) || (b.level || 0) - (a.level || 0) || a.name.localeCompare(b.name));
+}
+function showInfo(c) {
+  $('info').innerHTML = '<div class="big" style="background-image:url(' + esc(c.big) + ')"></div><div class="nm">' + esc(c.name) + '</div>' +
+    '<div class="mt">' + esc(c.type) + (c.attr ? ' · ' + esc(c.attr) : '') + (c.race ? ' · ' + esc(c.race) : '') + (c.level ? ' · Lv ' + c.level : '') + '</div>' +
+    (c.atk != null ? '<div class="st"><span class="a">ATK ' + c.atk + '</span> / <span class="d">DEF ' + (c.def ?? '?') + '</span></div>' : '') +
+    '<div class="tx">' + esc(c.desc) + '</div>' +
+    '<div class="mt" style="margin-top:8px">Script: <b class="fxl ' + c.script + '">' + ({ vanilla: 'VANILLA', scripted: 'SCRIPTED', partial: 'PARTIAL', stub: 'NO SCRIPT' })[c.script] + '</b></div>';
+}
+function cardEl(c, z) {
+  const el = document.createElement('div'); el.className = 'bd-c';
+  el.innerHTML = '<img src="' + esc(c.image) + '" loading="lazy" alt=""><i class="fx ' + c.script + '"></i>';
+  el.onmouseenter = () => showInfo(c);
+  el.onclick = () => remove(c, z);
+  el.oncontextmenu = e => { e.preventDefault(); remove(c, z); };
+  return el;
+}
+function paintDeck() {
+  [['main', 'zMain'], ['extra', 'zExtra'], ['side', 'zSide']].forEach(([z, id]) => {
+    const host = $(id); host.innerHTML = ''; host.classList.toggle('empty', !deck[z].length);
+    deck[z].forEach(c => host.appendChild(cardEl(c, z)));
+  });
+  const m = deck.main, n = k => m.filter(c => c.kind === k).length;
+  $('cMain').innerHTML = '<span class="' + (m.length < LIM.mainMin || m.length > LIM.mainMax ? 'bad' : '') + '">' + m.length + ' / ' + LIM.mainMax + '</span>';
+  $('cKinds').textContent = n('monster') + ' Monsters · ' + n('spell') + ' Spells · ' + n('trap') + ' Traps';
+  $('cExtra').innerHTML = '<span class="' + (deck.extra.length > LIM.extraMax ? 'bad' : '') + '">' + deck.extra.length + ' / ' + LIM.extraMax + '</span>';
+  $('cSide').textContent = deck.side.length + ' / ' + LIM.sideMax;
+  const illegal = mode === 'classic' ? [...new Set(all().filter(c => !c.classic).map(c => c.name))] : [];
+  const stubs = new Set(all().filter(c => c.script === 'stub').map(c => c.name));
+  const pr = [];
+  if (m.length < LIM.mainMin) pr.push('Need ' + (LIM.mainMin - m.length) + ' more Main Deck card' + (LIM.mainMin - m.length > 1 ? 's' : '') + ' to duel');
+  if (illegal.length) pr.push('Not allowed in Classic: ' + illegal.slice(0, 4).join(', ') + (illegal.length > 4 ? ' +' + (illegal.length - 4) + ' more' : '') + ' — remove them or switch to Modern');
+  if (stubs.size) pr.push(stubs.size + ' card' + (stubs.size > 1 ? 's' : '') + ' without a script (red diamonds) play as plain cards');
+  $('problems').innerHTML = pr.map(esc).join(' &nbsp;·&nbsp; ');
+  document.querySelectorAll('.bd-r').forEach(r => r.classList.toggle('maxed', copies(r.dataset.name) >= LIM.copies));
+  document.querySelectorAll('.bd-r').forEach(r => { const k = copies(r.dataset.name); let b = r.querySelector('.in'); if (k) { if (!b) { b = document.createElement('div'); b.className = 'in'; r.appendChild(b); } b.textContent = '×' + k; } else if (b) b.remove(); });
+}
+function add(c, forceSide) {
+  if (copies(c.name) >= LIM.copies) return toast('Max ' + LIM.copies + ' copies of ' + c.name, true);
+  const z = forceSide ? 'side' : c.extra ? 'extra' : 'main', lim = z === 'main' ? LIM.mainMax : z === 'extra' ? LIM.extraMax : LIM.sideMax;
+  if (deck[z].length >= lim) return toast(z.toUpperCase() + ' DECK is full (' + lim + ')', true);
+  deck[z].push(c); sortZone(z); markDirty(true); paintDeck();
+}
+function remove(c, z) {
+  const i = deck[z].indexOf(c); if (i < 0) return;
+  deck[z].splice(i, 1); markDirty(true); paintDeck();
+}
+
+// ---- card pool ---------------------------------------------------------------------------------
+const filters = () => ({ mode, q: $('fQ').value, kind: $('fKind').value, attr: $('fAttr').value, race: $('fRace').value, frame: $('fFrame').value, lv: $('fLv').value, script: $('fScript').value, sort: $('fSort').value });
+async function search(reset) {
+  const ticket = ++loading; if (reset) { offset = 0; $('results').innerHTML = ''; $('results').scrollTop = 0; }
+  const r = await api('/api/cards?' + new URLSearchParams({ ...filters(), offset, limit: 60 }));
+  if (ticket !== loading) return;
+  total = r.total;
+  r.cards.forEach(c => {
+    const el = document.createElement('div'); el.className = 'bd-r'; el.dataset.name = c.name;
+    el.innerHTML = '<img src="' + esc(c.image) + '" loading="lazy" alt="" title="' + esc(c.name) + '"><i class="fx ' + c.script + '"></i>';
+    el.onmouseenter = () => showInfo(c);
+    el.onclick = e => add(c, e.shiftKey);
+    el.oncontextmenu = e => { e.preventDefault(); add(c, true); };
+    $('results').appendChild(el);
+  });
+  offset += r.cards.length; $('more').style.display = offset < total ? '' : 'none';
+  $('pgInfo').textContent = offset + ' / ' + total + ' cards'; paintDeck();
+}
+let tmr; const later = () => { clearTimeout(tmr); tmr = setTimeout(() => search(true), 220); };
+['fQ'].forEach(i => $(i).addEventListener('input', later));
+['fKind', 'fAttr', 'fRace', 'fFrame', 'fLv', 'fScript', 'fSort'].forEach(i => $(i).addEventListener('change', () => search(true)));
+$('more').onclick = () => search(false);
+
+// ---- save / load -------------------------------------------------------------------------------
+const body = () => ({ mode, name: $('dName').value.trim() || 'New Deck', owner, avatar, frame, main: deck.main.map(c => c.id), extra: deck.extra.map(c => c.id), side: deck.side.map(c => c.id) });
+async function save(asCopy) {
+  const update = editing && !builtin && !asCopy;
+  try {
+    const r = await api(update ? '/api/decks/' + encodeURIComponent(editing) : '/api/decks/custom', { method: update ? 'PUT' : 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify(body()) });
+    editing = r.id; builtin = false; markDirty(false); $('bDel').style.display = ''; $('bSave').textContent = 'Save deck';
+    history.replaceState(null, '', '/builder?deck=' + encodeURIComponent(editing));
+    toast(r.warnings && r.warnings.length ? r.message + ' ' + r.warnings[0] : r.message, !!(r.warnings && r.warnings.length));
+  } catch (e) { toast(e.message, true); }
+}
+$('bSave').onclick = () => save(false); $('bCopy').onclick = () => save(true);
+$('bSort').onclick = () => { ['main', 'extra', 'side'].forEach(sortZone); paintDeck(); };
+$('bClear').onclick = () => { if (all().length && confirm('Remove every card from this deck?')) { deck.main = []; deck.extra = []; deck.side = []; markDirty(true); paintDeck(); } };
+$('bDel').onclick = async () => {
+  if (!editing || !confirm('Delete "' + $('dName').value + '" permanently?')) return;
+  try { await api('/api/decks/' + encodeURIComponent(editing), { method: 'DELETE' }); markDirty(false); location.href = '/decks'; } catch (e) { toast(e.message, true); }
+};
+$('bExport').onclick = () => {
+  const ydk = '#created by YGO simulator\n#main\n' + deck.main.map(c => c.id).join('\n') + '\n#extra\n' + deck.extra.map(c => c.id).join('\n') + '\n!side\n' + deck.side.map(c => c.id).join('\n') + '\n';
+  const a = document.createElement('a'); a.href = URL.createObjectURL(new Blob([ydk], { type: 'text/plain' })); a.download = ($('dName').value.trim() || 'deck') + '.ydk'; a.click();
+};
+$('dName').addEventListener('input', () => markDirty(true));
+const ownerPortrait = { yugi: '/images/YamiYugi-MDDG.png', kaiba: '/images/Kaiba-MDDG.png', joey: '/images/Joey-MDDG.png', mai: '/images/Mai-MDDG.png', jesse: '/images/Jesse-MDDG.png', jaden: '/images/Jaden-MDDG.png' };
+function paintAvatar() { $('avImg').innerHTML = avatarHTML(avatar || (owner && ownerPortrait[owner]) || '/images/avatar/Kuriboh-DAR.png', frame || DEFAULT_FRAME, $('dName').value); }
+$('bAvatar').onclick = async () => { const v = await pickAvatar({ avatar, frame }); if (v === null) return; avatar = v.avatar; frame = v.frame; paintAvatar(); markDirty(true); };
+
+function paintMode() { document.querySelectorAll('#mode button').forEach(b => b.classList.toggle('on', b.dataset.v === mode)); }
+document.querySelectorAll('#mode button').forEach(b => { b.onclick = () => { if (mode === b.dataset.v) return; mode = b.dataset.v; paintMode(); markDirty(true); search(true); }; });
+function paintOwners(list) {
+  const h = $('owners'); h.innerHTML = '';
+  list.forEach(o => { const b = document.createElement('button'); b.title = o.name; b.className = owner === o.id ? 'on' : ''; b.innerHTML = '<img src="' + esc(o.portrait) + '" alt="">';
+    b.onclick = () => { owner = owner === o.id ? null : o.id; markDirty(true); paintOwners(list); paintAvatar(); }; h.appendChild(b); });
+}
+(async () => {
+  const meta = await api('/api/cards/meta');
+  const fill = (id, arr) => arr.forEach(v => { const o = document.createElement('option'); o.value = o.textContent = v; $(id).appendChild(o); });
+  fill('fAttr', meta.attrs); fill('fRace', meta.races); fill('fFrame', meta.frames);
+  for (let i = 1; i <= 12; i++) { const o = document.createElement('option'); o.value = i; o.textContent = 'Level ' + i; $('fLv').appendChild(o); }
+  const id = params.get('deck');
+  if (id) {
+    try {
+      const d = await api('/api/decks/' + encodeURIComponent(id) + '/ids');
+      const ids = [...new Set([...d.main, ...d.extra, ...d.side])];
+      const cards = []; for (let i = 0; i < ids.length; i += 150) cards.push(...(await api('/api/cards?mode=modern&ids=' + ids.slice(i, i + 150).join(','))).cards);
+      const by = new Map(cards.map(c => [c.id, c])); const pick = a => a.map(i => by.get(i)).filter(Boolean);
+      deck.main = pick(d.main); deck.extra = pick(d.extra); deck.side = pick(d.side); ['main', 'extra', 'side'].forEach(sortZone);
+      mode = d.mode || 'classic'; paintMode(); owner = d.owner; avatar = d.avatar || ''; frame = d.frame || ''; builtin = d.builtin; $('dName').value = builtin ? d.name + ' (copy)' : d.name;
+      if (builtin) { toast('This is a duelist deck — saving creates your own copy.'); $('bSave').textContent = 'Save as new deck'; $('bCopy').style.display = 'none'; editing = null; }
+      else { editing = d.id; $('bDel').style.display = ''; }
+    } catch (e) { toast(e.message, true); }
+  }
+  paintOwners(meta.owners); paintAvatar(); paintDeck(); markDirty(builtin && !!id); await search(true);
+})();
+</script>
+</div></body></html>

@@ -1,0 +1,13 @@
+{
+  "name": "ygo-2-0",
+  "version": "2.0.0",
+  "type": "module",
+  "license": "AGPL-3.0-or-later",
+  "engines": { "node": ">=22.13" },
+  "scripts": {
+    "setup": "node tools/setup.mjs",
+    "start": "node server.js",
+    "test": "node test/e2e.mjs"
+  },
+  "dependencies": { "ejs": "^3.1.10", "express": "^5.1.0" }
+}

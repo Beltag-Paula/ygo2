@@ -1,0 +1,46 @@
+<!DOCTYPE html><html lang="en"><head><title>Duel</title><%- include('partials/head') %><link rel="stylesheet" href="/static/css/duel.css"><link rel="stylesheet" href="/static/css/md-arena.css"></head>
+<body>
+<div id="viewport"><div id="stage">
+  <div id="mat"></div>
+  <div id="slots"></div>
+  <div id="stats"></div>
+  <div id="cards"></div>
+
+  <div class="plate opp" id="plateOpp"><div class="ava" id="avaOpp"></div><div class="info"><div class="nm" id="nmOpp"></div><div class="dk" id="dkOpp"></div><div class="lpbar"><div class="ghost" id="ghostOpp"></div><div class="fill" id="fillOpp"></div></div></div><div class="lpnum" id="lpOpp">8000</div></div>
+  <div class="plate you" id="plateYou"><div class="ava" id="avaYou"></div><div class="info"><div class="nm" id="nmYou"></div><div class="dk" id="dkYou"></div><div class="lpbar"><div class="ghost" id="ghostYou"></div><div class="fill" id="fillYou"></div></div></div><div class="lpnum" id="lpYou">8000</div></div>
+
+  <div id="info"><div class="empty">HOVER A CARD</div></div>
+
+  <div id="side">
+    <div id="turnBox"><div class="who you" id="turnWho">YOUR TURN</div><small id="turnNo">TURN 1</small><div id="phaseName"></div>
+      <div id="phases"><span data-p="draw">DP</span><span data-p="standby">SP</span><span data-p="m1">M1</span><span data-p="battle">BP</span><span data-p="m2">M2</span><span data-p="end">EP</span></div></div>
+    <div id="log"></div>
+    <div id="phaseBtns"></div>
+    <div id="thinking" style="display:none">OPPONENT IS THINKING <i></i><i></i><i></i></div>
+  </div>
+
+  <div id="mini"><button id="btnTheme" title="Change colour theme">◈</button><button id="btnSnd" title="Sound">🔊</button><button id="btnSurr" title="Surrender">🏳</button><button id="btnLeave" title="Back to menu">⌂</button></div>
+
+  <div id="rbtns"><button id="rbSnd" title="Sound">&#9835;</button><button id="rbInfo" title="Pin card info">i</button><button id="rbLog" title="Duel log">&#9636;</button></div>
+
+  <div id="cmd"></div>
+  <div id="hint"></div>
+  <div id="prompt"></div>
+  <div id="picker"><div class="box"><h3 id="pkTitle"></h3><p class="sub" id="pkSub"></p><div class="grid" id="pkGrid"></div><div class="foot"><span class="cnt" id="pkCnt"></span><button class="btn ghost small" id="pkCancel">Cancel</button><button class="btn small" id="pkOk">Confirm</button></div></div></div>
+
+  <canvas id="fxcanvas" width="1600" height="900"></canvas>
+  <div id="banner"><div class="band"></div><div class="txt"></div><div class="sub2"></div></div>
+  <div id="cutin"><div class="glow"></div><div class="big"></div><div class="lbl"></div></div>
+  <div id="flash"></div>
+  <div id="result"><div class="box"><h1 id="resTxt"></h1><p id="resSub"></p><div class="row"><a class="btn gold" href="/duel">Duel Again</a><a class="btn ghost" href="/">Main Menu</a></div></div></div>
+</div></div>
+<div class="toast-host" id="toasts"></div>
+<script>
+  window.toast = (m, e) => { const h = document.getElementById('toasts'), t = document.createElement('div'); t.className = 'toast' + (e ? ' err' : ''); t.textContent = m; h.appendChild(t); setTimeout(() => t.remove(), 3600); };
+</script>
+<script src="/static/js/sfx.js"></script>
+<script src="/static/js/fx.js"></script>
+<script src="/static/js/duel.js"></script>
+<script src="/static/js/md-arena.js"></script>
+<script>document.getElementById("btnTheme").onclick = () => { const i = THEMES.indexOf(document.documentElement.dataset.theme); setTheme(THEMES[(i + 1) % THEMES.length]); };</script>
+</body></html>

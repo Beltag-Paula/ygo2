@@ -1,0 +1,954 @@
+{
+  "mainDeck": [
+    {
+      "id": 76812113,
+      "name": "Harpie Lady",
+      "typeline": [
+        "Winged Beast",
+        "Normal"
+      ],
+      "type": "Normal Monster",
+      "humanReadableCardType": "Normal Monster",
+      "frameType": "normal",
+      "desc": "This human-shaped animal with wings is beautiful to watch but deadly in battle.",
+      "race": "Winged Beast",
+      "atk": 1300,
+      "def": 1400,
+      "level": 4,
+      "attribute": "WIND",
+      "archetype": "Harpie",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/harpie-lady-6464",
+      "card_images": [
+        {
+          "id": 76812113,
+          "image_url": "https://images.ygoprodeck.com/images/cards/76812113.jpg",
+          "image_url_small": "https://images.ygoprodeck.com/images/cards_small/76812113.jpg",
+          "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/76812113.jpg"
+        }
+      ]
+    },
+    {
+      "id": 34100324,
+      "name": "Harpie Girl",
+      "typeline": [
+        "Winged Beast",
+        "Normal"
+      ],
+      "type": "Normal Monster",
+      "humanReadableCardType": "Normal Monster",
+      "frameType": "normal",
+      "desc": "A Harpie chick who aspires to flit about beautifully and gorgeously, but attack sharply.",
+      "race": "Winged Beast",
+      "atk": 500,
+      "def": 500,
+      "level": 2,
+      "attribute": "WIND",
+      "archetype": "Harpie",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/harpie-girl-2896",
+      "card_images": [
+        {
+          "id": 34100324,
+          "image_url": "https://images.ygoprodeck.com/images/cards/34100324.jpg",
+          "image_url_small": "https://images.ygoprodeck.com/images/cards_small/34100324.jpg",
+          "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/34100324.jpg"
+        }
+      ]
+    },
+    {
+      "id": 34100324,
+      "name": "Harpie Girl",
+      "typeline": [
+        "Winged Beast",
+        "Normal"
+      ],
+      "type": "Normal Monster",
+      "humanReadableCardType": "Normal Monster",
+      "frameType": "normal",
+      "desc": "A Harpie chick who aspires to flit about beautifully and gorgeously, but attack sharply.",
+      "race": "Winged Beast",
+      "atk": 500,
+      "def": 500,
+      "level": 2,
+      "attribute": "WIND",
+      "archetype": "Harpie",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/harpie-girl-2896",
+      "card_images": [
+        {
+          "id": 34100324,
+          "image_url": "https://images.ygoprodeck.com/images/cards/34100324.jpg",
+          "image_url_small": "https://images.ygoprodeck.com/images/cards_small/34100324.jpg",
+          "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/34100324.jpg"
+        }
+      ]
+    },
+    {
+      "id": 52040216,
+      "name": "Harpie's Pet Dragon",
+      "typeline": [
+        "Dragon",
+        "Effect"
+      ],
+      "type": "Effect Monster",
+      "humanReadableCardType": "Effect Monster",
+      "frameType": "effect",
+      "desc": "Gains 300 ATK/DEF for each \"Harpie Lady\" on the field.",
+      "race": "Dragon",
+      "atk": 2000,
+      "def": 2500,
+      "level": 7,
+      "attribute": "WIND",
+      "archetype": "Harpie",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/harpie-s-pet-dragon-4431",
+      "card_images": [
+        {
+          "id": 52040216,
+          "image_url": "https://images.ygoprodeck.com/images/cards/52040216.jpg",
+          "image_url_small": "https://images.ygoprodeck.com/images/cards_small/52040216.jpg",
+          "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/52040216.jpg"
+        }
+      ]
+    },
+    {
+      "id": 52040216,
+      "name": "Harpie's Pet Dragon",
+      "typeline": [
+        "Dragon",
+        "Effect"
+      ],
+      "type": "Effect Monster",
+      "humanReadableCardType": "Effect Monster",
+      "frameType": "effect",
+      "desc": "Gains 300 ATK/DEF for each \"Harpie Lady\" on the field.",
+      "race": "Dragon",
+      "atk": 2000,
+      "def": 2500,
+      "level": 7,
+      "attribute": "WIND",
+      "archetype": "Harpie",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/harpie-s-pet-dragon-4431",
+      "card_images": [
+        {
+          "id": 52040216,
+          "image_url": "https://images.ygoprodeck.com/images/cards/52040216.jpg",
+          "image_url_small": "https://images.ygoprodeck.com/images/cards_small/52040216.jpg",
+          "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/52040216.jpg"
+        }
+      ]
+    },
+    {
+      "id": 52040216,
+      "name": "Harpie's Pet Dragon",
+      "typeline": [
+        "Dragon",
+        "Effect"
+      ],
+      "type": "Effect Monster",
+      "humanReadableCardType": "Effect Monster",
+      "frameType": "effect",
+      "desc": "Gains 300 ATK/DEF for each \"Harpie Lady\" on the field.",
+      "race": "Dragon",
+      "atk": 2000,
+      "def": 2500,
+      "level": 7,
+      "attribute": "WIND",
+      "archetype": "Harpie",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/harpie-s-pet-dragon-4431",
+      "card_images": [
+        {
+          "id": 52040216,
+          "image_url": "https://images.ygoprodeck.com/images/cards/52040216.jpg",
+          "image_url_small": "https://images.ygoprodeck.com/images/cards_small/52040216.jpg",
+          "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/52040216.jpg"
+        }
+      ]
+    },
+    {
+      "id": 12206212,
+      "name": "Harpie Lady Sisters",
+      "typeline": [
+        "Winged Beast",
+        "Effect"
+      ],
+      "type": "Effect Monster",
+      "humanReadableCardType": "Effect Monster",
+      "frameType": "effect",
+      "desc": "Cannot be Normal Summoned/Set. Must first be Special Summoned with \"Elegant Egotist\".",
+      "race": "Winged Beast",
+      "atk": 1950,
+      "def": 2100,
+      "level": 6,
+      "attribute": "WIND",
+      "archetype": "Harpie",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/harpie-lady-sisters-1052",
+      "card_images": [
+        {
+          "id": 12206212,
+          "image_url": "https://images.ygoprodeck.com/images/cards/12206212.jpg",
+          "image_url_small": "https://images.ygoprodeck.com/images/cards_small/12206212.jpg",
+          "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/12206212.jpg"
+        }
+      ]
+    },
+    {
+      "id": 12206212,
+      "name": "Harpie Lady Sisters",
+      "typeline": [
+        "Winged Beast",
+        "Effect"
+      ],
+      "type": "Effect Monster",
+      "humanReadableCardType": "Effect Monster",
+      "frameType": "effect",
+      "desc": "Cannot be Normal Summoned/Set. Must first be Special Summoned with \"Elegant Egotist\".",
+      "race": "Winged Beast",
+      "atk": 1950,
+      "def": 2100,
+      "level": 6,
+      "attribute": "WIND",
+      "archetype": "Harpie",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/harpie-lady-sisters-1052",
+      "card_images": [
+        {
+          "id": 12206212,
+          "image_url": "https://images.ygoprodeck.com/images/cards/12206212.jpg",
+          "image_url_small": "https://images.ygoprodeck.com/images/cards_small/12206212.jpg",
+          "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/12206212.jpg"
+        }
+      ]
+    },
+    {
+      "id": 12206212,
+      "name": "Harpie Lady Sisters",
+      "typeline": [
+        "Winged Beast",
+        "Effect"
+      ],
+      "type": "Effect Monster",
+      "humanReadableCardType": "Effect Monster",
+      "frameType": "effect",
+      "desc": "Cannot be Normal Summoned/Set. Must first be Special Summoned with \"Elegant Egotist\".",
+      "race": "Winged Beast",
+      "atk": 1950,
+      "def": 2100,
+      "level": 6,
+      "attribute": "WIND",
+      "archetype": "Harpie",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/harpie-lady-sisters-1052",
+      "card_images": [
+        {
+          "id": 12206212,
+          "image_url": "https://images.ygoprodeck.com/images/cards/12206212.jpg",
+          "image_url_small": "https://images.ygoprodeck.com/images/cards_small/12206212.jpg",
+          "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/12206212.jpg"
+        }
+      ]
+    },
+    {
+      "id": 75064463,
+      "name": "Harpie Queen",
+      "typeline": [
+        "Winged Beast",
+        "Effect"
+      ],
+      "type": "Effect Monster",
+      "humanReadableCardType": "Effect Monster",
+      "frameType": "effect",
+      "desc": "This card's name becomes \"Harpie Lady\" while on the field or in the GY. You can discard this card to the GY; add 1 \"Harpies' Hunting Ground\" from your Deck to your hand.",
+      "race": "Winged Beast",
+      "atk": 1900,
+      "def": 1200,
+      "level": 4,
+      "attribute": "WIND",
+      "archetype": "Harpie",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/harpie-queen-6313",
+      "card_images": [
+        {
+          "id": 75064463,
+          "image_url": "https://images.ygoprodeck.com/images/cards/75064463.jpg",
+          "image_url_small": "https://images.ygoprodeck.com/images/cards_small/75064463.jpg",
+          "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/75064463.jpg"
+        }
+      ]
+    },
+    {
+      "id": 75064463,
+      "name": "Harpie Queen",
+      "typeline": [
+        "Winged Beast",
+        "Effect"
+      ],
+      "type": "Effect Monster",
+      "humanReadableCardType": "Effect Monster",
+      "frameType": "effect",
+      "desc": "This card's name becomes \"Harpie Lady\" while on the field or in the GY. You can discard this card to the GY; add 1 \"Harpies' Hunting Ground\" from your Deck to your hand.",
+      "race": "Winged Beast",
+      "atk": 1900,
+      "def": 1200,
+      "level": 4,
+      "attribute": "WIND",
+      "archetype": "Harpie",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/harpie-queen-6313",
+      "card_images": [
+        {
+          "id": 75064463,
+          "image_url": "https://images.ygoprodeck.com/images/cards/75064463.jpg",
+          "image_url_small": "https://images.ygoprodeck.com/images/cards_small/75064463.jpg",
+          "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/75064463.jpg"
+        }
+      ]
+    },
+    {
+      "id": 75064463,
+      "name": "Harpie Queen",
+      "typeline": [
+        "Winged Beast",
+        "Effect"
+      ],
+      "type": "Effect Monster",
+      "humanReadableCardType": "Effect Monster",
+      "frameType": "effect",
+      "desc": "This card's name becomes \"Harpie Lady\" while on the field or in the GY. You can discard this card to the GY; add 1 \"Harpies' Hunting Ground\" from your Deck to your hand.",
+      "race": "Winged Beast",
+      "atk": 1900,
+      "def": 1200,
+      "level": 4,
+      "attribute": "WIND",
+      "archetype": "Harpie",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/harpie-queen-6313",
+      "card_images": [
+        {
+          "id": 75064463,
+          "image_url": "https://images.ygoprodeck.com/images/cards/75064463.jpg",
+          "image_url_small": "https://images.ygoprodeck.com/images/cards_small/75064463.jpg",
+          "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/75064463.jpg"
+        }
+      ]
+    },
+    {
+      "id": 80316585,
+      "name": "Cyber Harpie Lady",
+      "typeline": [
+        "Winged Beast",
+        "Effect"
+      ],
+      "type": "Effect Monster",
+      "humanReadableCardType": "Effect Monster",
+      "frameType": "effect",
+      "desc": "(This card's name is always treated as \"Harpie Lady\".)",
+      "race": "Winged Beast",
+      "atk": 1800,
+      "def": 1300,
+      "level": 4,
+      "attribute": "WIND",
+      "archetype": "Harpie",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/cyber-harpie-lady-6736",
+      "card_images": [
+        {
+          "id": 80316585,
+          "image_url": "https://images.ygoprodeck.com/images/cards/80316585.jpg",
+          "image_url_small": "https://images.ygoprodeck.com/images/cards_small/80316585.jpg",
+          "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/80316585.jpg"
+        }
+      ]
+    },
+    {
+      "id": 56585883,
+      "name": "Harpie Harpist",
+      "typeline": [
+        "Winged Beast",
+        "Effect"
+      ],
+      "type": "Effect Monster",
+      "humanReadableCardType": "Effect Monster",
+      "frameType": "effect",
+      "desc": "This card's name becomes \"Harpie Lady\" while it is on the field or in the Graveyard. You can only use each of these effects of \"Harpie Harpist\" once per turn.\n● When this card is Normal Summoned: You can target 1 Winged Beast-Type monster you control (other than this card) and 1 face-up monster your opponent controls; return them to the hand.\n● During the End Phase, if this card is in the Graveyard because it was sent there this turn: You can add 1 Level 4 Winged Beast-Type monster with 1500 or less ATK from your Deck to your hand.",
+      "race": "Winged Beast",
+      "atk": 1700,
+      "def": 600,
+      "level": 4,
+      "attribute": "WIND",
+      "archetype": "Harpie",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/harpie-harpist-4817",
+      "card_images": [
+        {
+          "id": 56585883,
+          "image_url": "https://images.ygoprodeck.com/images/cards/56585883.jpg",
+          "image_url_small": "https://images.ygoprodeck.com/images/cards_small/56585883.jpg",
+          "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/56585883.jpg"
+        }
+      ]
+    },
+    {
+      "id": 56585883,
+      "name": "Harpie Harpist",
+      "typeline": [
+        "Winged Beast",
+        "Effect"
+      ],
+      "type": "Effect Monster",
+      "humanReadableCardType": "Effect Monster",
+      "frameType": "effect",
+      "desc": "This card's name becomes \"Harpie Lady\" while it is on the field or in the Graveyard. You can only use each of these effects of \"Harpie Harpist\" once per turn.\n● When this card is Normal Summoned: You can target 1 Winged Beast-Type monster you control (other than this card) and 1 face-up monster your opponent controls; return them to the hand.\n● During the End Phase, if this card is in the Graveyard because it was sent there this turn: You can add 1 Level 4 Winged Beast-Type monster with 1500 or less ATK from your Deck to your hand.",
+      "race": "Winged Beast",
+      "atk": 1700,
+      "def": 600,
+      "level": 4,
+      "attribute": "WIND",
+      "archetype": "Harpie",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/harpie-harpist-4817",
+      "card_images": [
+        {
+          "id": 56585883,
+          "image_url": "https://images.ygoprodeck.com/images/cards/56585883.jpg",
+          "image_url_small": "https://images.ygoprodeck.com/images/cards_small/56585883.jpg",
+          "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/56585883.jpg"
+        }
+      ]
+    },
+    {
+      "id": 45547649,
+      "name": "Birdface",
+      "typeline": [
+        "Winged Beast",
+        "Effect"
+      ],
+      "type": "Effect Monster",
+      "humanReadableCardType": "Effect Monster",
+      "frameType": "effect",
+      "desc": "When this card is destroyed by battle and sent to the GY: You can add 1 \"Harpie Lady\" from your Deck to your hand.",
+      "race": "Winged Beast",
+      "atk": 1600,
+      "def": 1600,
+      "level": 4,
+      "attribute": "WIND",
+      "archetype": "Harpie",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/birdface-3881",
+      "card_images": [
+        {
+          "id": 45547649,
+          "image_url": "https://images.ygoprodeck.com/images/cards/45547649.jpg",
+          "image_url_small": "https://images.ygoprodeck.com/images/cards_small/45547649.jpg",
+          "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/45547649.jpg"
+        }
+      ]
+    },
+    {
+      "id": 45547649,
+      "name": "Birdface",
+      "typeline": [
+        "Winged Beast",
+        "Effect"
+      ],
+      "type": "Effect Monster",
+      "humanReadableCardType": "Effect Monster",
+      "frameType": "effect",
+      "desc": "When this card is destroyed by battle and sent to the GY: You can add 1 \"Harpie Lady\" from your Deck to your hand.",
+      "race": "Winged Beast",
+      "atk": 1600,
+      "def": 1600,
+      "level": 4,
+      "attribute": "WIND",
+      "archetype": "Harpie",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/birdface-3881",
+      "card_images": [
+        {
+          "id": 45547649,
+          "image_url": "https://images.ygoprodeck.com/images/cards/45547649.jpg",
+          "image_url_small": "https://images.ygoprodeck.com/images/cards_small/45547649.jpg",
+          "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/45547649.jpg"
+        }
+      ]
+    },
+    {
+      "id": 27927359,
+      "name": "Harpie Lady 2",
+      "typeline": [
+        "Winged Beast",
+        "Effect"
+      ],
+      "type": "Effect Monster",
+      "humanReadableCardType": "Effect Monster",
+      "frameType": "effect",
+      "desc": "(This card's name is always treated as \"Harpie Lady\".)\nNegate the effects of Flip monsters this card destroys by battle.",
+      "race": "Winged Beast",
+      "atk": 1300,
+      "def": 1400,
+      "level": 4,
+      "attribute": "WIND",
+      "archetype": "Harpie",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/harpie-lady-2-2376",
+      "card_images": [
+        {
+          "id": 27927359,
+          "image_url": "https://images.ygoprodeck.com/images/cards/27927359.jpg",
+          "image_url_small": "https://images.ygoprodeck.com/images/cards_small/27927359.jpg",
+          "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/27927359.jpg"
+        }
+      ]
+    },
+    {
+      "id": 68815132,
+      "name": "Harpie Dancer",
+      "typeline": [
+        "Winged Beast",
+        "Effect"
+      ],
+      "type": "Effect Monster",
+      "humanReadableCardType": "Effect Monster",
+      "frameType": "effect",
+      "desc": "You can target 1 WIND monster you control; return it to the hand, then you can Normal Summon 1 WIND monster. You can only use this effect of \"Harpie Dancer\" once per turn. This card's name becomes \"Harpie Lady\" while on the field or in the GY.",
+      "race": "Winged Beast",
+      "atk": 1200,
+      "def": 1000,
+      "level": 4,
+      "attribute": "WIND",
+      "archetype": "Harpie",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/harpie-dancer-5781",
+      "card_images": [
+        {
+          "id": 68815132,
+          "image_url": "https://images.ygoprodeck.com/images/cards/68815132.jpg",
+          "image_url_small": "https://images.ygoprodeck.com/images/cards_small/68815132.jpg",
+          "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/68815132.jpg"
+        }
+      ]
+    },
+    {
+      "id": 68815132,
+      "name": "Harpie Dancer",
+      "typeline": [
+        "Winged Beast",
+        "Effect"
+      ],
+      "type": "Effect Monster",
+      "humanReadableCardType": "Effect Monster",
+      "frameType": "effect",
+      "desc": "You can target 1 WIND monster you control; return it to the hand, then you can Normal Summon 1 WIND monster. You can only use this effect of \"Harpie Dancer\" once per turn. This card's name becomes \"Harpie Lady\" while on the field or in the GY.",
+      "race": "Winged Beast",
+      "atk": 1200,
+      "def": 1000,
+      "level": 4,
+      "attribute": "WIND",
+      "archetype": "Harpie",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/harpie-dancer-5781",
+      "card_images": [
+        {
+          "id": 68815132,
+          "image_url": "https://images.ygoprodeck.com/images/cards/68815132.jpg",
+          "image_url_small": "https://images.ygoprodeck.com/images/cards_small/68815132.jpg",
+          "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/68815132.jpg"
+        }
+      ]
+    },
+    {
+      "id": 6924874,
+      "name": "Harpie's Pet Baby Dragon",
+      "typeline": [
+        "Dragon",
+        "Effect"
+      ],
+      "type": "Effect Monster",
+      "humanReadableCardType": "Effect Monster",
+      "frameType": "effect",
+      "desc": "This card gains effects based on the number of \"Harpie\" monsters you control, except \"Harpie's Pet Baby Dragon\".\n● 1 or more: Your opponent cannot target \"Harpie\" monsters you control for attacks, except \"Harpie's Pet Baby Dragon\".\n● 2 or more: Double the original ATK and DEF of this card.\n● 3 or more: Once per turn: You can target 1 card your opponent controls; destroy that target.",
+      "race": "Dragon",
+      "atk": 1200,
+      "def": 600,
+      "level": 4,
+      "attribute": "WIND",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/harpie-s-pet-baby-dragon-596",
+      "card_images": [
+        {
+          "id": 6924874,
+          "image_url": "https://images.ygoprodeck.com/images/cards/6924874.jpg",
+          "image_url_small": "https://images.ygoprodeck.com/images/cards_small/6924874.jpg",
+          "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/6924874.jpg"
+        }
+      ]
+    },
+    {
+      "id": 6924874,
+      "name": "Harpie's Pet Baby Dragon",
+      "typeline": [
+        "Dragon",
+        "Effect"
+      ],
+      "type": "Effect Monster",
+      "humanReadableCardType": "Effect Monster",
+      "frameType": "effect",
+      "desc": "This card gains effects based on the number of \"Harpie\" monsters you control, except \"Harpie's Pet Baby Dragon\".\n● 1 or more: Your opponent cannot target \"Harpie\" monsters you control for attacks, except \"Harpie's Pet Baby Dragon\".\n● 2 or more: Double the original ATK and DEF of this card.\n● 3 or more: Once per turn: You can target 1 card your opponent controls; destroy that target.",
+      "race": "Dragon",
+      "atk": 1200,
+      "def": 600,
+      "level": 4,
+      "attribute": "WIND",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/harpie-s-pet-baby-dragon-596",
+      "card_images": [
+        {
+          "id": 6924874,
+          "image_url": "https://images.ygoprodeck.com/images/cards/6924874.jpg",
+          "image_url_small": "https://images.ygoprodeck.com/images/cards_small/6924874.jpg",
+          "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/6924874.jpg"
+        }
+      ]
+    },
+    {
+      "id": 12181376,
+      "name": "Triangle Ecstasy Spark",
+      "type": "Spell Card",
+      "humanReadableCardType": "Normal Spell",
+      "frameType": "spell",
+      "desc": "Until the end of this turn, the ATK of all \"Harpie Lady Sisters\" currently on the field becomes 2700, your opponent cannot activate any Trap Cards, also negate all your opponent's Trap effects on the field.",
+      "race": "Normal",
+      "archetype": "Harpie",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/triangle-ecstasy-spark-1049",
+      "card_images": [
+        {
+          "id": 12181376,
+          "image_url": "https://images.ygoprodeck.com/images/cards/12181376.jpg",
+          "image_url_small": "https://images.ygoprodeck.com/images/cards_small/12181376.jpg",
+          "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/12181376.jpg"
+        }
+      ]
+    },
+    {
+      "id": 12181376,
+      "name": "Triangle Ecstasy Spark",
+      "type": "Spell Card",
+      "humanReadableCardType": "Normal Spell",
+      "frameType": "spell",
+      "desc": "Until the end of this turn, the ATK of all \"Harpie Lady Sisters\" currently on the field becomes 2700, your opponent cannot activate any Trap Cards, also negate all your opponent's Trap effects on the field.",
+      "race": "Normal",
+      "archetype": "Harpie",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/triangle-ecstasy-spark-1049",
+      "card_images": [
+        {
+          "id": 12181376,
+          "image_url": "https://images.ygoprodeck.com/images/cards/12181376.jpg",
+          "image_url_small": "https://images.ygoprodeck.com/images/cards_small/12181376.jpg",
+          "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/12181376.jpg"
+        }
+      ]
+    },
+    {
+      "id": 18144506,
+      "name": "Harpie's Feather Duster",
+      "type": "Spell Card",
+      "humanReadableCardType": "Normal Spell",
+      "frameType": "spell",
+      "desc": "Destroy all Spell and Trap Cards your opponent controls.",
+      "race": "Normal",
+      "archetype": "Harpie",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/harpie-s-feather-duster-1573",
+      "banlist_info": {
+        "ban_tcg": "Limited",
+        "ban_ocg": "Limited",
+        "ban_goat": "Forbidden"
+      },
+      "card_images": [
+        {
+          "id": 18144506,
+          "image_url": "https://images.ygoprodeck.com/images/cards/18144506.jpg",
+          "image_url_small": "https://images.ygoprodeck.com/images/cards_small/18144506.jpg",
+          "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/18144506.jpg"
+        }
+      ]
+    },
+    {
+      "id": 18144506,
+      "name": "Harpie's Feather Duster",
+      "type": "Spell Card",
+      "humanReadableCardType": "Normal Spell",
+      "frameType": "spell",
+      "desc": "Destroy all Spell and Trap Cards your opponent controls.",
+      "race": "Normal",
+      "archetype": "Harpie",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/harpie-s-feather-duster-1573",
+      "banlist_info": {
+        "ban_tcg": "Limited",
+        "ban_ocg": "Limited",
+        "ban_goat": "Forbidden"
+      },
+      "card_images": [
+        {
+          "id": 18144506,
+          "image_url": "https://images.ygoprodeck.com/images/cards/18144506.jpg",
+          "image_url_small": "https://images.ygoprodeck.com/images/cards_small/18144506.jpg",
+          "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/18144506.jpg"
+        }
+      ]
+    },
+    {
+      "id": 79571449,
+      "name": "Graceful Charity",
+      "type": "Spell Card",
+      "humanReadableCardType": "Normal Spell",
+      "frameType": "spell",
+      "desc": "Draw 3 cards, then discard 2 cards.",
+      "race": "Normal",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/graceful-charity-6673",
+      "banlist_info": {
+        "ban_tcg": "Forbidden",
+        "ban_ocg": "Forbidden",
+        "ban_goat": "Limited"
+      },
+      "card_images": [
+        {
+          "id": 79571449,
+          "image_url": "https://images.ygoprodeck.com/images/cards/79571449.jpg",
+          "image_url_small": "https://images.ygoprodeck.com/images/cards_small/79571449.jpg",
+          "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/79571449.jpg"
+        }
+      ]
+    },
+    {
+      "id": 90219263,
+      "name": "Elegant Egotist",
+      "type": "Spell Card",
+      "humanReadableCardType": "Normal Spell",
+      "frameType": "spell",
+      "desc": "If \"Harpie Lady\" is on the field: Special Summon 1 \"Harpie Lady\" or \"Harpie Lady Sisters\" from your hand or Deck.",
+      "race": "Normal",
+      "archetype": "Harpie",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/elegant-egotist-7533",
+      "card_images": [
+        {
+          "id": 90219263,
+          "image_url": "https://images.ygoprodeck.com/images/cards/90219263.jpg",
+          "image_url_small": "https://images.ygoprodeck.com/images/cards_small/90219263.jpg",
+          "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/90219263.jpg"
+        }
+      ]
+    },
+    {
+      "id": 90219263,
+      "name": "Elegant Egotist",
+      "type": "Spell Card",
+      "humanReadableCardType": "Normal Spell",
+      "frameType": "spell",
+      "desc": "If \"Harpie Lady\" is on the field: Special Summon 1 \"Harpie Lady\" or \"Harpie Lady Sisters\" from your hand or Deck.",
+      "race": "Normal",
+      "archetype": "Harpie",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/elegant-egotist-7533",
+      "card_images": [
+        {
+          "id": 90219263,
+          "image_url": "https://images.ygoprodeck.com/images/cards/90219263.jpg",
+          "image_url_small": "https://images.ygoprodeck.com/images/cards_small/90219263.jpg",
+          "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/90219263.jpg"
+        }
+      ]
+    },
+    {
+      "id": 90219263,
+      "name": "Elegant Egotist",
+      "type": "Spell Card",
+      "humanReadableCardType": "Normal Spell",
+      "frameType": "spell",
+      "desc": "If \"Harpie Lady\" is on the field: Special Summon 1 \"Harpie Lady\" or \"Harpie Lady Sisters\" from your hand or Deck.",
+      "race": "Normal",
+      "archetype": "Harpie",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/elegant-egotist-7533",
+      "card_images": [
+        {
+          "id": 90219263,
+          "image_url": "https://images.ygoprodeck.com/images/cards/90219263.jpg",
+          "image_url_small": "https://images.ygoprodeck.com/images/cards_small/90219263.jpg",
+          "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/90219263.jpg"
+        }
+      ]
+    },
+    {
+      "id": 19337371,
+      "name": "Hysteric Sign",
+      "type": "Spell Card",
+      "humanReadableCardType": "Continuous Spell",
+      "frameType": "spell",
+      "desc": "When this card is activated: Add 1 \"Elegant Egotist\" from your Deck or GY to your hand. During the End Phase, if this card is in the GY because it was sent there from the hand or field this turn: Add up to 3 \"Harpie\" cards with different names from each other from your Deck to your hand. You can only use 1 \"Hysteric Sign\" effect per turn, and only once that turn.",
+      "race": "Continuous",
+      "archetype": "Harpie",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/hysteric-sign-1668",
+      "card_images": [
+        {
+          "id": 19337371,
+          "image_url": "https://images.ygoprodeck.com/images/cards/19337371.jpg",
+          "image_url_small": "https://images.ygoprodeck.com/images/cards_small/19337371.jpg",
+          "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/19337371.jpg"
+        }
+      ]
+    },
+    {
+      "id": 19337371,
+      "name": "Hysteric Sign",
+      "type": "Spell Card",
+      "humanReadableCardType": "Continuous Spell",
+      "frameType": "spell",
+      "desc": "When this card is activated: Add 1 \"Elegant Egotist\" from your Deck or GY to your hand. During the End Phase, if this card is in the GY because it was sent there from the hand or field this turn: Add up to 3 \"Harpie\" cards with different names from each other from your Deck to your hand. You can only use 1 \"Hysteric Sign\" effect per turn, and only once that turn.",
+      "race": "Continuous",
+      "archetype": "Harpie",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/hysteric-sign-1668",
+      "card_images": [
+        {
+          "id": 19337371,
+          "image_url": "https://images.ygoprodeck.com/images/cards/19337371.jpg",
+          "image_url_small": "https://images.ygoprodeck.com/images/cards_small/19337371.jpg",
+          "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/19337371.jpg"
+        }
+      ]
+    },
+    {
+      "id": 63224564,
+      "name": "Cyber Shield",
+      "type": "Spell Card",
+      "humanReadableCardType": "Equip Spell",
+      "frameType": "spell",
+      "desc": "Equip only to \"Harpie Lady\" or \"Harpie Lady Sisters\". It gains 500 ATK.",
+      "race": "Equip",
+      "archetype": "Harpie",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/cyber-shield-5340",
+      "card_images": [
+        {
+          "id": 63224564,
+          "image_url": "https://images.ygoprodeck.com/images/cards/63224564.jpg",
+          "image_url_small": "https://images.ygoprodeck.com/images/cards_small/63224564.jpg",
+          "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/63224564.jpg"
+        }
+      ]
+    },
+    {
+      "id": 63224564,
+      "name": "Cyber Shield",
+      "type": "Spell Card",
+      "humanReadableCardType": "Equip Spell",
+      "frameType": "spell",
+      "desc": "Equip only to \"Harpie Lady\" or \"Harpie Lady Sisters\". It gains 500 ATK.",
+      "race": "Equip",
+      "archetype": "Harpie",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/cyber-shield-5340",
+      "card_images": [
+        {
+          "id": 63224564,
+          "image_url": "https://images.ygoprodeck.com/images/cards/63224564.jpg",
+          "image_url_small": "https://images.ygoprodeck.com/images/cards_small/63224564.jpg",
+          "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/63224564.jpg"
+        }
+      ]
+    },
+    {
+      "id": 45778932,
+      "name": "Rising Air Current",
+      "type": "Spell Card",
+      "humanReadableCardType": "Field Spell",
+      "frameType": "spell",
+      "desc": "All WIND monsters gain 500 ATK and lose 400 DEF.",
+      "race": "Field",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/rising-air-current-3898",
+      "card_images": [
+        {
+          "id": 45778932,
+          "image_url": "https://images.ygoprodeck.com/images/cards/45778932.jpg",
+          "image_url_small": "https://images.ygoprodeck.com/images/cards_small/45778932.jpg",
+          "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/45778932.jpg"
+        }
+      ]
+    },
+    {
+      "id": 75782277,
+      "name": "Harpies' Hunting Ground",
+      "type": "Spell Card",
+      "humanReadableCardType": "Field Spell",
+      "frameType": "spell",
+      "desc": "All Winged Beast monsters gain 200 ATK/DEF. If any \"Harpie Lady\" or \"Harpie Lady Sisters\" is Normal or Special Summoned: The player who conducted the Summon targets 1 Spell/Trap on the field; that player destroys that target.",
+      "race": "Field",
+      "archetype": "Harpie",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/harpies-hunting-ground-6379",
+      "card_images": [
+        {
+          "id": 75782277,
+          "image_url": "https://images.ygoprodeck.com/images/cards/75782277.jpg",
+          "image_url_small": "https://images.ygoprodeck.com/images/cards_small/75782277.jpg",
+          "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/75782277.jpg"
+        }
+      ]
+    },
+    {
+      "id": 75782277,
+      "name": "Harpies' Hunting Ground",
+      "type": "Spell Card",
+      "humanReadableCardType": "Field Spell",
+      "frameType": "spell",
+      "desc": "All Winged Beast monsters gain 200 ATK/DEF. If any \"Harpie Lady\" or \"Harpie Lady Sisters\" is Normal or Special Summoned: The player who conducted the Summon targets 1 Spell/Trap on the field; that player destroys that target.",
+      "race": "Field",
+      "archetype": "Harpie",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/harpies-hunting-ground-6379",
+      "card_images": [
+        {
+          "id": 75782277,
+          "image_url": "https://images.ygoprodeck.com/images/cards/75782277.jpg",
+          "image_url_small": "https://images.ygoprodeck.com/images/cards_small/75782277.jpg",
+          "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/75782277.jpg"
+        }
+      ]
+    },
+    {
+      "id": 77778835,
+      "name": "Hysteric Party",
+      "type": "Trap Card",
+      "humanReadableCardType": "Continuous Trap",
+      "frameType": "trap",
+      "desc": "Activate this card by discarding 1 card; Special Summon as many copies of \"Harpie Lady\" as possible from your Graveyard. When this face-up card leaves the field, destroy those monsters.",
+      "race": "Continuous",
+      "archetype": "Harpie",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/hysteric-party-6543",
+      "card_images": [
+        {
+          "id": 77778835,
+          "image_url": "https://images.ygoprodeck.com/images/cards/77778835.jpg",
+          "image_url_small": "https://images.ygoprodeck.com/images/cards_small/77778835.jpg",
+          "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/77778835.jpg"
+        }
+      ]
+    },
+    {
+      "id": 77778835,
+      "name": "Hysteric Party",
+      "type": "Trap Card",
+      "humanReadableCardType": "Continuous Trap",
+      "frameType": "trap",
+      "desc": "Activate this card by discarding 1 card; Special Summon as many copies of \"Harpie Lady\" as possible from your Graveyard. When this face-up card leaves the field, destroy those monsters.",
+      "race": "Continuous",
+      "archetype": "Harpie",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/hysteric-party-6543",
+      "card_images": [
+        {
+          "id": 77778835,
+          "image_url": "https://images.ygoprodeck.com/images/cards/77778835.jpg",
+          "image_url_small": "https://images.ygoprodeck.com/images/cards_small/77778835.jpg",
+          "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/77778835.jpg"
+        }
+      ]
+    },
+    {
+      "id": 77778835,
+      "name": "Hysteric Party",
+      "type": "Trap Card",
+      "humanReadableCardType": "Continuous Trap",
+      "frameType": "trap",
+      "desc": "Activate this card by discarding 1 card; Special Summon as many copies of \"Harpie Lady\" as possible from your Graveyard. When this face-up card leaves the field, destroy those monsters.",
+      "race": "Continuous",
+      "archetype": "Harpie",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/hysteric-party-6543",
+      "card_images": [
+        {
+          "id": 77778835,
+          "image_url": "https://images.ygoprodeck.com/images/cards/77778835.jpg",
+          "image_url_small": "https://images.ygoprodeck.com/images/cards_small/77778835.jpg",
+          "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/77778835.jpg"
+        }
+      ]
+    }
+  ],
+  "extraDeck": [],
+  "sideDeck": [],
+  "owner": "mai"
+}
