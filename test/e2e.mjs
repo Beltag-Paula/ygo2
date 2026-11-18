@@ -54,6 +54,25 @@ ok((await alice.post('/api/duel/bot', { deckId: draftId, mode: 'classic' })).s =
 ok((await alice.post('/api/duel/bot', { deckId: imp2.j.id, mode: 'classic' })).s === 400, 'a Modern deck cannot be used in Classic mode');
 ok((await bob.get('/api/decks/' + imp1.j.id)).s === 404, "players cannot see each other's decks");
 
+console.log('\nPhoto scan route');
+const imgCall = (c, body, headers = { 'x-requested-with': 'ygo' }) => fetch(BASE + '/api/decks/scan', { method: 'POST', headers: { 'content-type': 'image/jpeg', cookie: c.cookie, ...headers }, body });
+ok((await imgCall(new Client('x'), Buffer.from('ffd8ffe000104a4649460001', 'hex'))).status === 401, 'scanning needs a login');
+ok((await imgCall(alice, Buffer.from('definitely not an image, just text'))).status === 400, 'a non-image upload is refused');
+ok((await imgCall(alice, Buffer.from('ffd8ffe000104a4649460001', 'hex'), {})).status === 403, 'scan uploads need the CSRF header too');
+if (process.env.SCAN_E2E) {                                   // full OCR run on a generated photo (about a minute)
+  const { spawnSync } = await import('node:child_process');
+  const png = `/tmp/ygo-e2e-scan-${process.pid}.png`;
+  spawnSync('python3', ['-c', `import sys; sys.path.insert(0,'ocr/tests'); sys.path.insert(0,'ocr'); import make_synthetic as m; from carddb import CardDB; d=CardDB.from_cdb('BabelCDB/cards.cdb'); cs=m.pick(d,6,seed=4); m.photo([(c.name,c.desc) for c in cs]).save('${png}'); open('${png}.ids','w').write(','.join(str(c.id) for c in cs))`]);
+  const r = await fetch(BASE + '/api/decks/scan', { method: 'POST', headers: { 'content-type': 'image/png', cookie: alice.cookie, 'x-requested-with': 'ygo' }, body: fs.readFileSync(png) });
+  const { id } = await r.json(); ok(r.status === 202 && !!id, 'the upload returns a job id immediately (no long-held request)');
+  ok((await bob.get('/api/decks/scan/' + id)).s === 404, "other players cannot read your scan job");
+  let job; for (let i = 0; i < 200; i++) { job = (await alice.get('/api/decks/scan/' + id)).j; if (job.state === 'done' || job.state === 'error') break; await sleep(2000); }
+  const j = job.result || { cards: [] }, want = fs.readFileSync(png + '.ids', 'utf8').split(',').map(Number);
+  ok(job.state === 'done' && want.filter(w => j.cards.some(c => c.id === w)).length >= 5, `polling returns the scan (${j.cards.length} cards read, ${j.stats ? j.stats.verified : 0} verified)`);
+  const imp = await alice.post('/api/decks/import', { text: j.ydk, name: 'From scan' }); ok(imp.s === 200, 'the scanned .ydk imports as a deck');
+  fs.rmSync(png, { force: true }); fs.rmSync(png + '.ids', { force: true });
+}
+
 console.log('\nDuel vs bot (full game driven by the same bot brain, over HTTP)');
 const humanLoop = async (c, secs) => {
   const proxy = { over: false, seat: 0,

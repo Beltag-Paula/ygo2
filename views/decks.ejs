@@ -41,6 +41,8 @@ async function load() {
   });
   const add = document.createElement('div'); add.className = 'deck-case add'; add.id = 'upload';
   add.innerHTML = '<div><div class="plus">+</div><b>UPLOAD .YDK</b></div>'; add.onclick = () => $('uploadModal').classList.add('on'); g.appendChild(add);
+  const sc = document.createElement('div'); sc.className = 'deck-case add'; sc.id = 'scanTile';
+  sc.innerHTML = '<div><div class="plus">📷</div><b>SCAN PHOTO OF CARDS</b></div>'; sc.onclick = () => window.openScan(); g.appendChild(sc);
   const nw = document.createElement('a'); nw.className = 'deck-case add'; nw.href = '/builder?new=1';
   nw.innerHTML = '<div><div class="plus">✦</div><b>BUILD NEW DECK</b></div>'; g.appendChild(nw);
   if (!sel && decks[0]) { sel = decks[0].id; load(); showDetail(sel); }
@@ -93,6 +95,7 @@ $('upGo').onclick = async () => {
     toast(e.message, true);
   } finally { $('upGo').disabled = false; $('upGo').textContent = 'Upload'; }
 };
-load().then(() => { if (location.hash === '#upload') $('uploadModal').classList.add('on'); });
+load().then(() => { if (location.hash === '#upload') $('uploadModal').classList.add('on'); if (location.hash === '#scan') window.openScan(); });
 </script>
+<%- include('partials/scan') %>
 </div></body></html>

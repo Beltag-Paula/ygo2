@@ -3,6 +3,9 @@
 import express from 'express';
 import path from 'node:path';
 import fs from 'node:fs';
+import os from 'node:os';
+import crypto from 'node:crypto';
+import { spawn } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
 import { db, now } from './db.js';
 import { attachUser, requireUser, csrfGuard, hashPassword, checkPassword, validateCredentials, startSession, endSession, throttle } from './auth.js';
@@ -83,7 +86,7 @@ app.post('/api/decks/import', requireUser, wrap((req, res) => {
     const r = Decks.importYdk(req.user.id, b.text, { name: String(b.name || '').trim() || undefined, mode: b.mode });
     const bits = []; if (r.skipped.length) bits.push(`${r.skipped.length} unknown card(s) skipped`); if (r.dropped.length) bits.push(`${r.dropped.length} card(s) not allowed in Classic left out`);
     if (!r.deck.valid) bits.push('not legal yet: ' + r.deck.errors[0]);
-    res.json({ ...r, message: `Imported as a ${r.mode} deck` + (bits.length ? ' — ' + bits.join('; ') + '.' : '.') });
+    res.json({ ...r, message: `Imported as a ${r.mode} deck` + (bits.length ? ' — ' + bits.join('; ').replace(/\.+$/, '') + '.' : '.') });
   } catch (e) { res.status(e.status || 500).json({ error: e.message, skipped: e.skipped || [] }); }
 }));
 app.post('/api/decks/custom', requireUser, wrap((req, res) => { try { res.json(saveMsg(req.user.id, Decks.saveDeck(req.user.id, null, req.body || {}), 'created')); } catch (e) { fail(res, e.message, e.status || 500); } }));
@@ -93,6 +96,70 @@ app.get('/api/decks/:id', requireUser, (req, res) => { const d = Decks.getDeck(r
 app.put('/api/decks/:id', requireUser, wrap((req, res) => { const id = Decks.saveDeck(req.user.id, req.params.id, req.body || {}); if (!id) return fail(res, 'Deck not found', 404); res.json(saveMsg(req.user.id, id, 'saved')); }));
 app.patch('/api/decks/:id', requireUser, (req, res) => Decks.renameDeck(req.user.id, req.params.id, (req.body || {}).name) ? res.json({ ok: true }) : fail(res, 'Deck not found', 404));
 app.delete('/api/decks/:id', requireUser, (req, res) => Decks.deleteDeck(req.user.id, req.params.id) ? res.json({ ok: true }) : fail(res, 'Deck not found', 404));
+
+// ================================================================== scan a physical deck: photo -> OCR (Python) -> card list
+// The Python scanner (ocr/scan.py) reads card NAMES + a few words of effect text and matches them to the card database.
+// Node just hands it the photo and returns its report; the browser lets the player fix mistakes, then imports the deck.
+// Python for the scanner: PYTHON_BIN if set, else the project's own ocr/.venv (made by uv/venv), else the system python3.
+const venvPy = [path.join(__dirname, 'ocr', '.venv', 'bin', 'python'), path.join(__dirname, 'ocr', '.venv', 'Scripts', 'python.exe')].find(f => fs.existsSync(f));
+const PY = process.env.PYTHON_BIN || venvPy || 'python3', SCAN = path.join(__dirname, 'ocr', 'scan.py');
+const SCAN_TIMEOUT_MS = +process.env.SCAN_TIMEOUT_MS || 300_000;
+let scanQueue = Promise.resolve(), scanWaiting = 0, scanOk = { at: 0, ok: false };
+const sniff = b => b.length > 12 && ((b[0] === 0xff && b[1] === 0xd8) ? 'jpg' : (b[0] === 0x89 && b.toString('latin1', 1, 4) === 'PNG') ? 'png' : (b.toString('latin1', 0, 4) === 'RIFF' && b.toString('latin1', 8, 12) === 'WEBP') ? 'webp' : null);
+function run(cmd, args, timeoutMs) {
+  return new Promise(resolve => {
+    let out = '', err = '', done = false;
+    const c = spawn(cmd, args, { stdio: ['ignore', 'pipe', 'pipe'] });
+    const fin = r => { if (!done) { done = true; clearTimeout(t); resolve(r); } };
+    const t = setTimeout(() => { c.kill('SIGKILL'); fin({ code: -1, out, err: err + '\ntimeout' }); }, timeoutMs);
+    c.stdout.on('data', d => { if (out.length < 20e6) out += d; }); c.stderr.on('data', d => { err = (err + d).slice(-4000); });
+    c.on('error', e => fin({ code: -2, out, err: String(e.code || e.message) })); c.on('close', code => fin({ code, out, err }));
+  });
+}
+async function scanAvailable() {
+  if (Date.now() - scanOk.at < 60_000) return scanOk.ok;
+  const r = await run(PY, ['-c', 'import rapidocr_onnxruntime, cv2, rapidfuzz, numpy, PIL'], 30_000);
+  if (r.code !== 0 && scanOk.ok !== false) console.warn(`[scan] photo scanning unavailable with "${PY}": ${(r.err.trim().split('\n').pop() || 'python not found')} — see ocr/README.md ("Python version")`);
+  scanOk = { at: Date.now(), ok: r.code === 0 }; return scanOk.ok;
+}
+app.get('/api/decks/scan/status', requireUser, wrap(async (req, res) => res.json({ available: await scanAvailable() })));
+// Scans take 30-100 s on a small CPU, longer than many proxies hold a request open (Cloudflare: 100 s). So the upload returns a
+// job id at once and the page polls GET /api/decks/scan/:id until the job is done.
+const scanJobs = new Map();                                    // id -> { user, state: queued|running|done|error, result?, error?, at }
+setInterval(() => { for (const [k, j] of scanJobs) if (Date.now() - j.at > 15 * 60_000) scanJobs.delete(k); }, 60_000).unref();
+async function runScan(job, body, ext) {
+  const id = crypto.randomBytes(8).toString('hex'), img = path.join(os.tmpdir(), `ygo-scan-${id}.${ext}`), ann = path.join(os.tmpdir(), `ygo-scan-${id}-marked.jpg`);
+  job.state = 'running';
+  try {
+    fs.writeFileSync(img, body);
+    const r = await run(PY, [SCAN, img, '--stdout-json', '--annotate', ann], SCAN_TIMEOUT_MS);
+    let j = null; try { j = JSON.parse(r.out); } catch { /* not JSON */ }
+    if (!j || !j.ok) {
+      const miss = /ModuleNotFoundError|ENOENT/.test(r.err + (j && j.error || '')); console.error('[scan]', r.code, r.err.slice(-500));
+      job.state = 'error'; job.error = miss ? 'Photo scanning is not installed on this server.' : (j && j.error) || (r.err.includes('timeout') ? 'The scan took too long. Try a smaller photo with fewer cards.' : 'The scan failed.'); return;
+    }
+    for (const c of j.cards) { c.classic = Cards.allowed(c.id, 'classic'); c.image = '/pics/s/' + c.id + '.jpg'; }
+    j.annotated = fs.existsSync(ann) ? 'data:image/jpeg;base64,' + fs.readFileSync(ann).toString('base64') : null;
+    job.state = 'done'; job.result = j;
+  } catch (e) { console.error('[scan]', e); job.state = 'error'; job.error = 'The scan failed.'; }
+  finally { job.at = Date.now(); for (const f of [img, ann]) fs.rm(f, { force: true }, () => {}); }
+}
+app.post('/api/decks/scan', requireUser, express.raw({ type: ['image/jpeg', 'image/png', 'image/webp'], limit: '12mb' }), wrap(async (req, res) => {
+  const body = req.body, ext = Buffer.isBuffer(body) ? sniff(body) : null;
+  if (!ext) return fail(res, 'Send one JPEG, PNG or WebP photo as the request body (max 12 MB).');
+  if (!(await scanAvailable())) return fail(res, 'Photo scanning is not installed on this server (needs Python 3.9-3.12 and: pip install -r ocr/requirements.txt; see ocr/README.md).', 503);
+  const mine = [...scanJobs.values()].filter(j => j.user === req.user.id && (j.state === 'queued' || j.state === 'running')).length;
+  if (mine >= 2 || [...scanJobs.values()].filter(j => j.state === 'queued').length >= 6) return fail(res, 'The scanner is busy with other photos. Try again in a minute.', 429);
+  const id = crypto.randomBytes(12).toString('hex'), job = { user: req.user.id, state: 'queued', at: Date.now() };
+  scanJobs.set(id, job);
+  scanQueue = scanQueue.then(() => runScan(job, body, ext));   // one scan at a time: OCR uses all of the CPU
+  res.status(202).json({ id });
+}));
+app.get('/api/decks/scan/:id', requireUser, noStore, (req, res) => {
+  const j = scanJobs.get(req.params.id); if (!j || j.user !== req.user.id) return fail(res, 'Scan not found (results are kept for 15 minutes).', 404);
+  const ahead = j.state === 'queued' ? [...scanJobs.values()].filter(o => o !== j && (o.state === 'queued' || o.state === 'running') && o.at <= j.at).length : 0;
+  res.json({ state: j.state, ahead, error: j.error, result: j.state === 'done' ? j.result : undefined });
+});
 
 // ================================================================== lobby: presence, quick match, bot, invites
 app.get('/api/bots', requireUser, (req, res) => res.json({ bots: Decks.BOTS.map(b => ({ key: b.key, name: b.name, deckName: b.deckName, portrait: b.portrait, frame: b.frame, mode: b.mode })) }));

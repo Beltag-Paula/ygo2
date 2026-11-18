@@ -1,0 +1,129 @@
+<!-- Scan a physical deck: photo(s) -> /api/decks/scan (Python OCR) -> review table -> /api/decks/import.
+     Uses the page's $, api, toast, esc, load, showDetail, notice, sel from decks.ejs. -->
+<div class="modal-back" id="scanModal"><div class="panel modal scan-modal">
+  <h3>Scan a physical deck</h3>
+
+  <div id="scStep1">
+    <p class="sub">Lay your cards flat and take a photo (about <b>8–12 cards</b> per photo works best). Names must be readable, no glare, cards fully in view. Sideways photos are fine. For a bigger deck choose several photos — counts are added up.</p>
+    <p class="scwarn" id="scHint" style="display:none"></p>
+    <div class="field"><input type="file" id="scFiles" accept="image/*" multiple></div>
+    <p class="sub" id="scNA" style="display:none;color:#ff9c9a">Photo scanning is not installed on this server (needs Python 3.9–3.12 + <code>pip install -r ocr/requirements.txt</code>, see ocr/README.md).</p>
+    <div class="row-end"><button class="btn ghost small" id="scCancel" type="button">Cancel</button><button class="btn small" id="scGo" type="button">Scan</button></div>
+  </div>
+
+  <div id="scStep2" style="display:none"><p class="sub" id="scProg">Scanning…</p><div class="scbar"><i id="scBar"></i></div>
+    <p class="sub" style="font-size:12px">Reading the text on every card takes about a minute per photo. Only the printed words are used — never the artwork.</p></div>
+
+  <div id="scStep3" style="display:none">
+    <div id="scCov" class="sccov"></div>
+    <p class="sub" id="scSum"></p>
+    <div id="scWarn"></div>
+    <div class="sclist" id="scRows"></div>
+    <div id="scUnreadBox" style="display:none"><h4 class="sch">Not recognized — photograph just these cards again (closer, brighter), or search for them below. Tap ✓ once a card is covered.</h4><div class="scgal" id="scUnread"></div></div>
+    <div class="field" style="margin-top:10px"><label>Add a card by name</label><input type="text" id="scSearch" maxlength="60" placeholder="Type part of a name…" autocomplete="off"><div class="sclist" id="scFound"></div></div>
+    <details id="scAnnBox" style="display:none"><summary>See what was read on the photo (green = checked by effect text, blue = name only, orange = check, red = unreadable)</summary><div id="scAnn"></div></details>
+    <div class="scfoot">
+      <input type="text" id="scName" maxlength="60" placeholder="Deck name" value="Scanned deck">
+      <select id="scMode"><option value="auto">Auto mode</option><option value="classic">Classic</option><option value="modern">Modern</option></select>
+      <button class="btn ghost small" id="scBack" type="button">Scan more photos</button>
+      <button class="btn small" id="scMake" type="button">Create deck</button>
+    </div>
+  </div>
+</div></div>
+
+<script>
+(() => {
+  const rows = new Map(), unread = [], anns = []; const RANK = { review: 0, manual: 1, name_only: 1, verified: 2 };
+  const LABEL = { verified: ['✔ effect text matches', 'ok'], name_only: ['name only', 'mid'], review: ['⚠ please check', 'low'], manual: ['added by you', 'mid'] };
+  const show = n => { for (const i of [1, 2, 3]) $('scStep' + i).style.display = i === n ? '' : 'none'; };
+  const sleep = ms => new Promise(r => setTimeout(r, ms));
+  async function post(url, blob, onState) {                      // upload, then poll the job (a scan can outlast a proxy's request timeout)
+    const { id } = await api(url, { method: 'POST', headers: { 'content-type': blob.type || 'image/jpeg' }, body: blob });
+    for (let i = 0; i < 400; i++) {
+      await sleep(i < 5 ? 1500 : 3000);
+      const j = await api(url + '/' + id);
+      if (j.state === 'done') return j.result; if (j.state === 'error') throw new Error(j.error || 'The scan failed.');
+      if (onState) onState(j);
+    }
+    throw new Error('The scan took too long.');
+  }
+
+  async function shrink(file) {                      // phones make 12-megapixel photos: 3200px is plenty and uploads in a second
+    try {
+      const bmp = await createImageBitmap(file, { imageOrientation: 'from-image' }), k = Math.min(1, 3200 / Math.max(bmp.width, bmp.height));
+      const c = document.createElement('canvas'); c.width = Math.round(bmp.width * k); c.height = Math.round(bmp.height * k); c.getContext('2d').drawImage(bmp, 0, 0, c.width, c.height);
+      return await new Promise(r => c.toBlob(r, 'image/jpeg', 0.9));
+    } catch (e) { return file; }
+  }
+  function add(card) {
+    const r = rows.get(card.id);
+    if (!r) rows.set(card.id, { ...card }); else { r.count += card.count; if (RANK[card.status] < RANK[r.status]) r.status = card.status; }
+  }
+  function render() {
+    const list = [...rows.values()].sort((a, b) => (a.extra - b.extra) || a.name.localeCompare(b.name)), tot = list.reduce((s, r) => s + r.count, 0), ex = list.filter(r => r.extra).reduce((s, r) => s + r.count, 0);
+    const miss = unread.length, exp = tot + miss, pct = exp ? Math.round(100 * tot / exp) : 100;
+    $('scCov').className = 'sccov ' + (miss ? (pct >= 70 ? 'part' : 'poor') : 'full');
+    $('scCov').innerHTML = miss
+      ? '<b>Recognized ' + tot + ' of about ' + exp + ' cards (' + pct + '%).</b> ' + miss + ' could not be read. For the best result take a <b>closer, brighter photo of just those ' + miss + ' card' + (miss > 1 ? 's' : '') + '</b> (listed below) and choose “Scan the missing cards” — new photos are <i>added</i> to this list, so leave out cards that are already recognized. Or find them with the search box.<div class="scbar"><i style="width:' + pct + '%"></i></div>'
+      : '<b>✔ All ' + tot + ' cards accounted for.</b> Check the highlighted ones, then create the deck.';
+    $('scBack').textContent = miss ? 'Scan the missing cards' : 'Scan more photos';
+    $('scSum').innerHTML = '<b>' + tot + ' cards</b> (' + (tot - ex) + ' main, ' + ex + ' extra). Fix quantities or swap to an alternative if a row is wrong.';
+    $('scRows').innerHTML = list.map(r => { const [t, c] = LABEL[r.status] || LABEL.review;
+      return '<div class="scrow" data-id="' + r.id + '"><img loading="lazy" src="' + esc(r.image) + '" alt="">' +
+        '<div class="scname"><b>' + esc(r.name) + '</b>' + (r.extra ? ' <span class="chip">EXTRA</span>' : '') + (r.classic === false ? ' <span class="mode-chip modern">MODERN</span>' : '') + '<small>read as “' + esc((r.ocr_text || [])[0] || '') + '”</small>' +
+        (r.alternatives && r.alternatives.length && r.status !== 'verified' ? '<select data-alt>' + '<option value="">Not this card? choose…</option>' + r.alternatives.map(a => '<option value="' + a.id + '">' + esc(a.name) + '</option>').join('') + '</select>' : '') + '</div>' +
+        '<span class="chip ' + c + '">' + t + '</span>' +
+        '<div class="qty"><button data-d="-1" type="button">−</button><b>' + r.count + '</b><button data-d="1" type="button">+</button></div>' +
+        '<button class="btn danger small" data-rm type="button">✕</button></div>'; }).join('') || '<p class="sub">Nothing yet.</p>';
+    $('scUnread').innerHTML = unread.map((u, i) => '<figure>' + (u.crop ? '<img src="' + esc(u.crop) + '" alt="">' : '') + '<figcaption><b>' + esc(u.where || 'position unknown') + '</b>' + (u.text && u.text !== 'not read' ? '<br>read as “' + esc(u.text) + '”' : '') + (u.guess ? '<br><small>closest: ' + esc(u.guess) + '</small>' : '') + '<br><button class="btn ghost small" data-got="' + i + '" type="button">✓ got it</button></figcaption></figure>').join('');
+    $('scUnreadBox').style.display = unread.length ? '' : 'none';
+    $('scAnn').innerHTML = anns.map(a => '<img src="' + esc(a) + '" alt="" style="max-width:100%;margin-top:8px">').join(''); $('scAnnBox').style.display = anns.length ? '' : 'none';
+  }
+  $('scUnread').addEventListener('click', e => { if (e.target.dataset.got != null) { unread.splice(+e.target.dataset.got, 1); render(); } });
+  $('scRows').addEventListener('click', async e => {
+    const row = e.target.closest('.scrow'); if (!row) return; const r = rows.get(+row.dataset.id); if (!r) return;
+    if (e.target.dataset.d) { r.count += +e.target.dataset.d; if (r.count <= 0) rows.delete(r.id); render(); }
+    else if (e.target.hasAttribute('data-rm')) { rows.delete(r.id); render(); }
+  });
+  $('scRows').addEventListener('change', async e => {
+    if (!e.target.hasAttribute('data-alt') || !e.target.value) return;
+    const row = e.target.closest('.scrow'), r = rows.get(+row.dataset.id), nid = +e.target.value;
+    try { const c = (await api('/api/cards?ids=' + nid + '&mode=modern')).cards[0]; rows.delete(r.id);
+      add({ id: c.id, name: c.name, extra: c.extra, count: r.count, status: 'manual', image: c.image, classic: c.classic, ocr_text: r.ocr_text, alternatives: [] }); render(); } catch (err) { toast(err.message, true); }
+  });
+  let t = null;
+  $('scSearch').addEventListener('input', () => { clearTimeout(t); const q = $('scSearch').value.trim(); if (q.length < 2) { $('scFound').innerHTML = ''; return; }
+    t = setTimeout(async () => { try { const r = await api('/api/cards?mode=modern&limit=6&q=' + encodeURIComponent(q));
+      $('scFound').innerHTML = r.cards.map(c => '<div class="scrow found" data-cid="' + c.id + '"><img src="' + esc(c.image) + '" alt=""><div class="scname"><b>' + esc(c.name) + '</b><small>' + esc(c.type) + '</small></div><button class="btn small" type="button">Add</button></div>').join('');
+      $('scFound')._cards = Object.fromEntries(r.cards.map(c => [c.id, c])); } catch (e) { /* ignore */ } }, 250); });
+  $('scFound').addEventListener('click', e => { const el = e.target.closest('.found'); if (!el || !e.target.matches('button')) return; const c = $('scFound')._cards[el.dataset.cid];
+    add({ id: c.id, name: c.name, extra: c.extra, count: 1, status: 'manual', image: c.image, classic: c.classic, ocr_text: [], alternatives: [] }); render(); toast('Added ' + c.name); });
+
+  $('scCancel').onclick = () => $('scanModal').classList.remove('on');
+  $('scBack').onclick = () => { $('scFiles').value = ''; const h = $('scHint'); h.style.display = unread.length ? '' : 'none';
+    h.textContent = unread.length ? 'Photograph only the ' + unread.length + ' card(s) listed as not recognized — closer and with good light. They are added to the deck; cards already recognized would be counted twice.' : ''; show(1); };
+  $('scGo').onclick = async () => {
+    const files = [...$('scFiles').files]; if (!files.length) return toast('Choose at least one photo first', true);
+    show(2); const warns = new Set();
+    for (let i = 0; i < files.length; i++) {
+      $('scProg').textContent = 'Scanning photo ' + (i + 1) + ' of ' + files.length + '…'; $('scBar').style.width = (i / files.length * 100) + '%';
+      try { const r = await post('/api/decks/scan', await shrink(files[i]), j => { $('scProg').textContent = 'Scanning photo ' + (i + 1) + ' of ' + files.length + (j.state === 'queued' ? ' — waiting for ' + (j.ahead || 'other') + ' scan(s) ahead…' : ' — reading the cards…'); });
+        r.cards.forEach(add); unread.push(...(r.unmatched || []).map(u => ({ ...u })), ...(r.missing || []).map(m => ({ crop: m.crop, where: m.where, text: 'not read', guess: null })));
+        (r.warnings || []).forEach(w => warns.add(w)); if (r.annotated) anns.push(r.annotated);
+      } catch (e) { toast('Photo ' + (i + 1) + ': ' + e.message, true); warns.add('Photo ' + (i + 1) + ' failed: ' + e.message); }
+    }
+    $('scBar').style.width = '100%'; $('scWarn').innerHTML = [...warns].map(w => '<p class="scwarn">⚠ ' + esc(w) + '</p>').join(''); render(); show(3);
+  };
+  $('scMake').onclick = async () => {
+    const list = [...rows.values()]; if (!list.length) return toast('No cards to add yet', true);
+    const ids = r => Array(r.count).fill(r.id).join('\n');
+    const text = '#main\n' + list.filter(r => !r.extra).map(ids).join('\n') + '\n#extra\n' + list.filter(r => r.extra).map(ids).join('\n') + '\n!side\n';
+    $('scMake').disabled = true;
+    try { const r = await api('/api/decks/import', { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ text, name: $('scName').value.trim() || 'Scanned deck', mode: $('scMode').value }) });
+      $('scanModal').classList.remove('on'); sel = r.id; toast(r.message, !r.deck.valid); await load(); showDetail(sel); rows.clear(); unread.length = 0; anns.length = 0;
+    } catch (e) { toast(e.message, true); } finally { $('scMake').disabled = false; }
+  };
+  window.openScan = async () => { $('scanModal').classList.add('on'); show(rows.size ? 3 : 1);
+    try { const s = await api('/api/decks/scan/status'); $('scNA').style.display = s.available ? 'none' : ''; $('scGo').disabled = !s.available; } catch (e) { /* ignore */ } };
+})();
+</script>

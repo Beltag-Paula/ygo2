@@ -6,6 +6,8 @@
   "engines": { "node": ">=22.13" },
   "scripts": {
     "setup": "node tools/setup.mjs",
+    "setup:ocr": "python3 -m pip install -r ocr/requirements.txt",
+    "test:ocr": "python3 -m unittest discover -s ocr/tests -p 'test_*.py'",
     "start": "node server.js",
     "test": "node test/e2e.mjs"
   },
